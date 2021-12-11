@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+	<title>WCAG</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<style>
+
+	button{	margin-top: 5px;}
+	legend{	margin-top: 5px;font-size:inherit;}
+
+</style>
+
+<body>
+
+	<div class="container">
+			
+		<h1>WCAG <span id="wcagVersion">2.1</span></h1>
+		<div class="row">
+			<div class="col-sm-12 col-lg-7">
+				<p role="status">
+					Showing <span class="badge bg-primary" id="returnedResults">78</span> tests categorised by <span class="badge bg-primary" id="filter">all</span> success criteria
+				</p>
+			</div>
+		</div>
+
+		<fieldset>
+			<div class="row bg-light" style="padding:20px;">
+				<div class="col-3" style="padding-left:0px;">
+					<legend>Categorise WCAG</legend>
+				</div>
+				<div class="col" style="text-align:right">
+					<button type="button" class="btn btn-primary btn-sm">all</button>
+					<button type="button" class="btn btn-secondary btn-sm">content</button>
+					<button type="button" class="btn btn-secondary btn-sm">custom-controls</button>
+					<button type="button" class="btn btn-secondary btn-sm">forms-and-UI</button>
+					<button type="button" class="btn btn-secondary btn-sm">audio-video</button>
+					<button type="button" class="btn btn-secondary btn-sm">structure</button>
+					<button type="button" class="btn btn-secondary btn-sm">colour</button>
+					<button type="button" class="btn btn-secondary btn-sm">font-size</button>
+					<button type="button" class="btn btn-secondary btn-sm">dynamic-content</button>
+					<button type="button" class="btn btn-secondary btn-sm">keyboard</button>
+					<button type="button" class="btn btn-secondary btn-sm">link</button>
+				</div>
+			</div>
+		</fieldset>
+
+		<div style="overflow-x: auto;">
+		<table class="table">
+			<caption class="visually-hidden">WCAG success criteria sorted by category</caption>
+			<thead style="border-top:0px"><th>Understanding Criteria</th><th>Level</th><th>Version</th><th style="width: 40%;">Intent</th><th style="width: 40%;">Benefits</th><th>Category</th></thead>
+			<tbody></tbody>
+		</table>
+		</div>
+		
+	</div>
+	</body>
+
+	<script src="./data/json-EN.js"></script>
+	<script src="./scripts/script.js"></script>
+
+</html>
