@@ -1,14 +1,14 @@
 const tableBody = document.querySelector('tbody');
 const filteredBy = document.getElementById('filter');
 const wcagVersion = document.getElementById('wcagVersion');
+const level = document.getElementById('level')
+const resultsElement = document.getElementById('returnedResults');
+const tests = wcagObj['intents'];
 
-function populateTable(obj, filter)
+function populateTable()
 {
-	const resultsElement = document.getElementById('returnedResults');
-	const tests = obj['intents'];
-	var returnedResults = 0;
 	
-	wcagVersion.textContent = obj.latestWCAGversion;
+	var returnedResults = 0;
 	
 	for(let i = 0;i < tests.length; i++)
 	{
@@ -22,7 +22,7 @@ function populateTable(obj, filter)
 					var val = tests[i][key];
 					var tableData = document.createElement('td');
 
-					if(tests[i].category.includes(filter) || filter == 'all')
+					if(tests[i].category.includes(filteredBy.innerHTML) || filteredBy.innerHTML == 'all')
 					{
 						if(key=='category')
 						{
@@ -53,7 +53,8 @@ function populateTable(obj, filter)
 								case 'AA':
 									var cssSpan = document.createElement('span');
 									cssSpan.textContent = val;
-									cssSpan.classList.add('bg-success');
+									cssSpan.classList.add('bg-warning');
+									cssSpan.classList.add('text-dark');
 									cssSpan.classList.add('badge');
 									cssSpan.classList.add('rounded-pill');
 									tableData.appendChild(cssSpan);
@@ -61,8 +62,7 @@ function populateTable(obj, filter)
 								case 'AAA':
 									var cssSpan = document.createElement('span');
 									cssSpan.textContent = val;
-									cssSpan.classList.add('bg-warning');
-									cssSpan.classList.add('text-dark');
+									cssSpan.classList.add('bg-danger');
 									cssSpan.classList.add('badge');
 									cssSpan.classList.add('rounded-pill');
 									tableData.appendChild(cssSpan);
@@ -114,15 +114,122 @@ function populateTable(obj, filter)
 	}
 	resultsElement.textContent = returnedResults;
 }
-
-const btns = document.querySelectorAll('button');
+/*
+const btns = document.getElementsByClassName('category');
 for (i of btns) 
 {
   i.addEventListener('click', function(){
 		tableBody.innerHTML = '';
-		populateTable(wcagObj,this.textContent);
+		populateTable();
 		filteredBy.textContent = this.textContent;
   });
+}
+*/
+function btnCategory(btn)
+{
+	tableBody.innerHTML = '';
+	populateTable();
+	filteredBy.textContent = btn.textContent;
+}
+/*
+const levels = document.getElementsByClassName('level');
+for (i of levels) 
+{
+  i.addEventListener('click', function(){
+		const datafilter = document.getElementById('filter')
+		let dataLevel = datafilter.getAttribute('data-level')
+		const contentLevel = this.textContent
+		
+		if (dataLevel == "")
+		{
+			datafilter.setAttribute('data-level', contentLevel)	
+		}
+		else if (contentLevel == "All")
+		{
+			datafilter.setAttribute('data-level', 'All')
+		}
+		else{
+			const arrayLevels = dataLevel.split(",")
+			if (arrayLevels.indexOf(contentLevel) !== -1)
+			{
+				const newArray = arrayLevels.filter(item => item != contentLevel)
+				datafilter.setAttribute('data-level', newArray.join())
+			}
+			else
+			{
+				const index = arrayLevels.indexOf('All')
+				if (index !== -1)
+				{
+					arrayLevels.splice(index, 1)
+				}
+				arrayLevels.push(contentLevel)
+				datafilter.setAttribute('data-level', arrayLevels.join())
+			}
+		}
+  });
+}*/
+/*
+const levels = document.getElementsByClassName('level');
+for (i of levels) 
+{
+  i.addEventListener('click', function(){
+		const contentLevel = this.textContent
+		
+		if (contentLevel == "All")
+		{
+			level.textContent = 'All'
+		}
+		else
+		{
+			const arrayLevels = level.innerHTML.split(",")
+			if (arrayLevels.indexOf(contentLevel) !== -1)
+			{
+				const newArray = arrayLevels.filter(item => item != contentLevel)
+				level.textContent = newArray.join()
+			}
+			else
+			{
+				const index = arrayLevels.indexOf('All')
+				if (index !== -1)
+				{
+					arrayLevels.splice(index, 1)
+					level.textContent = arrayLevels.join()
+				}
+				arrayLevels.push(contentLevel)
+				level.textContent = arrayLevels.join()
+			}
+		}
+  });
+}*/
+
+function btnLevel(btn)
+{
+	const contentLevel = btn.textContent
+			
+			if (contentLevel == "All")
+			{
+				level.textContent = 'All'
+			}
+			else
+			{
+				const arrayLevels = level.innerHTML.split(",")
+				if (arrayLevels.indexOf(contentLevel) !== -1)
+				{
+					const newArray = arrayLevels.filter(item => item != contentLevel)
+					level.textContent = newArray.join()
+				}
+				else
+				{
+					const index = arrayLevels.indexOf('All')
+					if (index !== -1)
+					{
+						arrayLevels.splice(index, 1)
+						level.textContent = arrayLevels.join()
+					}
+					arrayLevels.push(contentLevel)
+					level.textContent = arrayLevels.join()
+				}
+			}
 }
 
 const hashstring = window.location.hash;
@@ -138,9 +245,9 @@ switch(hashstring.replace('#',''))
 	case 'keyboard':
 	case 'link':
 	case 'font-size':
-		populateTable(wcagObj, hashstring.replace('#',''));
+		populateTable();
 		break;
 	default:
-		populateTable(wcagObj, 'all');
+		populateTable();
 		break;
 }
