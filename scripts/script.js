@@ -7,9 +7,7 @@ const tests = wcagObj['intents'];
 
 function populateTable()
 {
-	
-	var returnedResults = 0;
-	
+	var returnedResults = 0;	
 	for(let i = 0;i < tests.length; i++)
 	{
 		const tableRow = document.createElement('tr');
@@ -110,97 +108,16 @@ function populateTable()
 				}
 			}
 		}
-
 	}
 	resultsElement.textContent = returnedResults;
 }
-/*
-const btns = document.getElementsByClassName('category');
-for (i of btns) 
-{
-  i.addEventListener('click', function(){
-		tableBody.innerHTML = '';
-		populateTable();
-		filteredBy.textContent = this.textContent;
-  });
-}
-*/
+
 function btnCategory(btn)
 {
 	tableBody.innerHTML = '';
 	populateTable();
 	filteredBy.textContent = btn.textContent;
 }
-/*
-const levels = document.getElementsByClassName('level');
-for (i of levels) 
-{
-  i.addEventListener('click', function(){
-		const datafilter = document.getElementById('filter')
-		let dataLevel = datafilter.getAttribute('data-level')
-		const contentLevel = this.textContent
-		
-		if (dataLevel == "")
-		{
-			datafilter.setAttribute('data-level', contentLevel)	
-		}
-		else if (contentLevel == "All")
-		{
-			datafilter.setAttribute('data-level', 'All')
-		}
-		else{
-			const arrayLevels = dataLevel.split(",")
-			if (arrayLevels.indexOf(contentLevel) !== -1)
-			{
-				const newArray = arrayLevels.filter(item => item != contentLevel)
-				datafilter.setAttribute('data-level', newArray.join())
-			}
-			else
-			{
-				const index = arrayLevels.indexOf('All')
-				if (index !== -1)
-				{
-					arrayLevels.splice(index, 1)
-				}
-				arrayLevels.push(contentLevel)
-				datafilter.setAttribute('data-level', arrayLevels.join())
-			}
-		}
-  });
-}*/
-/*
-const levels = document.getElementsByClassName('level');
-for (i of levels) 
-{
-  i.addEventListener('click', function(){
-		const contentLevel = this.textContent
-		
-		if (contentLevel == "All")
-		{
-			level.textContent = 'All'
-		}
-		else
-		{
-			const arrayLevels = level.innerHTML.split(",")
-			if (arrayLevels.indexOf(contentLevel) !== -1)
-			{
-				const newArray = arrayLevels.filter(item => item != contentLevel)
-				level.textContent = newArray.join()
-			}
-			else
-			{
-				const index = arrayLevels.indexOf('All')
-				if (index !== -1)
-				{
-					arrayLevels.splice(index, 1)
-					level.textContent = arrayLevels.join()
-				}
-				arrayLevels.push(contentLevel)
-				level.textContent = arrayLevels.join()
-			}
-		}
-  });
-}*/
 
 function btnLevel(btn)
 {
