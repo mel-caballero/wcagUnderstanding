@@ -1,13 +1,14 @@
 const tableBody = document.querySelector('tbody');
-const filteredBy = document.getElementById('filter');
-const wcagVersion = document.getElementById('wcagVersion');
+const filterCategory = document.getElementById('filter');
 const level = document.getElementById('level')
 const resultsElement = document.getElementById('returnedResults');
 const tests = wcagObj['intents'];
 
 function populateTable()
 {
+	const filterLevel = level.innerHTML.split(",")
 	var returnedResults = 0;	
+	
 	for(let i = 0;i < tests.length; i++)
 	{
 		const tableRow = document.createElement('tr');
@@ -20,8 +21,9 @@ function populateTable()
 					var val = tests[i][key];
 					var tableData = document.createElement('td');
 
-					if(tests[i].category.includes(filteredBy.innerHTML) || filteredBy.innerHTML == 'all')
+					if(tests[i].category.includes(filterCategory.innerHTML) || filterCategory.innerHTML == 'all')
 					{
+						
 						if(key=='category')
 						{
 							returnedResults++;
@@ -115,38 +117,39 @@ function populateTable()
 function btnCategory(btn)
 {
 	tableBody.innerHTML = '';
+	filterCategory.textContent = btn.textContent;
 	populateTable();
-	filteredBy.textContent = btn.textContent;
 }
 
 function btnLevel(btn)
 {
 	const contentLevel = btn.textContent
-			
-			if (contentLevel == "All")
-			{
-				level.textContent = 'All'
-			}
-			else
-			{
-				const arrayLevels = level.innerHTML.split(",")
-				if (arrayLevels.indexOf(contentLevel) !== -1)
-				{
-					const newArray = arrayLevels.filter(item => item != contentLevel)
-					level.textContent = newArray.join()
-				}
-				else
-				{
-					const index = arrayLevels.indexOf('All')
-					if (index !== -1)
-					{
-						arrayLevels.splice(index, 1)
-						level.textContent = arrayLevels.join()
-					}
-					arrayLevels.push(contentLevel)
-					level.textContent = arrayLevels.join()
-				}
-			}
+	const arrayLevels = level.innerHTML.split(",")
+
+	if (contentLevel == "All")
+	{
+		level.textContent = 'All'
+	}
+	else if (arrayLevels.indexOf(contentLevel) !== -1)
+	{
+		const newArray = arrayLevels.filter(item => item != contentLevel)
+		level.textContent = newArray.join()
+		if (level.innerHTML == "") {
+			level.textContent = 'All'
+		}
+	}
+	else
+	{
+		
+		if (arrayLevels.indexOf('All') !== -1)
+		{
+			arrayLevels.splice(arrayLevels.indexOf('All'), 1)
+			level.textContent = arrayLevels.join()
+		}
+		arrayLevels.push(contentLevel)
+		level.textContent = arrayLevels.join()
+	}
+	populateTable();
 }
 
 const hashstring = window.location.hash;
