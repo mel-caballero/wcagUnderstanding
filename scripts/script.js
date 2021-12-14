@@ -4,23 +4,24 @@ const wcagVersion = document.getElementById('wcagVersion');
 
 function populateTable(obj, filter)
 {
+	let cssSpan
 	const resultsElement = document.getElementById('returnedResults');
 	const tests = obj['intents'];
-	var returnedResults = 0;
-	
+	let returnedResults = 0
+
 	wcagVersion.textContent = obj.latestWCAGversion;
-	
+
 	for(let i = 0;i < tests.length; i++)
 	{
 		const tableRow = document.createElement('tr');
-		for (var key in tests[i]) 
+		for (let key in tests[i])
 		{
-			if (tests[i].hasOwnProperty(key)) 
+			if (tests[i].hasOwnProperty(key))
 			{
 				if(key!=='link')
-				{	
-					var val = tests[i][key];
-					var tableData = document.createElement('td');
+				{
+					const val = tests[i][key]
+					const tableData = document.createElement('td')
 
 					if(tests[i].category.includes(filter) || filter == 'all')
 					{
@@ -29,7 +30,7 @@ function populateTable(obj, filter)
 							returnedResults++;
 							for(let a = 0;a < tests[i][key].length; a++)
 							{
-								var cssSpan = document.createElement('span');
+								cssSpan = document.createElement('span')
 								cssSpan.textContent = val[a];
 								cssSpan.classList.add('bg-primary');
 								cssSpan.classList.add('badge');
@@ -37,15 +38,19 @@ function populateTable(obj, filter)
 								tableData.appendChild(cssSpan);
 							}
 						}
-						else if(key=='wcagLevel')
+						else if(key==='wcagLevel')
 						{
-							switch(val)
+							cssSpan = document.createElement('span')
+							cssSpan.textContent = val;
+							cssSpan.classList.add(val);
+							tableData.appendChild(cssSpan);
+						/*	switch(val)
 							{
 								case 'A':
 									var cssSpan = document.createElement('span');
 									cssSpan.textContent = val;
-									cssSpan.classList.add('bg-info');
-									cssSpan.classList.add('text-dark');
+									cssSpan.classList.add(val);
+									/*cssSpan.classList.add('text-dark');
 									cssSpan.classList.add('badge');
 									cssSpan.classList.add('rounded-pill');
 									tableData.appendChild(cssSpan);
@@ -70,7 +75,7 @@ function populateTable(obj, filter)
 								default:
 									tableData.textContent = val;
 									break;
-							}
+							} */
 						}
 						else if(key=='understandingCriteria')
 						{
@@ -82,7 +87,7 @@ function populateTable(obj, filter)
 							a.href = tests[i].link;
 							tableData.appendChild(a);
 						}
-						else if(key=='benefit') 
+						else if(key=='benefit')
 						{
 							const ul = document.createElement('ul');
 							const lista = val.split("#")
@@ -116,7 +121,7 @@ function populateTable(obj, filter)
 }
 
 const btns = document.querySelectorAll('button');
-for (i of btns) 
+for (i of btns)
 {
   i.addEventListener('click', function(){
 		tableBody.innerHTML = '';
@@ -127,7 +132,7 @@ for (i of btns)
 
 const hashstring = window.location.hash;
 switch(hashstring.replace('#',''))
-{	
+{
 	case 'dynamic-content':
 	case 'custom-controls':
 	case 'forms-and-UI':
