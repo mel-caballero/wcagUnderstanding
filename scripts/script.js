@@ -17,40 +17,10 @@ function populateTable() {
 						var val = tests[i][key];
 						var tableData = document.createElement('td');
 						if (key == 'wcagLevel') {
-							switch (val) {
-								case 'A':
-									var cssSpan = document.createElement('span');
-									cssSpan.textContent = val;
-									['bg-info', 'text-dark', 'badge', 'rounded-pill' ].forEach(item => {
-										cssSpan.classList.add(item);
-									})
-									/*cssSpan.classList.add('bg-info');
-									cssSpan.classList.add('text-dark');
-									cssSpan.classList.add('badge');
-									cssSpan.classList.add('rounded-pill');*/
-									tableData.appendChild(cssSpan);
-									break;
-								case 'AA':
-									var cssSpan = document.createElement('span');
-									cssSpan.textContent = val;
-									cssSpan.classList.add('bg-warning');
-									cssSpan.classList.add('text-dark');
-									cssSpan.classList.add('badge');
-									cssSpan.classList.add('rounded-pill');
-									tableData.appendChild(cssSpan);
-									break;
-								case 'AAA':
-									var cssSpan = document.createElement('span');
-									cssSpan.textContent = val;
-									cssSpan.classList.add('bg-danger');
-									cssSpan.classList.add('badge');
-									cssSpan.classList.add('rounded-pill');
-									tableData.appendChild(cssSpan);
-									break;
-								default:
-									tableData.textContent = val;
-									break;
-							}
+							cssSpan = document.createElement('span')
+							cssSpan.textContent = val;
+							cssSpan.classList.add(val);
+							tableData.appendChild(cssSpan);
 						}
 						else if (key == 'category') {
 							returnedResults++;
