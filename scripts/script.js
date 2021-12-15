@@ -1,64 +1,40 @@
 const tableBody = document.querySelector('tbody');
 const filterCategory = document.getElementById('filter');
 const level = document.getElementById('level')
+const version = document.getElementById('version')
 const resultsElement = document.getElementById('returnedResults');
 const tests = wcagObj['intents'];
 
-function populateTable(obj, filter)
-{
-	let cssSpan
-	const resultsElement = document.getElementById('returnedResults');
-	const tests = obj['intents'];
-	let returnedResults = 0
-
-	wcagVersion.textContent = obj.latestWCAGversion;
-
-	for(let i = 0;i < tests.length; i++)
-	{
-		const tableRow = document.createElement('tr');
-		for (let key in tests[i])
-		{
-			if (tests[i].hasOwnProperty(key))
-			{
-				if(key!=='link')
-				{
-					const val = tests[i][key]
-					const tableData = document.createElement('td')
-
-					if(tests[i].category.includes(filter) || filter == 'all')
-					{
-						if(key=='category')
-						{
-							returnedResults++;
-							for(let a = 0;a < tests[i][key].length; a++)
-							{
-								cssSpan = document.createElement('span')
-								cssSpan.textContent = val[a];
-								cssSpan.classList.add('bg-primary');
-								cssSpan.classList.add('badge');
-								cssSpan.classList.add('rounded-pill');
-								tableData.appendChild(cssSpan);
-							}
-						}
-						else if(key==='wcagLevel')
-						{
-							cssSpan = document.createElement('span')
-							cssSpan.textContent = val;
-							cssSpan.classList.add(val);
-							tableData.appendChild(cssSpan);
-						/*	switch(val)
-							{
+function populateTable() {
+	const filterLevel = level.innerHTML.split(",")
+	const filterVersion = version.innerHTML.split(",")
+	let returnedResults = 0;
+	tableBody.innerHTML = '';
+	for (let i = 0; i < tests.length; i++) {
+		if ((tests[i].category.includes(filterCategory.innerHTML) || filterCategory.innerHTML == 'all') && (filterLevel.find(item => item === tests[i].wcagLevel) || filterLevel[0] === 'All' ) && (filterVersion.find(item => item === tests[i].wcagVersion) || filterVersion[0] === 'All' )) {
+			const tableRow = document.createElement('tr');
+			for (let key in tests[i]) {
+				if (tests[i].hasOwnProperty(key)) {
+					if (key !== 'link') {
+						let val = tests[i][key];
+						let tableData = document.createElement('td');
+						if (key === 'wcagLevel') {
+							let cssSpan;
+							switch (val) {
 								case 'A':
-									var cssSpan = document.createElement('span');
+									cssSpan = document.createElement('span');
 									cssSpan.textContent = val;
-									cssSpan.classList.add(val);
-									/*cssSpan.classList.add('text-dark');
+									['bg-info', 'text-dark', 'badge', 'rounded-pill' ].forEach(item => {
+										cssSpan.classList.add(item);
+									})
+									/*cssSpan.classList.add('bg-info');
+									cssSpan.classList.add('text-dark');
 									cssSpan.classList.add('badge');
-									cssSpan.classList.add('rounded-pill');
+									cssSpan.classList.add('rounded-pill');*/
 									tableData.appendChild(cssSpan);
 									break;
 								case 'AA':
-									var cssSpan = document.createElement('span');
+									cssSpan = document.createElement('span');
 									cssSpan.textContent = val;
 									cssSpan.classList.add('bg-warning');
 									cssSpan.classList.add('text-dark');
@@ -67,7 +43,7 @@ function populateTable(obj, filter)
 									tableData.appendChild(cssSpan);
 									break;
 								case 'AAA':
-									var cssSpan = document.createElement('span');
+									cssSpan = document.createElement('span');
 									cssSpan.textContent = val;
 									cssSpan.classList.add('bg-danger');
 									cssSpan.classList.add('badge');
@@ -77,12 +53,12 @@ function populateTable(obj, filter)
 								default:
 									tableData.textContent = val;
 									break;
-							} */
+							}
 						}
-						else if (key == 'category') {
+						else if (key === 'category') {
 							returnedResults++;
 							for (let a = 0; a < tests[i][key].length; a++) {
-								var cssSpan = document.createElement('span');
+								cssSpan = document.createElement('span');
 								cssSpan.textContent = val[a];
 								cssSpan.classList.add('bg-primary');
 								cssSpan.classList.add('badge');
@@ -90,7 +66,7 @@ function populateTable(obj, filter)
 								tableData.appendChild(cssSpan);
 							}
 						}
-						else if (key == 'understandingCriteria') {
+						else if (key === 'understandingCriteria') {
 							const a = document.createElement('a');
 							const linkText = document.createTextNode(val);
 							a.appendChild(linkText);
@@ -99,8 +75,7 @@ function populateTable(obj, filter)
 							a.href = tests[i].link;
 							tableData.appendChild(a);
 						}
-						else if(key=='benefit')
-						{
+						else if (key === 'benefit') {
 							const ul = document.createElement('ul');
 							const lista = val.split("#")
 							lista.forEach(element => {
@@ -111,14 +86,20 @@ function populateTable(obj, filter)
 							});
 							tableData.appendChild(ul);
 						}
-						else if (key = "intent") {
+						else if (key === "intent") {
 							const pText = val.split("#")
 							pText.forEach(element => {
 								const p = document.createElement('p');
-								const pText = document.createTextNode(element);
-								p.appendChild(pText);
+								const text = document.createTextNode(element);
+								p.appendChild(text);
 								tableData.appendChild(p);
 							});
+						}
+						else
+						{
+							let texto = document.createElement('p');
+							texto.textContent = val
+							tableData.appendChild(texto);
 						}
 						tableRow.appendChild(tableData);
 						tableBody.appendChild(tableRow);
@@ -165,21 +146,34 @@ function btnLevel(btn) {
 	populateTable();
 }
 
-const hashstring = window.location.hash;
-switch (hashstring.replace('#', '')) {
-	case 'dynamic-content':
-	case 'custom-controls':
-	case 'forms-and-UI':
-	case 'audio-video':
-	case 'structure':
-	case 'colour':
-	case 'content':
-	case 'keyboard':
-	case 'link':
-	case 'font-size':
-		populateTable();
-		break;
-	default:
-		populateTable();
-		break;
+function btnVersion(btn) {
+	const contentVersion = btn.textContent
+	const arrayVersions = version.innerHTML.split(",")
+
+	if (contentVersion == "All") {
+		version.textContent = 'All'
+	}
+	else if (arrayVersions.indexOf(contentVersion) !== -1) {
+		const newArray = arrayVersions.filter(item => item != contentVersion)
+		version.textContent = newArray.join()
+		if (version.innerHTML == "") {
+			version.textContent = 'All'
+		}
+	}
+	else {
+
+		if (arrayVersions.indexOf('All') !== -1) {
+			arrayVersions.splice(arrayVersions.indexOf('All'), 1)
+			version.textContent = arrayVersions.join()
+		}
+		arrayVersions.push(contentVersion)
+		if (arrayVersions.length === 3) {
+			version.textContent = 'All'
+		} else {
+		version.textContent = arrayVersions.join()
+		}
+	}
+	populateTable();
 }
+
+populateTable();
