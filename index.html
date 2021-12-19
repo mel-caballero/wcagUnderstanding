@@ -8,82 +8,96 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 
+	<style>
+
+		button{	
+			margin-top: 5px;
+		}
+
+		legend{	
+			margin-top: 5px;
+			font-size:inherit;
+		}
+
+		.btns ul {
+			list-style-type: none;
+		}
+
+		.btns li {
+			float: left;
+			padding: 2px;
+		}
+
+	</style>
 </head>
-
-<style>
-
-	button{	margin-top: 5px;}
-	legend{	margin-top: 5px;font-size:inherit;}
-
-</style>
-
 <body>
 
 	<div class="container">
-			
+		
+		<div class="row">
+			<fieldset class="col-12 row bg-light justify-content-end btns" style="padding:20px">
+				<legend class="col" style="text-align: right;">Idioma</legend>
+				<ul class="col-4">
+					<li><button id="cat" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Català</button></li>
+					<li><button id="es" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Español</button></li>
+					<li><button id="en" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">English</button></li>
+				</ul>
+			</fieldset>
+		</div>
+
 		<h1>WCAG</h1>
+
 		<div class="row">
 			<div class="col-12">
 				<p role="status">
-					Mostrando <span class="badge bg-primary" id="returnedResults">78</span> Understanding Criteria de la/las version/es <span class="badge bg-primary" id="version">All</span> categorizados por <span class="badge bg-primary" id="filter">all</span> Success Criteria. Nivel <span class="badge bg-primary" id="level" >All</span>.
+					Showing <span class="badge bg-primary" id="returnedResults">78</span> tests, version <span class="badge bg-primary" id="version">All</span>, categorised by <span class="badge bg-primary" id="filter">all</span> success criteria. Level <span class="badge bg-primary" id="level" >All</span>.
 				</p>
 			</div>
 		</div>
+
 		<div class="row">
-			<fieldset class="col-6" style="padding:0">
-				<div class="row bg-light" style="padding:20px;">
-					<div class="col-6">
-						<legend>Version WCAG</legend>
-					</div>
-					<div class="col-6" style="text-align:center">
-						<button type="button" onclick="btnVersion(this)" class="btn btn-primary btn-sm version">All</button>
-						<button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.0</button>
-						<button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.1</button>
-						<button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.2</button>
-					</div>
-				</div>
+			<fieldset id="versionbtn" class="col-6 row bg-light btns" style="padding:20px">
+				<legend class="col-3">Version</legend>
+				<ul class="col justify-content-start">
+					<li><button type="button" onclick="btnVersion(this)" class="btn btn-primary btn-sm version">All</button></li>
+					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.0</button></li>
+					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.1</button></li>
+					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.2</button></li>
+				</ul>
 			</fieldset>
 
-			<fieldset class="col-6" style="padding:0">
-				<div class="row bg-light" style="padding:20px;">
-					<div class="col-6">
-						<legend>Nivel WCAG</legend>
-					</div>
-					<div class="col-6" style="text-align:center">
-						<button type="button" onclick="btnLevel(this)" class="btn btn-primary btn-sm level">All</button>
-						<button type="button" onclick="btnLevel(this)" class="btn btn-info dark-text btn-sm level">A</button>
-						<button type="button" onclick="btnLevel(this)" class="btn btn-warning dark-text btn-sm level">AA</button>
-						<button type="button" onclick="btnLevel(this)" class="btn btn-danger btn-sm level">AAA</button>
-					</div>
-				</div>
+			<fieldset id="levelbtn" class="col-6 row bg-light justify-content-end btns" style="padding:20px">
+				<legend class="col-3">Level</legend>
+				<ul class="col">
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-primary btn-sm level">All</button></li>
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-info dark-text btn-sm level">A</button></li>
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-warning dark-text btn-sm level">AA</button></li>
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-danger btn-sm level">AAA</button></li>
+				</ul>
 			</fieldset>
 		</div>
 
 		<div class="row">
-			<fieldset class="col-12" style="padding:0">
-				<div class="row bg-light" style="padding:20px;">
-					<div class="col-3">
-						<legend>Categorise WCAG</legend>
-					</div>
-					<div class="col" style="text-align:right">
-						<button type="button" onclick="btnCategory(this)" class="btn btn-primary btn-sm category">all</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">content</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">forms-and-UI</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">audio-video</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">structure</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">colour</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">font-size</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">dynamic-content</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">keyboard</button>
-						<button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">link</button>
-					</div>
-				</div>
+			<fieldset id="categorybtn" class="col-12 row bg-light btns" style="padding:20px">
+				<legend class="col-3">Category</legend>
+				<ul class="col" style="text-align:right">
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-primary btn-sm category">all</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">content</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">forms-and-UI</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">audio-video</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">structure</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">colour</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">font-size</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">dynamic-content</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">keyboard</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">link</button></li>
+				</ul>
 			</fieldset>
 		</div>
 
 		<div style="overflow-x: auto;">
 		<table class="table">
-			<caption class="visually-hidden">WCAG success criteria sorted by category</caption>
+			<caption class="visually-hidden">WCAG success criteria intents and benefits</caption>
 			<thead style="border-top:0px">
 				<th scope="col">Understanding Criteria</th>
 				<th scope="col">Level</th>
@@ -96,9 +110,7 @@
 		</div>
 		
 	</div>
-	</body>
-
 	<script src="./data/json-EN.js"></script>
 	<script src="./scripts/script.js"></script>
-
+</body>
 </html>

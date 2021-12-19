@@ -4,8 +4,9 @@ const level = document.getElementById('level')
 const version = document.getElementById('version')
 const resultsElement = document.getElementById('returnedResults');
 const tests = wcagObj['intents'];
+let lang = en
 
-function populateTable() {
+function populateTable(lang) {
 	const filterLevel = level.innerHTML.split(",")
 	const filterVersion = version.innerHTML.split(",")
 	let returnedResults = 0;
@@ -18,6 +19,7 @@ function populateTable() {
 					if (key !== 'link') {
 						let val = tests[i][key];
 						let tableData = document.createElement('td');
+
 						if (key === 'wcagLevel') {
 							let cssSpan;
 							switch (val) {
@@ -68,7 +70,23 @@ function populateTable() {
 						}
 						else if (key === 'understandingCriteria') {
 							const a = document.createElement('a');
-							const linkText = document.createTextNode(val);
+							let linkText;
+							switch (lang) {
+								case 'cat':
+									linkText = document.createTextNode(tests[i][key].cat);
+									break;
+								case 'es':
+									linkText = document.createTextNode(tests[i][key].es);
+									break;
+								case 'en':
+									linkText = document.createTextNode(tests[i][key].en);
+									break;
+								default:
+									linkText = document.createTextNode(tests[i][key].en);
+									
+									break;
+							}
+							
 							a.appendChild(linkText);
 							a.title = val
 							a.target = '_blank';
@@ -111,9 +129,14 @@ function populateTable() {
 	resultsElement.textContent = returnedResults;
 }
 
+function btnLang(btn) {
+	lang = btn.id
+	populateTable(lang);
+}
+
 function btnCategory(btn) {
 	filterCategory.textContent = btn.textContent;
-	populateTable();
+	populateTable(lang);
 }
 
 function btnLevel(btn) {
@@ -143,7 +166,7 @@ function btnLevel(btn) {
 		level.textContent = arrayLevels.join()
 		}
 	}
-	populateTable();
+	populateTable(lang);
 }
 
 function btnVersion(btn) {
@@ -173,7 +196,7 @@ function btnVersion(btn) {
 		version.textContent = arrayVersions.join()
 		}
 	}
-	populateTable();
+	populateTable(lang);
 }
 
-populateTable();
+populateTable(lang);
