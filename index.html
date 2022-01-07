@@ -27,7 +27,9 @@
 			float: left;
 			padding: 2px;
 		}
-
+		#columns li {
+    	padding-right: 30px;
+		}
 	</style>
 </head>
 <body>
@@ -95,22 +97,75 @@
 			</fieldset>
 		</div>
 
+		<div class="row">
+			<fieldset id="columns" class="col-12 row bg-light btns" style="padding:20px">
+				<legend class="col-3">Show columns</legend>
+				<ul class="col" style="text-align:right">
+					<li>
+						<label for="wcagLevel">Level</label>
+						<input type="checkbox" id="wcagLevel" value="Level" onchange="showColumns(this)" checked="true">
+					</li>
+					<li>
+						<label for="wcagVersion">Version</label>
+						<input type="checkbox" id="wcagVersion" value="Version" onchange="showColumns(this)" checked="true">
+					</li>
+					<li>
+						<label for="goal">Goal</label>
+						<input type="checkbox" id="goal" value="Goal" onchange="showColumns(this)" checked="true">
+					</li>
+					<li>
+						<label for="intent">Intent</label>
+						<input type="checkbox" id="intent" value="Intent" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="benefits">Benefits</label>
+						<input type="checkbox" id="benefits" value="Benefits" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="verification">Verification</label>
+						<input type="checkbox" id="verification" value="Verification" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="tools">Tools</label>
+						<input type="checkbox" id="tools" value="Tools" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="category">Category</label>
+						<input type="checkbox" id="category" value="Category" onchange="showColumns(this)" checked="true">
+					</li>
+				</ul>
+			</fieldset>
+		</div>
+
 		<div style="overflow-x: auto;">
 		<table class="table">
-			<caption class="visually-hidden">WCAG success criteria intents and benefits</caption>
+			<caption class="visually-hidden">WCAG success criteria intents and benefits</caption><!--
 			<thead style="border-top:0px">
 				<th scope="col">Understanding Criteria</th>
 				<th scope="col">Level</th>
 				<th scope="col">Version</th>
 				<th scope="col" style="width: 40%;">Intent</th>
 				<th scope="col" style="width: 40%;">Benefits</th>
-				<th scope="col">Category</th></thead>
+				<th scope="col">Category</th>
+			</thead>
+			<thead style="border-top:0px">
+				<th scope="col">Understanding Criteria</th>
+				<th scope="col">Level</th>
+				<th scope="col">Version</th>
+				<th scope="col">Goal</th>
+				<th scope="col">Intent</th>
+				<th scope="col">Benefits</th>
+				<th scope="col">Verification</th>
+				<th scope="col">Tools</th>
+				<th scope="col">Category</th>
+			</thead>-->
+			<thead></thead>
 			<tbody></tbody>
 		</table>
 		</div>
 		
 	</div>
-	<script src="./data/json-EN.js"></script>
+	<script src="./data/content.js"></script>
 	<script src="./scripts/script.js"></script>
 </body>
 </html>
