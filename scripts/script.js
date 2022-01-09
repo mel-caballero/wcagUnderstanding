@@ -1,6 +1,6 @@
 const criteria = wcagObj['criterion'];
 let lang = 'en';
-let total = "78";
+let totalElem = "78";
 let version = 'All';
 let level = 'All';
 let category = 'All';
@@ -11,8 +11,6 @@ let message;
 //const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'verification', 'tools', 'category'];
 const checks = ['level', 'version', 'goal', 'intent', 'benefits'];
 
-const tableHeader = document.querySelector('thead');
-const tableBody = document.querySelector('tbody');
 let headers = [
 	{
 		"name": "criteria",
@@ -42,12 +40,12 @@ let headers = [
 	{
 		"name": "intent",
 		"alias": "Intent",
-		"view": true
+		"view": false
 	},
 	{
 		"name": "benefits",
 		"alias": "Benefits",
-		"view": true
+		"view": false
 	},
 	{
 		"name": "verification",
@@ -69,17 +67,21 @@ let headers = [
 const createTable = () => {
 	const filterLevel = level.split(",");
 	const filterVersion = version.split(",");
+	const tableHeader = document.getElementById('thead');
+	const tableBody = document.getElementById('tbody');
   
-	const elementHead = document.getElementById('thead');
-  const totalhead = elementHead.children.length;
-  for(let g= 0; g<totalhead; g++) {
-    if (elementHead.children.length >0 ) { elementHead.removeChild(elementHead.children[0]) }
+  const totalHead = tableHeader.children.length;
+  for(let g= 0; g<totalHead; g++) {
+    if (tableHeader.children.length >0 ) { 
+			tableHeader.removeChild(tableHeader.children[0]) 
+		}
   }
 
-	const element = document.getElementById('bodyTable')
-  const total = element.children.length
-  for (let i = 0; i < total;i++ ) {
-    if (element.children.length > 0 ) { element.removeChild(element.children[0]) }
+  const totalBody = tableBody.children.length;
+  for (let i = 0; i < totalBody;i++ ) {
+    if (tableBody.children.length > 0 ) { 
+			tableBody.removeChild(tableBody.children[0]) 
+		}
   }
 
 	// Create table headers
@@ -93,7 +95,7 @@ const createTable = () => {
       tr.appendChild(th)
     }
   })
-  elementHead.appendChild(tr)
+  tableHeader.appendChild(tr)
 
 	// Create table body
   criteria.forEach(item => {
@@ -124,26 +126,31 @@ const createTable = () => {
       }
     });
 		if (tr.firstElementChild != null){
-			element.append(tr);
+			tableBody
+.append(tr);
 		}
   });
-	totalElem = document.getElementById('wcagTable').rows.length - 1;
+	total = document.getElementById('wcagTable').rows.length - 1;
 	updateResume();
 }
 
 function updateResume() {
 	switch (lang) {
 		case 'cat':
-			message = 'Mostrar ' + total + ' tests. Versió ' + version + ' nivell ' + level + '. Categoritzats en ' + category + ' criteris.';
+			//message = 'Mostrar <span class="btn btn-primary btn-sm">' + total + '</span> tests. Versió <span class="btn btn-primary btn-sm">' + version + '</span> nivell <span class="btn btn-primary btn-sm">' + level + '</span>. Categoritzats en <span class="btn btn-primary btn-sm">' + category + '</span> criteris.';
+			message = 'Mostrar <span class="btn btn-primary btn-sm">' + total + '</span> tests. Versió <span class="btn btn-primary btn-sm">' + version + '</span> nivell <span class="btn btn-primary btn-sm">' + level + '</span>.';
 		break;
 		case 'es':
-			message = 'Showing ' + total + ' tests. Version ' + version + ' level ' + level + '. Categorised by ' + category + ' criterios.';
+			//message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>. Categorised by <span class="btn btn-primary btn-sm">' + category + '</span> criterios.';
+			message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>.';
 		break;
 		case 'en':
-			message = 'Showing ' + total + ' tests. Version ' + version + ' level ' + level + '. Categorised by ' + category + ' criteria.';
+			//message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>. Categorised by <span class="btn btn-primary btn-sm">' + category + '</span> criteria.';
+			message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>.';
 		break;
 		default:
-			message = 'Showing ' + total + ' tests. Version ' + version + ' level ' + level + '. Categorised by ' + category + ' criteria.';
+			//message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>. Categorised by <span class="btn btn-primary btn-sm">' + category + '</span> criteria.';
+			message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>.';
 		break;
 	}
 	resume.innerHTML = message;

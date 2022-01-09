@@ -198,9 +198,9 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "La intenció d'aquest criteri d'èxit és permetre que les persones sordes o amb problemes d'audició vegin presentacions en temps real. Els subtítols proporcionen la part del contingut disponible a través de la pista d'àudio. Els subtítols no només inclouen diàlegs, sinó que també identifiquen qui parla i anoten efectes de so i altres àudios significatius.#Aquest criteri d'èxit estava pensat per aplicar-se a l'emissió de mitjans sincronitzats i no pretén exigir trucades multimèdia bidireccionals entre dos o més. les persones mitjançant aplicacions web s'han de subtitular independentment de les necessitats dels usuaris. La responsabilitat de proporcionar subtítols recairia en els proveïdors de contingut (els que truca) o en l'amfitrió, i no en l'aplicació.", 
-        "es" : "La intención de este Criterio de Conformidad es permitir que las personas sordas o con problemas de audición vean presentaciones en tiempo real. Los subtítulos proporcionan la parte del contenido disponible a través de la pista de audio. Los subtítulos no solo incluyen el diálogo, sino que también identifican quién está hablando y anotan efectos de sonido y otro audio significativo. las personas a través de aplicaciones web deben estar subtituladas independientemente de las necesidades de los usuarios. La responsabilidad de proporcionar subtítulos recaería en los proveedores de contenido (las personas que llaman) o en la persona que llama amfitrión, y no en la aplicación.", 
-        "en" : "The intent of this Success Criterion is to enable people who are deaf or hard of hearing to watch real-time presentations. Captions provide the part of the content available via the audio track. Captions not only include dialogue, but also identify who is speaking and notate sound effects and other significant audio.#This success criterion was intended to apply to broadcast of synchronized media and is not intended to require that two-way multimedia calls between two or more individuals through web apps must be captioned regardless of the needs of users. Responsibility for providing captions would fall to the content providers (the callers) or the “host” caller, and not the application.",
+        "cat" : "<p>La intenció d'aquest criteri d'èxit és permetre que les persones sordes o amb problemes d'audició vegin presentacions en temps real. Els subtítols proporcionen la part del contingut disponible a través de la pista d'àudio. Els subtítols no només inclouen diàlegs, sinó que també identifiquen qui parla i anoten efectes de so i altres àudios significatius.</p><p>Aquest criteri d'èxit estava pensat per aplicar-se a l'emissió de mitjans sincronitzats i no pretén exigir trucades multimèdia bidireccionals entre dos o més. les persones mitjançant aplicacions web s'han de subtitular independentment de les necessitats dels usuaris. La responsabilitat de proporcionar subtítols recairia en els proveïdors de contingut (els que truca) o en l'amfitrió, i no en l'aplicació.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es permitir que las personas sordas o con problemas de audición vean presentaciones en tiempo real. Los subtítulos proporcionan la parte del contenido disponible a través de la pista de audio. Los subtítulos no solo incluyen el diálogo, sino que también identifican quién está hablando y anotan efectos de sonido y otro audio significativo. las personas a través de aplicaciones web deben estar subtituladas independientemente de las necesidades de los usuarios. La responsabilidad de proporcionar subtítulos recaería en los proveedores de contenido (las personas que llaman) o en la persona que llama amfitrión, y no en la aplicación.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to enable people who are deaf or hard of hearing to watch real-time presentations. Captions provide the part of the content available via the audio track. Captions not only include dialogue, but also identify who is speaking and notate sound effects and other significant audio.</p><p>This success criterion was intended to apply to broadcast of synchronized media and is not intended to require that two-way multimedia calls between two or more individuals through web apps must be captioned regardless of the needs of users. Responsibility for providing captions would fall to the content providers (the callers) or the “host” caller, and not the application.</p>",
       },
       "benefits" :
       {
@@ -327,9 +327,9 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "La intenció d'aquest criteri d'èxit és proporcionar a les persones cegues o amb discapacitat visual l'accés a una presentació multimèdia sincronitzada més enllà del que es pot proporcionar amb una descripció d'àudio estàndard. Això es fa congelant periòdicament la presentació multimèdia sincronitzada i reproduint una descripció d'àudio addicional. Aleshores es reprèn la presentació multimèdia sincronitzada.#Com que interromp la visualització per a aquells que no necessiten la descripció addicional, sovint es proporcionen tècniques que us permeten activar i desactivar la funció. Alternativament, es poden proporcionar versions amb i sense la descripció addicional.", 
-        "es" : "La intención de este Criterio de Conformidad es proporcionar a las personas ciegas o con discapacidad visual acceso a una presentación multimedia sincronizada más allá de lo que puede proporcionar una descripción de audio estándar. Esto se hace congelando periódicamente la presentación multimedia sincronizada y reproduciendo una descripción de audio adicional. A continuación, se reanuda la presentación multimedia sincronizada. # Debido a que interrumpe la visualización para aquellos que no necesitan la descripción adicional, a menudo se proporcionan técnicas que le permiten activar y desactivar la función. Alternativamente, se pueden proporcionar versiones con y sin la descripción adicional.", 
-        "en" : "The intent of this Success Criterion is to provide people who are blind or visually impaired access to a synchronized media presentation beyond that which can be provided by standard audio description. This is done by periodically freezing the synchronized media presentation and playing additional audio description. The synchronized media presentation is then resumed.#Because it disrupts viewing for those who do not need the additional description, techniques that allow you to turn the feature on and off are often provided. Alternately, versions with and without the additional description can be provided.",
+        "cat" : "<p>La intenció d'aquest criteri d'èxit és proporcionar a les persones cegues o amb discapacitat visual l'accés a una presentació multimèdia sincronitzada més enllà del que es pot proporcionar amb una descripció d'àudio estàndard. Això es fa congelant periòdicament la presentació multimèdia sincronitzada i reproduint una descripció d'àudio addicional. Aleshores es reprèn la presentació multimèdia sincronitzada.</p><p>Com que interromp la visualització per a aquells que no necessiten la descripció addicional, sovint es proporcionen tècniques que us permeten activar i desactivar la funció. Alternativament, es poden proporcionar versions amb i sense la descripció addicional.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es proporcionar a las personas ciegas o con discapacidad visual acceso a una presentación multimedia sincronizada más allá de lo que puede proporcionar una descripción de audio estándar. Esto se hace congelando periódicamente la presentación multimedia sincronizada y reproduciendo una descripción de audio adicional. A continuación, se reanuda la presentación multimedia sincronizada.</p><p>Debido a que interrumpe la visualización para aquellos que no necesitan la descripción adicional, a menudo se proporcionan técnicas que le permiten activar y desactivar la función. Alternativamente, se pueden proporcionar versiones con y sin la descripción adicional.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to provide people who are blind or visually impaired access to a synchronized media presentation beyond that which can be provided by standard audio description. This is done by periodically freezing the synchronized media presentation and playing additional audio description. The synchronized media presentation is then resumed.</p><p>Because it disrupts viewing for those who do not need the additional description, techniques that allow you to turn the feature on and off are often provided. Alternately, versions with and without the additional description can be provided.</p>",
       },
       "benefits" :
       {
@@ -370,9 +370,9 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "La intenció d'aquest criteri d'èxit és posar material audiovisual a disposició de les persones amb una visió massa pobre per llegir els subtítols de manera fiable i amb una audició massa baixa per escoltar de manera fiable el diàleg i l'àudiodescripció. Això es fa proporcionant una alternativa per als mitjans basats en el temps. #Aquest enfocament implica proporcionar tota la informació dels mitjans sincronitzats (tant visuals com auditius) en forma de text. Una alternativa per als mitjans basats en el temps proporciona una descripció en execució de tot el que està passant al contingut multimèdia sincronitzat. L'alternativa per als mitjans de comunicació basats en el temps llegeix alguna cosa com un llibre. A diferència de l'àudiodescripció, la descripció de la part de vídeo no es limita només a les pauses del diàleg existent. Es proporcionen descripcions completes de tota la informació visual, inclòs el context visual, les accions i expressions dels actors i qualsevol altre material visual. A més, es descriuen sons que no són de parla (rialles, veus fora de la pantalla, etc.) i s'inclouen transcripcions de tots els diàlegs. La seqüència de descripcions i transcripcions de diàlegs és la mateixa que la seqüència dels mitjans sincronitzats. Com a resultat, l'alternativa per als mitjans basats en el temps pot proporcionar una representació molt més completa del contingut multimèdia sincronitzat que només la descripció d'àudio. #Si hi ha alguna interacció com a part de la presentació multimèdia sincronitzada (p. ex., 'prem ara per respondre el pregunta') aleshores l'alternativa per als mitjans de comunicació basats en el temps proporcionaria hiperenllaços o el que sigui necessari per oferir una funcionalitat paral·lela. mitjans basats en l'ús d'una pantalla braille actualitzable.", 
-        "es" : "La intención de este Criterio de Conformidad es hacer que el material audiovisual esté disponible para las personas cuya visión es demasiado pobre para leer subtítulos de manera confiable y cuya audición es demasiado pobre para escuchar el diálogo y la descripción de audio de manera confiable. Esto se hace proporcionando una alternativa para los medios basados en el tiempo. # Este enfoque implica proporcionar toda la información en los medios sincronizados (tanto visual como auditiva) en forma de texto. Una alternativa para los medios basados en el tiempo proporciona una descripción continua de todo lo que sucede en el contenido de los medios sincronizados. La alternativa para los medios basados en el tiempo es algo así como un libro. A diferencia de la descripción de audio, la descripción de la parte de video no se limita solo a las pausas en el diálogo existente. Se proporcionan descripciones completas de toda la información visual, incluido el contexto visual, las acciones y expresiones de los actores, y cualquier otro material visual. Además, se describen los sonidos que no son del habla (risas, voces fuera de la pantalla, etc.) y se incluyen las transcripciones de todos los diálogos. La secuencia de descripciones y transcripciones de diálogos es la misma que la secuencia en el propio medio sincronizado. Como resultado, la alternativa para los medios basados en el tiempo puede proporcionar una representación mucho más completa del contenido de los medios sincronizados que la descripción de audio sola. # Si hay alguna interacción como parte de la presentación de los medios sincronizados (por ejemplo, 'presione ahora para responder al pregunta') entonces la alternativa para los medios basados en el tiempo proporcionaría hipervínculos o lo que sea necesario para proporcionar una funcionalidad paralela. multimedia basados en el uso de una pantalla braille actualizable.", 
-        "en" : "The intent of this Success Criterion is to make audio visual material available to individuals whose vision is too poor to reliably read captions and whose hearing is too poor to reliably hear dialogue and audio description. This is done by providing an alternative for time-based media.#This approach involves providing all of the information in the synchronized media (both visual and auditory) in text form. An alternative for time-based media provides a running description of all that is going on in the synchronized media content. The alternative for time-based media reads something like a book. Unlike audio description, the description of the video portion is not constrained to just the pauses in the existing dialogue. Full descriptions are provided of all visual information, including visual context, actions and expressions of actors, and any other visual material. In addition, non-speech sounds (laughter, off-screen voices, etc.) are described, and transcripts of all dialogue are included. The sequence of descriptions and dialogue transcripts is the same as the sequence in the synchronized media itself. As a result, the alternative for time-based media can provide a much more complete representation of the synchronized media content than audio description alone.#If there is any interaction as part of the synchronized media presentation (e.g., 'press now to answer the question') then the alternative for time-based media would provide hyperlinks or whatever is needed to provide parallel functionality.#Individuals whose vision is too poor to reliably read captions and whose hearing is too poor to reliably hear dialogue can access the alternative for time-based media by using a refreshable braille display.",
+        "cat" : "<p>La intenció d'aquest criteri d'èxit és posar material audiovisual a disposició de les persones amb una visió massa pobre per llegir els subtítols de manera fiable i amb una audició massa baixa per escoltar de manera fiable el diàleg i l'àudiodescripció. Això es fa proporcionant una alternativa per als mitjans basats en el temps.</p><p>Aquest enfocament implica proporcionar tota la informació dels mitjans sincronitzats (tant visuals com auditius) en forma de text. Una alternativa per als mitjans basats en el temps proporciona una descripció en execució de tot el que està passant al contingut multimèdia sincronitzat. L'alternativa per als mitjans de comunicació basats en el temps llegeix alguna cosa com un llibre. A diferència de l'àudiodescripció, la descripció de la part de vídeo no es limita només a les pauses del diàleg existent. Es proporcionen descripcions completes de tota la informació visual, inclòs el context visual, les accions i expressions dels actors i qualsevol altre material visual. A més, es descriuen sons que no són de parla (rialles, veus fora de la pantalla, etc.) i s'inclouen transcripcions de tots els diàlegs. La seqüència de descripcions i transcripcions de diàlegs és la mateixa que la seqüència dels mitjans sincronitzats. Com a resultat, l'alternativa per als mitjans basats en el temps pot proporcionar una representació molt més completa del contingut multimèdia sincronitzat que només la descripció d'àudio.</p><p>Si hi ha alguna interacció com a part de la presentació multimèdia sincronitzada (p. ex., 'prem ara per respondre el pregunta') aleshores l'alternativa per als mitjans de comunicació basats en el temps proporcionaria hiperenllaços o el que sigui necessari per oferir una funcionalitat paral·lela. mitjans basats en l'ús d'una pantalla braille actualitzable.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es hacer que el material audiovisual esté disponible para las personas cuya visión es demasiado pobre para leer subtítulos de manera confiable y cuya audición es demasiado pobre para escuchar el diálogo y la descripción de audio de manera confiable. Esto se hace proporcionando una alternativa para los medios basados en el tiempo.</p><p>Este enfoque implica proporcionar toda la información en los medios sincronizados (tanto visual como auditiva) en forma de texto. Una alternativa para los medios basados en el tiempo proporciona una descripción continua de todo lo que sucede en el contenido de los medios sincronizados. La alternativa para los medios basados en el tiempo es algo así como un libro. A diferencia de la descripción de audio, la descripción de la parte de video no se limita solo a las pausas en el diálogo existente. Se proporcionan descripciones completas de toda la información visual, incluido el contexto visual, las acciones y expresiones de los actores, y cualquier otro material visual. Además, se describen los sonidos que no son del habla (risas, voces fuera de la pantalla, etc.) y se incluyen las transcripciones de todos los diálogos. La secuencia de descripciones y transcripciones de diálogos es la misma que la secuencia en el propio medio sincronizado. Como resultado, la alternativa para los medios basados en el tiempo puede proporcionar una representación mucho más completa del contenido de los medios sincronizados que la descripción de audio sola.</p><p>Si hay alguna interacción como parte de la presentación de los medios sincronizados (por ejemplo, 'presione ahora para responder al pregunta') entonces la alternativa para los medios basados en el tiempo proporcionaría hipervínculos o lo que sea necesario para proporcionar una funcionalidad paralela. multimedia basados en el uso de una pantalla braille actualizable.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to make audio visual material available to individuals whose vision is too poor to reliably read captions and whose hearing is too poor to reliably hear dialogue and audio description. This is done by providing an alternative for time-based media.</p><p>This approach involves providing all of the information in the synchronized media (both visual and auditory) in text form. An alternative for time-based media provides a running description of all that is going on in the synchronized media content. The alternative for time-based media reads something like a book. Unlike audio description, the description of the video portion is not constrained to just the pauses in the existing dialogue. Full descriptions are provided of all visual information, including visual context, actions and expressions of actors, and any other visual material. In addition, non-speech sounds (laughter, off-screen voices, etc.) are described, and transcripts of all dialogue are included. The sequence of descriptions and dialogue transcripts is the same as the sequence in the synchronized media itself. As a result, the alternative for time-based media can provide a much more complete representation of the synchronized media content than audio description alone.</p><p>If there is any interaction as part of the synchronized media presentation (e.g., 'press now to answer the question') then the alternative for time-based media would provide hyperlinks or whatever is needed to provide parallel functionality.#Individuals whose vision is too poor to reliably read captions and whose hearing is too poor to reliably hear dialogue can access the alternative for time-based media by using a refreshable braille display.</p>",
       },
       "benefits" :
       {
@@ -790,7 +790,7 @@ const wcagObj = {
         "en" : "1.4.3 Contrast (Minimum)",
       }, 
       "link" : "", 
-      "level" : "A",
+      "level" : "AA",
       "version" : "2.0", 
       "goal" : 
       {
@@ -1518,10 +1518,10 @@ const wcagObj = {
       {
         "cat" : "", 
         "es" : "", 
-        "en" : "",
+        "en" : "2.3.2 Three Flashes",
       }, 
       "link" : "", 
-      "level" : "A",
+      "level" : "AAA",
       "version" : "2.0", 
       "goal" : 
       {
@@ -2243,7 +2243,136 @@ const wcagObj = {
       },
       "category" : [""]
     },
+
+    { // 2.4.11.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "2.4.11 Focus Appearance (Minimum)",
+      }, 
+      "link" : "", 
+      "level" : "AA",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
     
+    { // 2.4.12.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "2.4.12 Focus Appearance (Enhanced)",
+      }, 
+      "link" : "", 
+      "level" : "AAA",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+    
+    { // 2.4.13.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "2.4.13 Page Break Navigation",
+      }, 
+      "link" : "", 
+      "level" : "A",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+
     { // 2.5.1.
       "criteria" : 
       {
@@ -2292,7 +2421,7 @@ const wcagObj = {
       {
         "cat" : "", 
         "es" : "", 
-        "en" : "",
+        "en" : "2.5.2 Pointer Cancellation",
       }, 
       "link" : "", 
       "level" : "A",
@@ -2502,6 +2631,92 @@ const wcagObj = {
       "category" : [""]
     },
     
+    { // 2.5.7.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "2.5.7 Dragging Movements",
+      }, 
+      "link" : "", 
+      "level" : "AA",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+
+    { // 2.5.8.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "2.5.8 Target Size (Minimum)",
+      }, 
+      "link" : "", 
+      "level" : "AA",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+
     { // 3.1.1.
       "criteria" : 
       {
@@ -2976,6 +3191,92 @@ const wcagObj = {
       "category" : [""]
     },
     
+    { // 3.2.6.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "3.2.6 Consisten Help",
+      }, 
+      "link" : "", 
+      "level" : "A",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+
+    { // 3.2.7.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "3.2.7 Visible Controls",
+      }, 
+      "link" : "", 
+      "level" : "AA",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+
     { // 3.3.1.
       "criteria" : 
       {
@@ -3234,6 +3535,92 @@ const wcagObj = {
       "category" : [""]
     },
     
+    { // 3.3.7.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "3.3.7 Accessible Authentication",
+      }, 
+      "link" : "", 
+      "level" : "A",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+
+    { // 3.3.8.
+      "criteria" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "3.3.8 Redundant entry",
+      }, 
+      "link" : "", 
+      "level" : "A",
+      "version" : "2.2", 
+      "goal" : 
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "intent" : 
+      {
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
+      },
+      "benefits" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "verification" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      }, 
+      "tools" :
+      {
+        "cat" : "-", 
+        "es" : "-", 
+        "en" : "-",
+      },
+      "category" : [""]
+    },
+
     { // 4.1.1.
       "criteria" : 
       {
@@ -3362,6 +3749,5 @@ const wcagObj = {
       },
       "category" : ["custom-controls"]
     }
-  
   ]
 };
