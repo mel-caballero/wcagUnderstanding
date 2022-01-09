@@ -8,7 +8,8 @@ let category = 'All';
 const resume = document.getElementById('resume');
 let message;
 
-const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'verification', 'tools'];
+//const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'verification', 'tools', 'category'];
+const checks = ['level', 'version', 'goal', 'intent', 'benefits'];
 
 const tableHeader = document.querySelector('thead');
 const tableBody = document.querySelector('tbody');
@@ -36,7 +37,7 @@ let headers = [
 	{
 		"name": "goal",
 		"alias": "Goal",
-		"view": false
+		"view": true
 	},
 	{
 		"name": "intent",
@@ -46,7 +47,7 @@ let headers = [
 	{
 		"name": "benefits",
 		"alias": "Benefits",
-		"view": false
+		"view": true
 	},
 	{
 		"name": "verification",
