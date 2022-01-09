@@ -27,7 +27,9 @@
 			float: left;
 			padding: 2px;
 		}
-
+		#columns li {
+    	padding-right: 30px;
+		}
 	</style>
 </head>
 <body>
@@ -35,9 +37,12 @@
 	<div class="container">
 		
 		<div class="row">
-			<fieldset class="col-12 row bg-light justify-content-end btns" style="padding:20px">
+			<div class="col-6 row btns" style="padding:20px">
+				<h1>WCAG</h1>
+			</div>
+			<fieldset class="col-6 row justify-content-end btns" style="padding:20px">
 				<legend class="col" style="text-align: right;">Idioma</legend>
-				<ul class="col-4">
+				<ul class="col">
 					<li><button id="cat" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Català</button></li>
 					<li><button id="es" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Español</button></li>
 					<li><button id="en" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">English</button></li>
@@ -45,18 +50,15 @@
 			</fieldset>
 		</div>
 
-		<h1>WCAG</h1>
-
 		<div class="row">
 			<div class="col-12">
-				<p role="status">
-					Showing <span class="badge bg-primary" id="returnedResults">78</span> tests, version <span class="badge bg-primary" id="version">All</span>, categorised by <span class="badge bg-primary" id="filter">all</span> success criteria. Level <span class="badge bg-primary" id="level" >All</span>.
+				<p id="resume">
 				</p>
 			</div>
 		</div>
 
 		<div class="row">
-			<fieldset id="versionbtn" class="col-6 row bg-light btns" style="padding:20px">
+			<fieldset id="versionbtn" class="col-6 row btns" style="padding:20px">
 				<legend class="col-3">Version</legend>
 				<ul class="col justify-content-start">
 					<li><button type="button" onclick="btnVersion(this)" class="btn btn-primary btn-sm version">All</button></li>
@@ -66,7 +68,7 @@
 				</ul>
 			</fieldset>
 
-			<fieldset id="levelbtn" class="col-6 row bg-light justify-content-end btns" style="padding:20px">
+			<fieldset id="levelbtn" class="col-6 row justify-content-end btns" style="padding:20px">
 				<legend class="col-3">Level</legend>
 				<ul class="col">
 					<li><button type="button" onclick="btnLevel(this)" class="btn btn-primary btn-sm level">All</button></li>
@@ -76,12 +78,12 @@
 				</ul>
 			</fieldset>
 		</div>
-
+<!--
 		<div class="row">
-			<fieldset id="categorybtn" class="col-12 row bg-light btns" style="padding:20px">
+			<fieldset id="categorybtn" class="col-12 row btns" style="padding:20px">
 				<legend class="col-3">Category</legend>
 				<ul class="col" style="text-align:right">
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-primary btn-sm category">all</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-primary btn-sm category">All</button></li>
 					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">content</button></li>
 					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">forms-and-UI</button></li>
 					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">audio-video</button></li>
@@ -94,23 +96,58 @@
 				</ul>
 			</fieldset>
 		</div>
+-->
+		<div class="row">
+			<fieldset id="columns" class="col-12 row btns" style="padding:20px">
+				<legend class="col-3">Show columns</legend>
+				<ul class="col" style="text-align:right">
+					<li>
+						<label for="level">Level</label>
+						<input type="checkbox" id="level" value="Level" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="version">Version</label>
+						<input type="checkbox" id="version" value="Version" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="goal">Goal</label>
+						<input type="checkbox" id="goal" value="Goal" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="intent">Intent</label>
+						<input type="checkbox" id="intent" value="Intent" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="benefits">Benefits</label>
+						<input type="checkbox" id="benefits" value="Benefits" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="verification">Verification</label>
+						<input type="checkbox" id="verification" value="Verification" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="tools">Tools</label>
+						<input type="checkbox" id="tools" value="Tools" onchange="showColumns(this)">
+					</li><!--
+					<li>
+						<label for="category">Category</label>
+						<input type="checkbox" id="category" value="Category" onchange="showColumns(this)">
+					</li>-->
+				</ul>
+			</fieldset>
+		</div>
 
 		<div style="overflow-x: auto;">
-		<table class="table">
-			<caption class="visually-hidden">WCAG success criteria intents and benefits</caption>
-			<thead style="border-top:0px">
-				<th scope="col">Understanding Criteria</th>
-				<th scope="col">Level</th>
-				<th scope="col">Version</th>
-				<th scope="col" style="width: 40%;">Intent</th>
-				<th scope="col" style="width: 40%;">Benefits</th>
-				<th scope="col">Category</th></thead>
-			<tbody></tbody>
+		<table id="wcagTable" class="table" style="width:100%">
+			<thead id="thead">
+			</thead>
+			<tbody id="bodyTable">
+			</tbody>
 		</table>
 		</div>
 		
 	</div>
-	<script src="./data/json-EN.js"></script>
+	<script src="./data/content.js"></script>
 	<script src="./scripts/script.js"></script>
 </body>
 </html>
