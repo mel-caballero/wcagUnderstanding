@@ -69,19 +69,15 @@ const createTable = () => {
 	const filterVersion = version.split(",");
 	const tableHeader = document.getElementById('thead');
 	const tableBody = document.getElementById('tbody');
-  
   const totalHead = tableHeader.children.length;
-  for(let g= 0; g<totalHead; g++) {
-    if (tableHeader.children.length >0 ) { 
-			tableHeader.removeChild(tableHeader.children[0]) 
-		}
+  const totalBody = tableBody.children.length;
+  
+	for(let g= 0; g<totalHead; g++) {
+    if (tableHeader.children.length >0 ) { tableHeader.removeChild(tableHeader.children[0]); }
   }
 
-  const totalBody = tableBody.children.length;
   for (let i = 0; i < totalBody;i++ ) {
-    if (tableBody.children.length > 0 ) { 
-			tableBody.removeChild(tableBody.children[0]) 
-		}
+    if (tableBody.children.length > 0 ) { tableBody.removeChild(tableBody.children[0]); }
   }
 
 	// Create table headers
@@ -126,8 +122,7 @@ const createTable = () => {
       }
     });
 		if (tr.firstElementChild != null){
-			tableBody
-.append(tr);
+			tableBody.append(tr);
 		}
   });
 	total = document.getElementById('wcagTable').rows.length - 1;
@@ -248,3 +243,6 @@ function checksInit() {
 
 checksInit();
 createTable();
+
+// TODO element.ariaPressed = true || false
+// TODO traducir botones
