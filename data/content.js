@@ -12,7 +12,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Tot el contingut no text que es presenta a l'usuari té una alternativa de text que serveix per a la finalitat equivalent, llevat de les situacions que s'enumeren a continuació.", 
+        "cat" : "Proporcioneu alternatives de text per a qualsevol contingut que no sigui de text perquè es pugui canviar a altres formes que les persones necessitin, com ara lletra gran, braille, parla, símbols o un llenguatge més simple.", 
         "es" : "Proporcione alternativas de texto para cualquier contenido que no sea de texto para que se pueda cambiar a otras formas que las personas necesiten, como letra grande, braille, habla, símbolos o un lenguaje más simple.", 
         "en" : "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
       },
@@ -63,7 +63,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Per als suports de només àudio pregravats i només de vídeo pregravats , el següent és cert, excepte quan l'àudio o el vídeo és una alternativa multimèdia per al text i està clarament etiquetat.", 
+        "cat" : "Es proporcionen subtítols per a tot el contingut d'àudio pregravat en mitjans sincronitzats, excepte quan el mitjà és una alternativa de mitjans per al text i està clarament etiquetat com a tal.", 
         "es" : "Se proporcionan subtítulos para todo el contenido de audio pregrabado en medios sincronizados, excepto cuando el medio es una alternativa de medios para el texto y está claramente etiquetado como tal.", 
         "en" : "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
       },
@@ -106,7 +106,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Els subtítols es proporcionen per a tot el contingut d'àudio pregravat en suports sincronitzats, excepte quan el suport és una alternativa multimèdia per al text i està clarament etiquetat com a tal.", 
+        "cat" : "Es proporcionen subtítols per a tot el contingut d'àudio pregravat en mitjans sincronitzats, excepte quan el mitjà és una alternativa de mitjans per al text i està clarament etiquetat com a tal.", 
         "es" : "Se proporcionan subtítulos para todo el contenido de audio pregrabado en medios sincronizados, excepto cuando el medio es una alternativa de medios para el texto y está claramente etiquetado como tal.", 
         "en" : "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
       },
@@ -140,7 +140,7 @@ const wcagObj = {
     { // 1.2.3.
       "criteria" : 
       {
-        "cat" : "1.2.3 Descripció d'àudio o alternativa multimèdia (pregravada)", 
+        "cat" : "1.2.3 Descripció d'àudio o mitjans alternatius (pregravats)", 
         "es" : "1.2.3 Descripción de audio o medios alternativos (pregrabados)", 
         "en" : "1.2.3 Audio Description or Media Alternative (Prerecorded)",
       }, 
@@ -149,7 +149,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Es proporciona una alternativa per als mitjans basats en el temps o la descripció d' àudio del contingut de vídeo pregravat per als mitjans sincronitzats , excepte quan el suport és una alternativa multimèdia per al text i està clarament etiquetat com a tal.", 
+        "cat" : "Es proporciona una alternativa per als mitjans basats en el temps o la descripció dàudio del contingut de vídeo pregravat per als mitjans sincronitzats, excepte quan els mitjans són una alternativa de mitjans per al text i estan clarament etiquetats com a tals.", 
         "es" : "Se proporciona una alternativa para los medios basados en el tiempo o la descripción de audio del contenido de video pregrabado para los medios sincronizados, excepto cuando los medios son una alternativa de medios para el texto y están claramente etiquetados como tales.", 
         "en" : "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
       },
@@ -192,7 +192,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Es proporcionen subtítols per a tot el contingut d'àudio en directe en mitjans sincronitzats.", 
+        "cat" : "Es proporcionen subtítols per a tot el contingut dàudio en viu en mitjans sincronitzats.", 
         "es" : "Se proporcionan subtítulos para todo el contenido de audio en vivo en medios sincronizados.", 
         "en" : "Captions are provided for all live audio content in synchronized media.",
       },
@@ -226,7 +226,7 @@ const wcagObj = {
     { // 1.2.5.
       "criteria" : 
       {
-        "cat" : "1.2.5 Descripció d'àudio (pregravada)", 
+        "cat" : "1.2.5 Descripció d'àudio (pregravat)", 
         "es" : "1.2.5 Descripción de audio (pregrabado)", 
         "en" : "1.2.5 Audio Description (Prerecorded)",
       }, 
@@ -235,7 +235,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Es proporciona una descripció d'àudio per a tot el contingut de vídeo pregravat en suports sincronitzats.", 
+        "cat" : "Es proporciona descripció dàudio per a tot el contingut de vídeo pregravat en mitjans sincronitzats.", 
         "es" : "Se proporciona descripción de audio para todo el contenido de video pregrabado en medios sincronizados.", 
         "en" : "Audio description is provided for all prerecorded video content in synchronized media.",
       },
@@ -269,7 +269,7 @@ const wcagObj = {
     { // 1.2.6.
       "criteria" : 
       {
-        "cat" : "1.2.6 Llengua de signes (pregravada)", 
+        "cat" : "1.2.6 Llenguatge de senyals (pregravat)", 
         "es" : "1.2.6 Lenguaje de señas (pregrabado)", 
         "en" : "1.2.6 Sign Language (Prerecorded)",
       }, 
@@ -278,7 +278,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "S'ofereix interpretació en llengua de signes per a tot el contingut d'àudio pregravat en suports sincronitzats.", 
+        "cat" : "Es proporciona interpretació en llenguatge de senyals per a tot el contingut dàudio pregravat en mitjans sincronitzats.", 
         "es" : "Se proporciona interpretación en lenguaje de señas para todo el contenido de audio pregrabado en medios sincronizados.", 
         "en" : "Sign language interpretation is provided for all prerecorded audio content in synchronized media.",
       },
@@ -321,7 +321,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Quan les pauses a l'àudio en primer pla són insuficients per permetre que les descripcions d'àudio transmetin el sentit del vídeo, es proporciona una descripció d'àudio ampliada per a tot el contingut de vídeo pregravat en suports sincronitzats.", 
+        "cat" : "Quan les pauses a l'àudio de primer pla són insuficients per permetre que les descripcions d'àudio transmetin el sentit del vídeo, es proporciona una descripció d'àudio estesa per a tot el contingut de vídeo pregravat a mitjans sincronitzats.", 
         "es" : "Cuando las pausas en el audio de primer plano son insuficientes para permitir que las descripciones de audio transmitan el sentido del video, se proporciona una descripción de audio extendida para todo el contenido de video pregrabado en medios sincronizados.", 
         "en" : "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.",
       },
@@ -355,7 +355,7 @@ const wcagObj = {
     { // 1.2.8.
       "criteria" : 
       {
-        "cat" : "1.2.8 Alternativa multimèdia (pregravada)", 
+        "cat" : "1.2.8 Mitjans alternatius (pregravats)", 
         "es" : "1.2.8 Medios alternativos (pregrabados)", 
         "en" : "1.2.8 Media Alternative (Prerecorded)",
       }, 
@@ -364,7 +364,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "S'ofereix una alternativa per als suports basats en el temps per a tots els suports sincronitzats pregravats i per a tots els mitjans de només vídeo pregravats.", 
+        "cat" : "Es proporciona una alternativa per als mitjans basats en el temps per a tots els mitjans sincronitzats pregravats i per a tots els mitjans només de vídeo pregravats.", 
         "es" : "Se proporciona una alternativa para los medios basados ​​en el tiempo para todos los medios sincronizados pregrabados y para todos los medios solo de video pregrabados.", 
         "en" : "An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.",
       },
@@ -407,7 +407,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "Es proporciona una alternativa per als mitjans basats en el temps que presenta informació equivalent per al contingut només d'àudio en directe.", 
+        "cat" : "Es proporciona una alternativa per als mitjans basats en el temps que presenta informació equivalent al contingut de només àudio en viu.", 
         "es" : "Se proporciona una alternativa para los medios basados ​​en el tiempo que presenta información equivalente al contenido de solo audio en vivo.", 
         "en" : "An alternative for time-based media that presents equivalent information for live audio-only content is provided.",
       },
@@ -441,7 +441,7 @@ const wcagObj = {
     { // 1.3.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.3.1 Informació i relacions", 
         "es" : "1.3.1 Información y relaciones", 
         "en" : "1.3.1 Info and Relationships",
       }, 
@@ -450,7 +450,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan la seqüència en què es presenta el contingut afecta el seu significat, es pot determinar mitjançant programació una seqüència de lectura correcta.", 
         "es" : "Cuando la secuencia en la que se presenta el contenido afecta su significado, se puede determinar mediante programación una secuencia de lectura correcta.", 
         "en" : "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.",
       },
@@ -484,7 +484,7 @@ const wcagObj = {
     { // 1.3.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.3.2 Seqüència significativa", 
         "es" : "1.3.2 Secuencia significativa", 
         "en" : "1.3.2 Meaningful Sequence",
       }, 
@@ -493,7 +493,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan la seqüència en què es presenta el contingut afecta el seu significat, es pot determinar mitjançant programació una seqüència de lectura correcta.", 
         "es" : "Cuando la secuencia en la que se presenta el contenido afecta su significado, se puede determinar mediante programación una secuencia de lectura correcta.", 
         "en" : "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.",
       },
@@ -527,7 +527,7 @@ const wcagObj = {
     { // 1.3.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.3.3 Característiques sensorials", 
         "es" : "1.3.3 Características sensoriales", 
         "en" : "1.3.3 Sensory Characteristics",
       }, 
@@ -536,7 +536,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les instruccions proporcionades per comprendre i operar el contingut no es basen únicament en les característiques sensorials dels components, com ara la forma, el color, la mida, la ubicació visual, l'orientació o el so.", 
         "es" : "Las instrucciones proporcionadas para comprender y operar el contenido no se basan únicamente en las características sensoriales de los componentes, como la forma, el color, el tamaño, la ubicación visual, la orientación o el sonido.", 
         "en" : "Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, color, size, visual location, orientation, or sound.",
       },
@@ -570,7 +570,7 @@ const wcagObj = {
     { // 1.3.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.3.4 Orientació", 
         "es" : "1.3.4 Orientación", 
         "en" : "1.3.4 Orientation",
       }, 
@@ -579,7 +579,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El contingut no restringeix la seva visualització i funcionament a una única orientació de visualització, com a vertical o horitzontal, llevat que sigui essencial una orientació de visualització específica.", 
         "es" : "El contenido no restringe su visualización y funcionamiento a una única orientación de visualización, como vertical u horizontal, a menos que sea esencial una orientación de visualización específica.", 
         "en" : "Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.",
       },
@@ -613,7 +613,7 @@ const wcagObj = {
     { // 1.3.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.3.5 Identificar el propòsit d'entrada", 
         "es" : "1.3.5 Identificar el propósito de entrada", 
         "en" : "1.3.5 Identify Input Purpose",
       }, 
@@ -622,7 +622,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El propòsit de cada camp d'entrada que recopila informació sobre l'usuari es pot determinar mitjançant la programació quan:<ul><li>El camp d'entrada té un propòsit identificat a la secció Propòsits d'entrada per als components de la interfície d'usuari; i</li><li>El contingut s'implementa utilitzant tecnologies amb suport per identificar el significat esperat per a les dades d'entrada del formulari.</li></ul>", 
         "es" : "El propósito de cada campo de entrada que recopila información sobre el usuario se puede determinar mediante programación cuando:<ul><li>El campo de entrada tiene un propósito identificado en la sección Propósitos de entrada para los componentes de la interfaz de usuario; y</li><li>El contenido se implementa utilizando tecnologías con soporte para identificar el significado esperado para los datos de entrada del formulario.</li></ul>",
         "en" : "The purpose of each input field collecting information about the user can be programmatically determined when:<ul><li>The input field serves a purpose identified in the Input Purposes for User Interface Components section; and</li><li>The content is implemented using technologies with support for identifying the expected meaning for form input data.</li></ul>",
       },
@@ -656,7 +656,7 @@ const wcagObj = {
     { // 1.3.6.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.3.6 Identificar el Propòsit", 
         "es" : "1.3.6 Identificar Propósito", 
         "en" : "1.3.6 Identify Purpose",
       }, 
@@ -665,7 +665,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Al contingut implementat mitjançant llenguatges de marcatge, el propòsit dels components, icones i regions de la interfície d'usuari es pot determinar mitjançant programació.", 
         "es" : "En el contenido implementado mediante lenguajes de marcado, el propósito de los componentes, iconos y regiones de la interfaz de usuario se puede determinar mediante programación.", 
         "en" : "In content implemented using markup languages, the purpose of User Interface Components, icons, and regions can be programmatically determined.",
       },
@@ -699,7 +699,7 @@ const wcagObj = {
     { // 1.4.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.1 Ús del color", 
         "es" : "1.4.1 Uso del color", 
         "en" : "1.4.1 Use of Color",
       }, 
@@ -708,7 +708,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El color no es fa servir com a únic mitjà visual per transmetre informació, indicar una acció, provocar una resposta o distingir un element visual.", 
         "es" : "El color no se utiliza como el único medio visual para transmitir información, indicar una acción, provocar una respuesta o distinguir un elemento visual.", 
         "en" : "Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.",
       },
@@ -742,7 +742,7 @@ const wcagObj = {
     { // 1.4.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.2 Àudio Control", 
         "es" : "1.4.2 Audio Control", 
         "en" : "1.4.2 Audio Control",
       }, 
@@ -751,7 +751,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Si qualsevol àudio en una pàgina web es reprodueix automàticament durant més de 3 segons, hi ha un mecanisme disponible per pausar o aturar làudio, o hi ha un mecanisme disponible per controlar el volum dàudio independentment del nivell de volum general del sistema.", 
         "es" : "Si cualquier audio en una página web se reproduce automáticamente durante más de 3 segundos, hay un mecanismo disponible para pausar o detener el audio, o hay un mecanismo disponible para controlar el volumen de audio independientemente del nivel de volumen general del sistema.", 
         "en" : "If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.",
       },
@@ -785,7 +785,7 @@ const wcagObj = {
     { // 1.4.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.3 Contrast (Mínim)", 
         "es" : "1.4.3 Contraste (Mínimo)", 
         "en" : "1.4.3 Contrast (Minimum)",
       }, 
@@ -794,7 +794,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "La presentació visual de text i imatges de text té una relació de contrast d'almenys 4,5:1, excepte pel següent:<ul><li>Text gran: el text a gran escala i les imatges de text a gran escala tenen una relació de contrast d'almenys 3:1;</li><li>Incidental: text o imatges de text que formen part d'un component d'interfície d'usuari inactiu, que són decoració pura, que no són visibles per a ningú o que formen part d'una imatge que conté un altre contingut visual significatiu, no tenen requisits de contrast.</li><li>Logotips: el text que forma part d'un logotip o una marca no té requisits de contrast.</li></ul>", 
         "es" : "La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 4,5:1, excepto por lo siguiente:<ul><li>Texto grande: el texto a gran escala y las imágenes de texto a gran escala tienen una relación de contraste de al menos 3:1;</li><li>Incidental: texto o imágenes de texto que forman parte de un componente de interfaz de usuario inactivo, que son pura decoración, que no son visibles para nadie o que forman parte de una imagen que contiene otro contenido visual significativo, no tienen requisitos de contraste.</li><li>Logotipos: el texto que forma parte de un logotipo o marca no tiene requisitos de contraste.</li></ul>", 
         "en" : "The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:<ul><li>Large Text : Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;</li><li>Incidental : Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li><li>Logotypes : Text that is part of a logo or brand name has no contrast requirement.</li></ul>",
       },
@@ -828,7 +828,7 @@ const wcagObj = {
     { // 1.4.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.4 Canviar la mida del text", 
         "es" : "1.4.4 Cambiar el tamaño del texto", 
         "en" : "1.4.4 Resize text",
       }, 
@@ -837,7 +837,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "A excepció dels subtítols i les imatges de text, el text es pot canviar de mida sense tecnologia dassistència fins a un 200 per cent sense pèrdua de contingut o funcionalitat.", 
         "es" : "A excepción de los subtítulos y las imágenes de texto, el texto se puede cambiar de tamaño sin tecnología de asistencia hasta en un 200 por ciento sin pérdida de contenido o funcionalidad.", 
         "en" : "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.",
       },
@@ -871,7 +871,7 @@ const wcagObj = {
     { // 1.4.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.5 Imatges de text", 
         "es" : "1.4.5 Imágenes de texto", 
         "en" : "1.4.5 Images of Text",
       }, 
@@ -880,7 +880,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Si les tecnologies que es fan servir poden aconseguir la presentació visual, s'utilitza text per transmetre informació en lloc d'imatges de text, excepte per les següents:<ul><li>Personalitzable: la imatge del text es pot personalitzar visualment segons els requisits de lusuari;</li><li>Essencial: una presentació particular del text és essencial per a la informació que es transmet.</li></ul>", 
         "es" : "Si las tecnologías que se utilizan pueden lograr la presentación visual, se utiliza texto para transmitir información en lugar de imágenes de texto, excepto por lo siguiente:<ul><li>Personalizable: la imagen del texto se puede personalizar visualmente según los requisitos del usuario;</li><li>Esencial: una presentación particular del texto es esencial para la información que se transmite.</li></ul>", 
         "en" : "If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following: <ul><li>Customizable : The image of text can be visually customized to the user's requirements;</li><li>Essential : A particular presentation of text is essential to the information being conveyed.</li></ul>",
       },
@@ -914,7 +914,7 @@ const wcagObj = {
     { // 1.4.6.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.6 Contrast (millorat)", 
         "es" : "1.4.6 Contraste (mejorado)", 
         "en" : "1.4.6 Contrast (Enhanced)",
       }, 
@@ -923,7 +923,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "La presentació visual de text i imatges de text té una relació de contrast d'almenys 7:1, excepte pel següent:<ul><li>Text gran: el text a gran escala i les imatges de text a gran escala tenen una relació de contrast d'almenys 4,5:1;</li><li>Incidental: text o imatges de text que formen part d'un component d'interfície d'usuari inactiu, que són decoració pura, que no són visibles per a ningú o que formen part d'una imatge que conté un altre contingut visual significatiu, no tenen requisits de contrast.</li><li>Logotips: El text que forma part d'un logotip o una marca no té requisits de contrast.</li></ul>", 
         "es" : "	La presentación visual de texto e imágenes de texto tiene una relación de contraste de al menos 7:1, excepto por lo siguiente:<ul><li>Texto grande: el texto a gran escala y las imágenes de texto a gran escala tienen una relación de contraste de al menos 4,5:1;</li><li>Incidental: texto o imágenes de texto que forman parte de un componente de interfaz de usuario inactivo, que son pura decoración, que no son visibles para nadie o que forman parte de una imagen que contiene otro contenido visual significativo, no tienen requisitos de contraste.</li><li>Logotipos: El texto que forma parte de un logotipo o marca no tiene requisitos de contraste.</li></ul>",
         "en" : "The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: <ul><li>Large Text : Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;</li><li>Incidental : Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li><li>Logotypes: Text that is part of a logo or brand name has no contrast requirement.</li></ul>",
       },
@@ -957,7 +957,7 @@ const wcagObj = {
     { // 1.4.7.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.7 Àudio de fons baix o nul", 
         "es" : "1.4.7 Audio de fondo bajo o nulo", 
         "en" : "1.4.7 Low or No Background Audio",
       }, 
@@ -966,7 +966,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a contingut pregravat de només àudio que (1) conté principalment veu en primer pla, (2) no és un CAPTCHA d'àudio ni un logotip d'àudio, i (3) no és una vocalització destinada a ser principalment una expressió musical, com ara cantar o rapejar, almenys un dels següents és veritable:<ul><li>Sense fons: l'àudio no conté sons de fons.</li><li>Apagar: els sons de fons es poden apagar.</li><li>20 dB : Els sons de fons són almenys 20 decibels més baixos que el contingut de la parla en primer pla, amb l'excepció de sons ocasionals que duren només un o dos segons.</li></ul>", 
         "es" : "Para contenido pregrabado de solo audio que (1) contiene principalmente voz en primer plano, (2) no es un CAPTCHA de audio ni un logotipo de audio, y (3) no es una vocalización destinada a ser principalmente una expresión musical, como cantar o rapear, al menos uno de los siguientes es verdadero:<ul><li>Sin fondo: el audio no contiene sonidos de fondo.</li><li>Apagar: los sonidos de fondo se pueden apagar.</li><li>20 dB : Los sonidos de fondo son al menos 20 decibeles más bajos que el contenido del habla en primer plano, con la excepción de sonidos ocasionales que duran solo uno o dos segundos.</li></ul>", 
         "en" : "For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true: <ul><li>No Background : The audio does not contain background sounds.</li><li>Turn Off : The background sounds can be turned off.</li><li>20 dB : The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.</li></ul>",
       },
@@ -1000,7 +1000,7 @@ const wcagObj = {
     { // 1.4.8.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.8 Presentació visual", 
         "es" : "1.4.8 Presentación visual", 
         "en" : "1.4.8 Visual Presentation",
       }, 
@@ -1009,7 +1009,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a la presentació visual de blocs de text, hi ha un mecanisme disponible per aconseguir el següent:<ul><li>Lusuari pot seleccionar els colors de primer pla i de fons.</li><li>L'amplada no supera els 80 caràcters o glifs (40 si és CJK).</li><li>El text no està justificat (alineat als marges esquerre i dret).</li><li>L'interlineat (interlineat) és almenys d'espai i mig dins dels paràgrafs, i l'interlineat és almenys 1,5 vegades més gran que l'interlineat.</li><li>El text es pot canviar de mida sense tecnologia dassistència fins a un 200 per cent duna manera que no requereix que lusuari es desplaci horitzontalment per llegir una línia de text en una finestra de pantalla completa.</li></ul>", 
         "es" : "Para la presentación visual de bloques de texto, hay un mecanismo disponible para lograr lo siguiente:<ul><li>El usuario puede seleccionar los colores de primer plano y de fondo.</li><li>El ancho no supera los 80 caracteres o glifos (40 si es CJK).</li><li>El texto no está justificado (alineado a los márgenes izquierdo y derecho).</li><li>El interlineado (interlineado) es al menos de espacio y medio dentro de los párrafos, y el interlineado es al menos 1,5 veces mayor que el interlineado.</li><li>El texto se puede cambiar de tamaño sin tecnología de asistencia hasta en un 200 por ciento de una manera que no requiere que el usuario se desplace horizontalmente para leer una línea de texto en una ventana de pantalla completa.</li></ul>", 
         "en" : "For the visual presentation of blocks of text, a mechanism is available to achieve the following:<ul><li>Foreground and background colors can be selected by the user.</li><li>Width is no more than 80 characters or glyphs (40 if CJK).</li><li>Text is not justified (aligned to both the left and the right margins).</li><li>Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.</li><li>Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window.</li></ul>",
       },
@@ -1043,7 +1043,7 @@ const wcagObj = {
     { // 1.4.9.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.9 Imatges de text (sense excepció", 
         "es" : "1.4.9 Imágenes de texto (sin excepción", 
         "en" : "1.4.9 Images of Text (No Exception)",
       }, 
@@ -1052,7 +1052,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les imatges de text només es fan servir per a decoració pura o quan una presentació particular del text és essencial per a la informació que es transmet.", 
         "es" : "Las imágenes de texto solo se utilizan para decoración pura o cuando una presentación particular del texto es esencial para la información que se transmite.", 
         "en" : "Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.",
       },
@@ -1086,7 +1086,7 @@ const wcagObj = {
     { // 1.4.10.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.10 Reflux", 
         "es" : "1.4.10 Reflujo", 
         "en" : "1.4.10 Reflow",
       }, 
@@ -1095,7 +1095,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El contingut es pot presentar sense pèrdua dinformació o funcionalitat, i sense necessitat de desplaçar-se en dues dimensions per:<ul><li>Contingut de desplaçament vertical amb una amplada equivalent a 320 píxels CSS;</li><li>Contingut de desplaçament horitzontal a una alçada equivalent a 256 píxels CSS.</li></ul>Excepte per parts del contingut que requereixen un disseny bidimensional per al seu ús o significat.", 
         "es" : "El contenido se puede presentar sin pérdida de información o funcionalidad, y sin necesidad de desplazarse en dos dimensiones para:<ul><li>Contenido de desplazamiento vertical con un ancho equivalente a 320 píxeles CSS;</li><li>Contenido de desplazamiento horizontal a una altura equivalente a 256 píxeles CSS.</li></ul>Excepto por partes del contenido que requieren un diseño bidimensional para su uso o significado.", 
         "en" : "Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:<ul><li>Vertical scrolling content at a width equivalent to 320 CSS pixels;</li><li>Horizontal scrolling content at a height equivalent to 256 CSS pixels.</li></ul>Except for parts of the content which require two-dimensional layout for usage or meaning.",
       },
@@ -1129,7 +1129,7 @@ const wcagObj = {
     { // 1.4.11.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.11 Contrast sense text", 
         "es" : "1.4.11 Contraste sin texto", 
         "en" : "1.4.11 Non-text Contrast",
       }, 
@@ -1138,7 +1138,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "La presentació visual del següent té una relació de contrast d'almenys 3:1 davant dels colors adjacents:<ul><li>Components de la interfície d'usuari: informació visual necessària per identificar els components i els estats de la interfície d'usuari, excepte els components inactius o quan l'aparença del component la determina l'agent d'usuari i l'autor no la modifica;</li><li>Objectes gràfics: Parts de gràfics necessaris per comprendre el contingut, excepte quan una presentació particular de gràfics és essencial per a la informació que es transmet.</li></ul>", 
         "es" : "	La presentación visual de lo siguiente tiene una relación de contraste de al menos 3:1 frente a los colores adyacentes:<ul><li>Componentes de la interfaz de usuario: información visual necesaria para identificar los componentes y estados de la interfaz de usuario, excepto los componentes inactivos o cuando la apariencia del componente la determina el agente de usuario y el autor no la modifica;</li><li>Objetos gráficos: Partes de gráficos necesarios para comprender el contenido, excepto cuando una presentación particular de gráficos es esencial para la información que se transmite.</li></ul>", 
         "en" : "The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):<ul><li>User Interface Components : Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;</li><li>Graphical Objects : Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.</li></ul>",
       },
@@ -1172,7 +1172,7 @@ const wcagObj = {
     { // 1.4.12.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.12 Espaiat de text", 
         "es" : "1.4.12 Espaciado de texto", 
         "en" : "1.4.12 Text Spacing",
       }, 
@@ -1181,7 +1181,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Al contingut implementat mitjançant llenguatges de marcatge que admeten les següents propietats d'estil de text, no es produeix pèrdua de contingut o funcionalitat en configurar tot el següent i no canviar cap altra propietat d'estil:<ul><li>Alçada de línia (interlineat) a almenys 1,5 vegades la mida de font;</li><li>Espaiar els paràgrafs següents almenys 2 vegades la mida de la font;</li><li>Espaiat entre lletres (seguiment) d'almenys 0,12 vegades la mida de la font;</li><li>Espaiat entre paraules d'almenys 0,16 vegades la mida de la font.</li></ul>Excepció: els llenguatges humans i les escriptures que no usen una o més d'aquestes propietats d'estil de text al text escrit poden conformar-se usant només les propietats que existeixen per a aquesta combinació de llenguatge i escriptura.", 
         "es" : "En el contenido implementado mediante lenguajes de marcado que admiten las siguientes propiedades de estilo de texto, no se produce pérdida de contenido o funcionalidad al configurar todo lo siguiente y no cambiar ninguna otra propiedad de estilo:<ul><li>Altura de línea (interlineado) a al menos 1,5 veces el tamaño de fuente;</li><li>Espaciar los siguientes párrafos al menos 2 veces el tamaño de la fuente;</li><li>Espaciado entre letras (seguimiento) de al menos 0,12 veces el tamaño de la fuente;</li><li>Espaciado entre palabras de al menos 0,16 veces el tamaño de la fuente.</li></ul>Excepción: los lenguajes humanos y las escrituras que no usan una o más de estas propiedades de estilo de texto en el texto escrito pueden conformarse usando solo las propiedades que existen para esa combinación de lenguaje y escritura.", 
         "en" : "In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property:<ul><li>Line height (line spacing) to at least 1.5 times the font size;</li><li>Spacing following paragraphs to at least 2 times the font size;</li><li>Letter spacing (tracking) to at least 0.12 times the font size;</li><li>Word spacing to at least 0.16 times the font size.</li></ul>Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.",
       },
@@ -1215,7 +1215,7 @@ const wcagObj = {
     { // 1.4.13.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "1.4.13 Contingut en passar el ratolí o enfocar", 
         "es" : "1.4.13 Contenido al pasar el mouse o enfocar", 
         "en" : "1.4.13 Content on Hover or Focus",
       }, 
@@ -1224,7 +1224,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "On rebre i després treure el punter o el focus del teclat desencadena contingut addicional perquè es torni visible i després s'oculti, el següent és cert:<ul><li>Un sol ús: hi ha un mecanisme disponible per descartar el contingut addicional sense moure el punter o el focus del teclat, llevat que el contingut addicional comuniqui un error d'entrada o no oculti o reemplaceu un altre contingut;</li><li>Hoverable: si el punter pot activar el contingut addicional, aleshores el punter es pot moure sobre el contingut addicional sense que desaparegui el contingut addicional;</li><li>Persistent: el contingut addicional roman visible fins que s'elimina el disparador de desplaçament o enfocament, l'usuari el descarta o la informació ja no és vàlida.</li></ul>Excepció: la presentació visual del contingut addicional està controlada per l'agent d'usuari i no l'ha modificat l'autor.", 
         "es" : "Donde recibir y luego quitar el puntero o el foco del teclado desencadena contenido adicional para que se vuelva visible y luego se oculte, lo siguiente es cierto:<ul><li>Desechable: hay un mecanismo disponible para descartar el contenido adicional sin mover el puntero o el foco del teclado, a menos que el contenido adicional comunique un error de entrada o no oculte o reemplace otro contenido;</li><li>Hoverable: si el puntero puede activar el contenido adicional, entonces el puntero se puede mover sobre el contenido adicional sin que desaparezca el contenido adicional;</li><li>Persistente: el contenido adicional permanece visible hasta que se elimina el disparador de desplazamiento o enfoque, el usuario lo descarta o su información ya no es válida.</li></ul>Excepción: la presentación visual del contenido adicional está controlada por el agente de usuario y no es modificada por el autor.", 
         "en" : "Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:<ul><li>Dismissable : A mechanism is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an input error or does not obscure or replace other content;</li><li>Hoverable : If pointer hover can trigger the additional content, then the pointer can be moved over the additional content without the additional content disappearing;</li><li>Persistent : The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</li></ul>Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.",
       },
@@ -1258,7 +1258,7 @@ const wcagObj = {
     { // 2.1.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.1.1 Teclat", 
         "es" : "2.1.1 Teclado", 
         "en" : "2.1.1 Keyboard",
       }, 
@@ -1267,7 +1267,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Tota la funcionalitat del contingut es pot operar mitjançant una interfície de teclat sense requerir temps específics per a pulsacions de tecles individuals, excepte quan la funció subjacent requereix una entrada que depèn de la ruta de moviment de l'usuari i no només dels punts finals.", 
         "es" : "Toda la funcionalidad del contenido se puede operar a través de una interfaz de teclado sin requerir tiempos específicos para pulsaciones de teclas individuales, excepto cuando la función subyacente requiere una entrada que depende de la ruta de movimiento del usuario y no solo de los puntos finales.", 
         "en" : "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.",
       },
@@ -1301,7 +1301,7 @@ const wcagObj = {
     { // 2.1.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.1.2 Sense parany de teclat", 
         "es" : "2.1.2 Sin trampa de teclado", 
         "en" : "2.1.2 No Keyboard Trap",
       }, 
@@ -1310,7 +1310,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Si el focus del teclat es pot moure a un component de la pàgina usant una interfície de teclat, llavors el focus es pot allunyar d'aquest component usant només una interfície de teclat i, si requereix més que tecles de fletxa o de tabulació sense modificar altres mètodes de sortida estàndard, s'informa a l'usuari del mètode per allunyar el focus.", 
         "es" : "Si el foco del teclado se puede mover a un componente de la página usando una interfaz de teclado, entonces el foco se puede alejar de ese componente usando solo una interfaz de teclado y, si requiere más que teclas de flecha o de tabulación sin modificar u otros métodos de salida estándar, se informa al usuario del método para alejar el foco.", 
         "en" : "If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.",
       },
@@ -1344,7 +1344,7 @@ const wcagObj = {
     { // 2.1.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.1.3 Teclat (sense excepció)", 
         "es" : "2.1.3 Teclado (sin excepción)", 
         "en" : "2.1.3 Keyboard (No Exception)",
       }, 
@@ -1353,7 +1353,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Tota la funcionalitat del contingut es pot operar mitjançant una interfície de teclat sense requerir temps específics per a pulsacions de tecles individuals.", 
         "es" : "Toda la funcionalidad del contenido se puede operar a través de una interfaz de teclado sin requerir tiempos específicos para pulsaciones de teclas individuales.", 
         "en" : "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.",
       },
@@ -1387,7 +1387,7 @@ const wcagObj = {
     { // 2.1.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.1.4 Accessos directes de tecles de caràcters", 
         "es" : "2.1.4 Accesos directos de teclas de caracteres", 
         "en" : "2.1.4 Character Key Shortcuts",
       }, 
@@ -1396,7 +1396,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Si s'implementa una drecera de teclat en el contingut usant només lletres (incloses lletres majúscules i minúscules), signes de puntuació, números o símbols, llavors almenys un dels següents és veritable:<ul><li>Desactivar: Hi ha un mecanisme disponible per desactivar la drecera;</li><li>Reassignació: hi ha un mecanisme disponible per reassignar la drecera per utilitzar un o més caràcters de teclat no imprimibles (per exemple, Ctrl, Alt, etc.);</li><li>Actiu només al focus: el mètode abreujat de teclat per a un component de la interfície d'usuari només està actiu quan aquest component té el focus.</li></ul>", 
         "es" : "Si se implementa un atajo de teclado en el contenido usando solo letras (incluidas letras mayúsculas y minúsculas), signos de puntuación, números o símbolos, entonces al menos uno de los siguientes es verdadero:<ul><li>Desactivar: Hay un mecanismo disponible para desactivar el atajo;</li><li>Reasignación: hay un mecanismo disponible para reasignar el atajo para usar uno o más caracteres de teclado no imprimibles (por ejemplo, Ctrl, Alt, etc.);</li><li>Activo solo en el foco: el método abreviado de teclado para un componente de la interfaz de usuario solo está activo cuando ese componente tiene el foco.</li></ul>", 
         "en" : "If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:<ul><li>Turn off : A mechanism is available to turn the shortcut off;</li><li>Remap : A mechanism is available to remap the shortcut to use one or more non-printable keyboard characters (e.g. Ctrl, Alt, etc);</li><li>Active only on focus : The keyboard shortcut for a user interface component is only active when that component has focus.</li></ul>",
       },
@@ -1430,7 +1430,7 @@ const wcagObj = {
     { // 2.2.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.2.1 Temporització ajustable", 
         "es" : "2.2.1 Temporización ajustable", 
         "en" : "2.2.1 Timing Adjustable",
       }, 
@@ -1439,7 +1439,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a cada límit de temps establert pel contingut, almenys un dels següents és veritable:<ul><li>Desactivar: l'usuari pot desactivar el límit de temps abans de trobar-lo; o</li><li>Ajustar: l'usuari pot ajustar el límit de temps abans de trobar-lo en un rang ampli que és almenys deu vegades la durada de la configuració predeterminada; o</li><li>Estendre: s'adverteix a l'usuari abans que expiri el temps i se li atorguen almenys 20 segons per estendre el límit de temps amb una simple acció (per exemple, 'pressionar la barra d'espai'), i l'usuari pot estendre el límit de temps almenys deu vegades; o</li><li>Excepció en temps real: el límit de temps és una part requerida dun esdeveniment en temps real (per exemple, una subhasta), i no és possible cap alternativa al límit de temps; o</li><li>Excepció Essencial: El límit de temps és essencial i ampliar-lo invalidaria l'activitat; o</li><li>Excepció de 20 hores: el límit de temps és superior a 20 hores.</li></ul>", 
         "es" : "Para cada límite de tiempo establecido por el contenido, al menos uno de los siguientes es verdadero:<ul><li>Desactivar: el usuario puede desactivar el límite de tiempo antes de encontrarlo; o</li><li>Ajustar: el usuario puede ajustar el límite de tiempo antes de encontrarlo en un amplio rango que es al menos diez veces la duración de la configuración predeterminada; o</li><li>Extender: se advierte al usuario antes de que expire el tiempo y se le otorgan al menos 20 segundos para extender el límite de tiempo con una simple acción (por ejemplo, 'presionar la barra espaciadora'), y el usuario puede extender el límite de tiempo al menos diez veces ; o</li><li>Excepción en tiempo real: el límite de tiempo es una parte requerida de un evento en tiempo real (por ejemplo, una subasta), y no es posible ninguna alternativa al límite de tiempo; o</li><li>Excepción Esencial: El límite de tiempo es esencial y ampliarlo invalidaría la actividad; o</li><li>Excepción de 20 horas: el límite de tiempo es superior a 20 horas.</li></ul>", 
         "en" : "For each time limit that is set by the content, at least one of the following is true:<ul><li>Turn off : The user is allowed to turn off the time limit before encountering it; or</li><li>Adjust : The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or</li><li>Extend : The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, 'press the space bar'), and the user is allowed to extend the time limit at least ten times; or</li><li>Real-time Exception : The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or</li><li>Essential Exception : The time limit is essential and extending it would invalidate the activity; or</li><li>20 Hour Exception : The time limit is longer than 20 hours.</li></ul>",
       },
@@ -1473,7 +1473,7 @@ const wcagObj = {
     { // 2.2.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.2.2 Pausa Aturar Amagar", 
         "es" : "2.2.2 Pausa Detener Ocultar", 
         "en" : "2.2.2 Pause Stop Hide",
       }, 
@@ -1482,7 +1482,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a informació en moviment, parpelleig, desplaçament o actualització automàtica, tot el següent és veritable:<ul><li>Moviment, parpelleig, desplaçament: per a qualsevol informació en moviment, parpelleig o desplaçament que (1) s'iniciï automàticament, (2) duri més de cinc segons i (3) es presenti en paral·lel amb un altre contingut, hi ha un mecanisme perquè l'usuari pausar-lo, aturar-lo o amagar-lo llevat que el moviment, parpelleig o desplaçament sigui part d'una activitat en què sigui essencial; i</li><li>Actualització automàtica: per a qualsevol informació d'actualització automàtica que (1) s'iniciï automàticament i (2) es presenti en paral·lel amb un altre contingut, hi ha un mecanisme perquè l'usuari la pausi, l'aturi, l'oculti o controli la freqüència de l'actualització tret que l'actualització automàtica sigui part d'una activitat on sigui essencial.</li></ul>", 
         "es" : "Para información en movimiento, parpadeo, desplazamiento o actualización automática, todo lo siguiente es verdadero:<ul><li>Movimiento, parpadeo, desplazamiento: para cualquier información en movimiento, parpadeo o desplazamiento que (1) se inicie automáticamente, (2) dure más de cinco segundos y (3) se presente en paralelo con otro contenido, existe un mecanismo para que el usuario pausarlo, detenerlo u ocultarlo a menos que el movimiento, parpadeo o desplazamiento sea parte de una actividad en la que sea esencial; y</li><li>Actualización automática: para cualquier información de actualización automática que (1) se inicie automáticamente y (2) se presente en paralelo con otro contenido, existe un mecanismo para que el usuario la pause, la detenga, la oculte o controle la frecuencia de la actualizar a menos que la actualización automática sea parte de una actividad donde sea esencial.</li></ul>", 
         "en" : "For moving, blinking, scrolling, or auto-updating information, all of the following are true:<ul><li>Moving, blinking, scrolling : For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and</li><li>Auto-updating : For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.</li></ul>",
       },
@@ -1516,7 +1516,7 @@ const wcagObj = {
     { // 2.2.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.3.2 Tres centelleigs", 
         "es" : "2.3.2 Tres destellos", 
         "en" : "2.3.2 Three Flashes",
       }, 
@@ -1525,7 +1525,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El temps no és una part essencial de l'esdeveniment o activitat presentat pel contingut, tret dels mitjans sincronitzats no interactius i els esdeveniments en temps real.", 
         "es" : "El tiempo no es una parte esencial del evento o actividad presentado por el contenido, a excepción de los medios sincronizados no interactivos y los eventos en tiempo real.", 
         "en" : "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.",
       },
@@ -1559,8 +1559,8 @@ const wcagObj = {
     { // 2.2.4.
       "criteria" : 
       {
-        "cat" : "", 
-        "es" : "", 
+        "cat" : "2.2.4 Interrupcions", 
+        "es" : "2.2.4 Interrupciones", 
         "en" : "2.2.4 Interruptions",
       }, 
       "link" : "https://www.w3.org/TR/WCAG21/#interruptions", 
@@ -1568,7 +1568,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les interrupcions poden ser postergades o suprimides per l'usuari, excepte les interrupcions que impliquin una emergència.", 
         "es" : "Las interrupciones pueden ser postergadas o suprimidas por el usuario, excepto las interrupciones que impliquen una emergencia.", 
         "en" : "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.",
       },
@@ -1602,7 +1602,7 @@ const wcagObj = {
     { // 2.2.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.2.5 Re-autenticació", 
         "es" : "2.2.5 Re-autenticación", 
         "en" : "2.2.5 Re-authenticating",
       }, 
@@ -1611,7 +1611,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan caduceu una sessió autenticada, l'usuari pot continuar l'activitat sense pèrdua de dades després de tornar a autenticar-se.", 
         "es" : "Cuando caduca una sesión autenticada, el usuario puede continuar la actividad sin pérdida de datos después de volver a autenticarse.", 
         "en" : "When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.",
       },
@@ -1645,7 +1645,7 @@ const wcagObj = {
     { // 2.2.6.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.2.6 Temps despera", 
         "es" : "2.2.6 Tiempos de espera", 
         "en" : "2.2.6 Timeouts",
       }, 
@@ -1654,7 +1654,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "S'adverteix els usuaris sobre la durada de qualsevol inactivitat de l'usuari que pugui causar la pèrdua de dades, tret que les dades es conservin durant més de 20 hores quan l'usuari no realitza cap acció.", 
         "es" : "Se advierte a los usuarios sobre la duración de cualquier inactividad del usuario que pueda causar la pérdida de datos, a menos que los datos se conserven durante más de 20 horas cuando el usuario no realiza ninguna acción.", 
         "en" : "Users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.",
       },
@@ -1688,7 +1688,7 @@ const wcagObj = {
     { // 2.3.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.3.1 Tres centelleigs o per sota del llindar", 
         "es" : "2.3.1 Tres destellos o por debajo del umbral", 
         "en" : "2.3.1 Three Flashes or Below Threshold",
       }, 
@@ -1697,7 +1697,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les pàgines web no contenen res que parpellegeu més de tres vegades en qualsevol període d'un segon, o el parpelleig està per sota dels llindars de parpelleig general i parpelleig vermell.", 
         "es" : "Las páginas web no contienen nada que parpadee más de tres veces en cualquier período de un segundo, o el parpadeo está por debajo de los umbrales de parpadeo general y parpadeo rojo.", 
         "en" : "Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.",
       },
@@ -1731,7 +1731,7 @@ const wcagObj = {
     { // 2.3.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.3.2 Tres centelleigs", 
         "es" : "2.3.2 Tres destellos", 
         "en" : "2.3.2 Three Flashes",
       }, 
@@ -1740,7 +1740,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les pàgines web no contenen res que parpellegi més de tres vegades en qualsevol període dun segon.", 
         "es" : "Las páginas web no contienen nada que parpadee más de tres veces en cualquier período de un segundo.", 
         "en" : "Web pages do not contain anything that flashes more than three times in any one second period.",
       },
@@ -1774,7 +1774,7 @@ const wcagObj = {
     { // 2.3.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.3.3 Animació a partir de les interaccions", 
         "es" : "2.3.3 Animación a partir de interacciones", 
         "en" : "2.3.3 Animation from Interactions",
       }, 
@@ -1783,7 +1783,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "L'animació de moviment desencadenada per la interacció es pot desactivar, tret que l'animació sigui essencial per a la funcionalitat o la informació que es transmet.", 
         "es" : "La animación de movimiento desencadenada por la interacción se puede desactivar, a menos que la animación sea esencial para la funcionalidad o la información que se transmite.", 
         "en" : "Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.",
       },
@@ -1817,7 +1817,7 @@ const wcagObj = {
     { // 2.4.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.1 Blocs de derivació", 
         "es" : "2.4.1 Bloques de derivación", 
         "en" : "2.4.1 Bypass Blocks",
       }, 
@@ -1826,7 +1826,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Hi ha un mecanisme disponible per eludir blocs de contingut que es repeteixen a diverses pàgines web.", 
         "es" : "Hay un mecanismo disponible para eludir bloques de contenido que se repiten en varias páginas web.", 
         "en" : "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.",
       },
@@ -1860,7 +1860,7 @@ const wcagObj = {
     { // 2.4.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.2 Pàgina titulada", 
         "es" : "2.4.2 Página titulada", 
         "en" : "2.4.2 Page Titled",
       }, 
@@ -1869,7 +1869,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les pàgines web tenen títols que descriuen el tema o el propòsit.", 
         "es" : "Las páginas web tienen títulos que describen el tema o el propósito.", 
         "en" : "Web pages have titles that describe topic or purpose.",
       },
@@ -1903,7 +1903,7 @@ const wcagObj = {
     { // 2.4.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.3 Ordre denfocament", 
         "es" : "2.4.3 Orden de enfoque", 
         "en" : "2.4.3 Focus Order",
       }, 
@@ -1912,7 +1912,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Si podeu navegar seqüencialment per una pàgina web i les seqüències de navegació afecten el significat o l'operació, els components enfocables reben l'enfocament en un ordre que preserva el significat i l'operabilitat.", 
         "es" : "Si se puede navegar secuencialmente por una página web y las secuencias de navegación afectan el significado o la operación, los componentes enfocables reciben el enfoque en un orden que preserva el significado y la operabilidad.", 
         "en" : "If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.",
       },
@@ -1946,7 +1946,7 @@ const wcagObj = {
     { // 2.4.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.4 Propòsit de lenllaç (en context)", 
         "es" : "2.4.4 Propósito del enlace (en contexto)", 
         "en" : "2.4.4 Link Purpose (In Context)",
       }, 
@@ -1955,7 +1955,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El propòsit de cada enllaç es pot determinar a partir del text de lenllaç només o del text de lenllaç juntament amb el seu context denllaç determinat mitjançant programació, excepte quan el propòsit de lenllaç sigui ambigu per als usuaris en general.", 
         "es" : "El propósito de cada enlace se puede determinar a partir del texto del enlace solo o del texto del enlace junto con su contexto de enlace determinado mediante programación, excepto cuando el propósito del enlace sea ambiguo para los usuarios en general.", 
         "en" : "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.",
       },
@@ -1989,7 +1989,7 @@ const wcagObj = {
     { // 2.4.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.5 Múltiples formes", 
         "es" : "2.4.5 Múltiples formas", 
         "en" : "2.4.5 Multiple Ways",
       }, 
@@ -1998,7 +1998,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Hi ha més duna manera disponible per ubicar una pàgina web dins un conjunt de pàgines web, excepte quan la pàgina web és el resultat o un pas en un procés.", 
         "es" : "Hay más de una manera disponible para ubicar una página web dentro de un conjunto de páginas web, excepto cuando la página web es el resultado o un paso en un proceso.", 
         "en" : "More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.",
       },
@@ -2032,7 +2032,7 @@ const wcagObj = {
     { // 2.4.6.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.6 Encapçalaments i Etiquetes", 
         "es" : "2.4.6 Encabezados y Etiquetas", 
         "en" : "2.4.6 Headings and Labels",
       }, 
@@ -2041,7 +2041,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les capçaleres i les etiquetes descriuen el tema o el propòsit.", 
         "es" : "Los encabezados y las etiquetas describen el tema o el propósito.", 
         "en" : "Headings and labels describe topic or purpose.",
       },
@@ -2075,7 +2075,7 @@ const wcagObj = {
     { // 2.4.7.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.7 Enfocament visible", 
         "es" : "2.4.7 Enfoque visible", 
         "en" : "2.4.7 Focus Visible",
       }, 
@@ -2084,7 +2084,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Qualsevol interfície d'usuari operable per teclat té un mode d'operació on és visible l'indicador d'enfocament del teclat.", 
         "es" : "Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.", 
         "en" : "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.",
       },
@@ -2118,7 +2118,7 @@ const wcagObj = {
     { // 2.4.8.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.8 Ubicació", 
         "es" : "2.4.8 Ubicación", 
         "en" : "2.4.8 Location",
       }, 
@@ -2127,7 +2127,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "La informació sobre la ubicació de lusuari dins un conjunt de pàgines web està disponible.", 
         "es" : "La información sobre la ubicación del usuario dentro de un conjunto de páginas web está disponible.", 
         "en" : "Information about the user's location within a set of Web pages is available.",
       },
@@ -2161,7 +2161,7 @@ const wcagObj = {
     { // 2.4.9.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.9 Propòsit de l'enllaç (només enllaç)", 
         "es" : "2.4.9 Propósito del enlace (solo enlace)", 
         "en" : "2.4.9 Link Purpose (Link Only)",
       }, 
@@ -2170,7 +2170,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Hi ha un mecanisme disponible per permetre que el propòsit de cada enllaç s'identifiqui només a partir del text de l'enllaç, excepte quan el propòsit de l'enllaç sigui ambigu per als usuaris en general.", 
         "es" : "Hay un mecanismo disponible para permitir que el propósito de cada enlace se identifique solo a partir del texto del enlace, excepto cuando el propósito del enlace sea ambiguo para los usuarios en general.", 
         "en" : "A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.",
       },
@@ -2204,7 +2204,7 @@ const wcagObj = {
     { // 2.4.10.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.10 Títols de secció", 
         "es" : "2.4.10 Títulos de sección", 
         "en" : "2.4.10 Section Headings",
       }, 
@@ -2213,7 +2213,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Les capçaleres de les seccions s'utilitzen per organitzar el contingut.", 
         "es" : "Los encabezados de las secciones se utilizan para organizar el contenido.", 
         "en" : "Section headings are used to organize the content.",
       },
@@ -2247,7 +2247,7 @@ const wcagObj = {
     { // 2.4.11.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.11 Aspecte d'enfocament (mínim)", 
         "es" : "2.4.11 Aspecto de enfoque (mínimo)", 
         "en" : "2.4.11 Focus Appearance (Minimum)",
       }, 
@@ -2256,7 +2256,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan els components de la interfície dusuari reben el focus del teclat, tot el següent és veritable:<ul><li>Àrea de contrast: hi ha una àrea de l'indicador d'enfocament que té una relació de contrast d'almenys 3:1 entre els colors als estats enfocats i desenfocats.</li><li>Àrea mínima: L'àrea de contrast és almenys tan gran com:<ul><li>Contorn: l'àrea d'un perímetre de 1 píxel CSS de gruix del component desenfocat, o</li><li>Forma: l'àrea d'una línia de 4 píxels CSS de gruix al costat més curt d'un quadre delimitador mínim del component desenfocat, i no més prima que 2 píxels CSS.</li></ul></li><li>Contrast adjacent: l'àrea de contrast també té una relació de contrast d'almenys 3:1 davant dels colors adjacents al component enfocat, o l'àrea de contrast té un gruix d'almenys 2 píxels CSS.</li><li>No és completament ocult: l'element que té el focus no està completament ocult pel contingut creat per l'autor.</li></ul>", 
         "es" : "Cuando los componentes de la interfaz de usuario reciben el foco del teclado, todo lo siguiente es verdadero:<ul><li>Área de contraste: hay un área del indicador de enfoque que tiene una relación de contraste de al menos 3:1 entre los colores en los estados enfocado y desenfocado.</li><li>Área mínima: El área de contraste es al menos tan grande como:<ul><li>Contorno: el área de un perímetro de 1 píxel CSS de espesor del componente desenfocado, o</li><li>Forma: el área de una línea de 4 píxeles CSS de grosor a lo largo del lado más corto de un cuadro delimitador mínimo del componente desenfocado, y no más delgada que 2 píxeles CSS.</li></ul></li><li>Contraste adyacente: el área de contraste también tiene una relación de contraste de al menos 3:1 frente a los colores adyacentes en el componente enfocado, o el área de contraste tiene un grosor de al menos 2 píxeles CSS.</li><li>No completamente oculto: el elemento que tiene el foco no está completamente oculto por el contenido creado por el autor.</li></ul>", 
         "en" : "When user interface components receive keyboard focus, all of the following are true:<ul><li>Contrasting area: There is an area of the focus indicator that has a contrast ratio of at least 3:1 between the colors in the focused and unfocused states.</li><li>Minimum area: The contrasting area is at least as large as:<ul><li>Outline: the area of a 1 CSS pixel thick perimeter of the unfocused component, or</li><li>Shape: the area of a 4 CSS pixel thick line along the shortest side of a minimum bounding box of the unfocused component, and no thinner than 2 CSS pixels.</li></ul></li><li>Adjacent contrast: The contrasting area also has a contrast ratio of least 3:1 against adjacent colors in the focused component, or the contrasting area has a thickness of at least 2 CSS pixels.</li><li>Not fully obscured: The item with focus is not entirely hidden by author-created content.</li></ul>",
       },
@@ -2290,7 +2290,7 @@ const wcagObj = {
     { // 2.4.12.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.12 Aspecte d'enfocament (millorat)", 
         "es" : "2.4.12 Aspecto de enfoque (mejorado)", 
         "en" : "2.4.12 Focus Appearance (Enhanced)",
       }, 
@@ -2299,7 +2299,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan els components de la interfície dusuari tenen el focus del teclat, tot el següent és cert:<ul><li>Àrea de contrast: hi ha una àrea de l'indicador d'enfocament que té una relació de contrast d'almenys 4,5:1 entre els colors als estats enfocats i desenfocats.</li><li>Àrea mínima: l'àrea de contrast és com a mínim el doble de l'àrea d'un perímetre de 1 píxel CSS del component desenfocat;</li><li>No enfosquit: el contingut creat per l'autor no amaga cap part de l'indicador d'enfocament.</li></ul>", 
         "es" : "Cuando los componentes de la interfaz de usuario tienen el foco del teclado, todo lo siguiente es cierto:<ul><li>Área de contraste: hay un área del indicador de enfoque que tiene una relación de contraste de al menos 4,5:1 entre los colores en los estados enfocado y desenfocado.</li><li>Área mínima: el área de contraste es al menos el doble del área de un perímetro de 1 píxel CSS del componente desenfocado;</li><li>No oscurecido: el contenido creado por el autor no oculta ninguna parte del indicador de enfoque.</li></ul>", 
         "en" : "When user interface components have keyboard focus, all of the following are true:<ul><li>Contrasting area: There is an area of the focus indicator that has a contrast ratio of at least 4.5:1 between the colors in the focused and unfocused states.</li><li>Minimum area: The contrasting area is at least double the area of a 1 CSS pixel perimeter of the unfocused component;</li><li>Not obscured: No part of the focus indicator is hidden by author-created content.</li></ul>",
       },
@@ -2333,7 +2333,7 @@ const wcagObj = {
     { // 2.4.13.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.4.13 Navegació de salt de pàgina", 
         "es" : "2.4.13 Navegación de salto de página", 
         "en" : "2.4.13 Page Break Navigation",
       }, 
@@ -2342,7 +2342,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per al contingut web amb localitzadors de salts de pàgina, hi ha un mecanisme disponible per navegar a cada localitzador.", 
         "es" : "Para el contenido web con localizadores de saltos de página, hay un mecanismo disponible para navegar a cada localizador.", 
         "en" : "For web content with page break locators, a mechanism is available to navigate to each locator.",
       },
@@ -2376,7 +2376,7 @@ const wcagObj = {
     { // 2.5.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.1 Gestos de punter", 
         "es" : "2.5.1 Gestos de puntero", 
         "en" : "2.5.1 Pointer Gestures",
       }, 
@@ -2385,8 +2385,8 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
-        "es" : "	Toda la funcionalidad que utiliza gestos multipunto o basados ​​en rutas para la operación se puede operar con un solo puntero sin un gesto basado en rutas, a menos que sea esencial un gesto multipunto o basado en rutas.", 
+        "cat" : "Tota la funcionalitat que utilitza gestos multipunt o basats en rutes per a l'operació es pot operar amb un sol punter sense un gest basat en rutes, llevat que sigui essencial un gest multipunt o basat en rutes.", 
+        "es" : "	Toda la funcionalidad que utiliza gestos multipunto o basados en rutas para la operación se puede operar con un solo puntero sin un gesto basado en rutas, a menos que sea esencial un gesto multipunto o basado en rutas.", 
         "en" : "All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.",
       },
       "intent" : 
@@ -2419,7 +2419,7 @@ const wcagObj = {
     { // 2.5.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.2 Cancel·lació de punter", 
         "es" : "2.5.2 Cancelación de puntero", 
         "en" : "2.5.2 Pointer Cancellation",
       }, 
@@ -2428,7 +2428,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a la funcionalitat que es pot operar usant un sol punter, almenys un dels següents és veritable:<ul><li>Sense esdeveniment descendent: l'esdeveniment descendent del punter no es fa servir per executar cap part de la funció;</li><li>Cancel·lar o desfer: la finalització de la funció és a l'esdeveniment ascendent i hi ha un mecanisme disponible per cancel·lar la funció abans de completar-la o per desfer la funció després de completar-la;</li><li>Up Reversal: L'esdeveniment up inverteix qualsevol resultat de l'esdeveniment down anterior;</li><li>Essencial: Completar la funció a l'esdeveniment down és essencial.</li></ul>", 
         "es" : "Para la funcionalidad que se puede operar usando un solo puntero, al menos uno de los siguientes es verdadero:<ul><li>Sin evento descendente: el evento descendente del puntero no se utiliza para ejecutar ninguna parte de la función;</li><li>Cancelar o deshacer: la finalización de la función está en el evento ascendente y hay un mecanismo disponible para cancelar la función antes de completarla o para deshacer la función después de completarla;</li><li>Up Reversal: El evento up invierte cualquier resultado del evento down anterior;</li><li>Esencial: Completar la función en el evento down es esencial.</li></ul>", 
         "en" : "For functionality that can be operated using a single pointer, at least one of the following is true:<ul><li>No Down-Event : The down-event of the pointer is not used to execute any part of the function;</li><li>Abort or Undo : Completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion;</li><li>Up Reversal : The up-event reverses any outcome of the preceding down-event;</li><li>Essential : Completing the function on the down-event is essential.</li></ul>",
       },
@@ -2462,7 +2462,7 @@ const wcagObj = {
     { // 2.5.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.3 Etiqueta en Nom", 
         "es" : "2.5.3 Etiqueta en Nombre", 
         "en" : "2.5.3 Label in Name",
       }, 
@@ -2471,7 +2471,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per als components de la interfície dusuari amb etiquetes que inclouen text o imatges de text, el nom conté el text que es presenta visualment.", 
         "es" : "Para los componentes de la interfaz de usuario con etiquetas que incluyen texto o imágenes de texto, el nombre contiene el texto que se presenta visualmente.", 
         "en" : "For user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
       },
@@ -2505,7 +2505,7 @@ const wcagObj = {
     { // 2.5.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.4 Actuació de moviment", 
         "es" : "2.5.4 Actuación de movimiento", 
         "en" : "2.5.4 Motion Actuation",
       }, 
@@ -2514,7 +2514,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "La funcionalitat que pot ser operada pel moviment del dispositiu o el moviment de l'usuari també pot ser operada pels components de la interfície d'usuari i la resposta al moviment es pot desactivar per evitar l'activació accidental, excepte quan:<ul><li>Interfície compatible: el moviment s'utilitza per operar la funcionalitat mitjançant una interfície compatible amb l'accessibilitat;</li><li>Essencial: el moviment és essencial per a la funció i fer-ho invalidaria l'activitat.</li></ul>", 
         "es" : "La funcionalidad que puede ser operada por el movimiento del dispositivo o el movimiento del usuario también puede ser operada por los componentes de la interfaz de usuario y la respuesta al movimiento puede desactivarse para evitar la activación accidental, excepto cuando:<ul><li>Interfaz compatible: el movimiento se utiliza para operar la funcionalidad a través de una interfaz compatible con la accesibilidad;</li><li>Esencial: el movimiento es esencial para la función y hacerlo invalidaría la actividad.</li></ul>", 
         "en" : "Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:<ul><li>Supported Interface : The motion is used to operate functionality through an accessibility supported interface;</li><li>Essential : The motion is essential for the function and doing so would invalidate the activity.</li></ul>",
       },
@@ -2548,7 +2548,7 @@ const wcagObj = {
     { // 2.5.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.5 Mida objectiu", 
         "es" : "2.5.5 Tamaño objetivo", 
         "en" : "2.5.5 Target Size",
       }, 
@@ -2557,7 +2557,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "La mida de l'objectiu per a les entrades del punter és d'almenys 44 per 44 píxels CSS, excepte quan:<ul><li>Equivalent: l'objectiu està disponible mitjançant un enllaç o control equivalent a la mateixa pàgina que té almenys 44 per 44 píxels CSS;<li></li>En línia: l'objectiu és una oració o bloc de text;</li><li>Control de l'agent d'usuari: la mida de l'objectiu és determinada per l'agent d'usuari i l'autor no el modifica;</li><li>Essencial: una presentació particular de l'objectiu és essencial per a la informació que es transmet.</li></ul>", 
         "es" : "El tamaño del objetivo para las entradas del puntero es de al menos 44 por 44 píxeles CSS, excepto cuando:<ul><li>Equivalente: el objetivo está disponible a través de un enlace o control equivalente en la misma página que tiene al menos 44 por 44 píxeles CSS;</li><li>En línea: el objetivo está en una oración o bloque de texto;</li><li>Control del agente de usuario: el tamaño del objetivo lo determina el agente de usuario y el autor no lo modifica;</li><li>Esencial: una presentación particular del objetivo es esencial para la información que se transmite.</li></ul>", 
         "en" : "The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:<ul><li>Equivalent : The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;</li><li>Inline : The target is in a sentence or block of text;</li><li>User Agent Control : The size of the target is determined by the user agent and is not modified by the author;</li><li>Essential : A particular presentation of the target is essential to the information being conveyed.</li></ul>",
       },
@@ -2591,7 +2591,7 @@ const wcagObj = {
     { // 2.5.6.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.6 Mecanismes d'entrada concurrents", 
         "es" : "2.5.6 Mecanismos de entrada concurrentes", 
         "en" : "2.5.6 Concurrent Input Mechanisms",
       }, 
@@ -2600,7 +2600,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El contingut web no restringeix l'ús de les modalitats d'entrada disponibles a una plataforma, excepte quan la restricció sigui essencial, necessària per garantir la seguretat del contingut o necessària per respectar la configuració de l'usuari.", 
         "es" : "El contenido web no restringe el uso de las modalidades de entrada disponibles en una plataforma, excepto cuando la restricción sea esencial, necesaria para garantizar la seguridad del contenido o necesaria para respetar la configuración del usuario.", 
         "en" : "Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.",
       },
@@ -2634,7 +2634,7 @@ const wcagObj = {
     { // 2.5.7.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.7 Moviments d'arrossegament", 
         "es" : "2.5.7 Movimientos de arrastre", 
         "en" : "2.5.7 Dragging Movements",
       }, 
@@ -2643,7 +2643,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Tota la funcionalitat que utilitza un moviment d'arrossegament per a l'operació es pot aconseguir amb un sol punter sense arrossegar, tret que arrossegar sigui essencial.", 
         "es" : "Toda la funcionalidad que utiliza un movimiento de arrastre para la operación se puede lograr con un solo puntero sin arrastrar, a menos que arrastrar sea esencial.", 
         "en" : "All functionality that uses a dragging movement for operation can be achieved by a single pointer without dragging, unless dragging is essential.",
       },
@@ -2677,7 +2677,7 @@ const wcagObj = {
     { // 2.5.8.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "2.5.8 Grandària de l'objectiu (mínim)", 
         "es" : "2.5.8 Tamaño del objetivo (mínimo)", 
         "en" : "2.5.8 Target Size (Minimum)",
       }, 
@@ -2686,7 +2686,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Els objectius tenen una àrea d'almenys 24 per 24 píxels CSS, excepte on:<ul><li>Espaiat: el desplaçament de l'objectiu és d'almenys 24 píxels CSS per a cada objectiu adjacent;</li><li>En línia: l'objectiu és una oració o bloc de text;</li><li>Essencial: una presentació particular de l'objectiu és essencial per a la informació que es transmet.</li></ul>", 
         "es" : "Los objetivos tienen un área de al menos 24 por 24 píxeles CSS, excepto donde:<ul><li>Espaciado: el desplazamiento del objetivo es de al menos 24 píxeles CSS para cada objetivo adyacente;</li><li>En línea: el objetivo está en una oración o bloque de texto;</li><li>Esencial: una presentación particular del objetivo es esencial para la información que se transmite.</li></ul>", 
         "en" : "Targets have an area of at least 24 by 24 CSS pixels, except where:<ul><li>Spacing : The target offset is at least 24 CSS pixels to every adjacent target;</li><li>Inline : The target is in a sentence or block of text;</li><li>Essential : A particular presentation of the target is essential to the information being conveyed.</li></ul>",
       },
@@ -2720,7 +2720,7 @@ const wcagObj = {
     { // 3.1.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.1.1 Idioma de la pàgina", 
         "es" : "3.1.1 Idioma de la página", 
         "en" : "3.1.1 Language of Page",
       }, 
@@ -2729,7 +2729,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "L'idioma humà per defecte de cada pàgina web es pot determinar mitjançant la programació.", 
         "es" : "El idioma humano predeterminado de cada página web se puede determinar mediante programación.", 
         "en" : "The default human language of each Web page can be programmatically determined.",
       },
@@ -2763,7 +2763,7 @@ const wcagObj = {
     { // 3.1.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.1.2 Idioma de les parts", 
         "es" : "3.1.2 Idioma de las partes", 
         "en" : "3.1.2 Language of Parts",
       }, 
@@ -2772,7 +2772,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "El llenguatge humà de cada passatge o frase en el contingut es pot determinar programàticament a excepció dels noms propis, termes tècnics, paraules de llenguatge indeterminat i paraules o frases que han esdevingut part de la llengua vernacla del text circumdant immediat.", 
         "es" : "El lenguaje humano de cada pasaje o frase en el contenido se puede determinar programáticamente a excepción de los nombres propios, términos técnicos, palabras de lenguaje indeterminado y palabras o frases que se han convertido en parte de la lengua vernácula del texto circundante inmediato.", 
         "en" : "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.",
       },
@@ -2806,7 +2806,7 @@ const wcagObj = {
     { // 3.1.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.1.3 Paraules inusuals", 
         "es" : "3.1.3 Palabras inusuales", 
         "en" : "3.1.3 Unusual Words",
       }, 
@@ -2815,7 +2815,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Hi ha un mecanisme disponible per identificar definicions específiques de paraules o frases utilitzades de manera inusual o restringida, inclosos modismes i argot.", 
         "es" : "Hay un mecanismo disponible para identificar definiciones específicas de palabras o frases utilizadas de manera inusual o restringida, incluidos modismos y jerga.", 
         "en" : "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.",
       },
@@ -2849,7 +2849,7 @@ const wcagObj = {
     { // 3.1.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.1.4 Abreviatures", 
         "es" : "3.1.4 Abreviaturas", 
         "en" : "3.1.4 Abbreviations",
       }, 
@@ -2858,7 +2858,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Hi ha disponible un mecanisme per identificar la forma expandida o el significat de les abreviatures.", 
         "es" : "Se encuentra disponible un mecanismo para identificar la forma expandida o el significado de las abreviaturas.", 
         "en" : "A mechanism for identifying the expanded form or meaning of abbreviations is available.",
       },
@@ -2892,7 +2892,7 @@ const wcagObj = {
     { // 3.1.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.1.5 Nivell de lectura", 
         "es" : "3.1.5 Nivel de lectura", 
         "en" : "3.1.5 Reading Level",
       }, 
@@ -2901,7 +2901,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan el text requereix una capacitat de lectura més avançada que el nivell d'educació secundària inferior després d'eliminar els noms i els títols propis, hi ha disponible contingut complementari o una versió que no requereix una capacitat de lectura més avançada que el nivell d'educació secundària inferior.", 
         "es" : "Cuando el texto requiere una capacidad de lectura más avanzada que el nivel de educación secundaria inferior después de eliminar los nombres y títulos propios, hay disponible contenido complementario o una versión que no requiere una capacidad de lectura más avanzada que el nivel de educación secundaria inferior.", 
         "en" : "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.",
       },
@@ -2935,7 +2935,7 @@ const wcagObj = {
     { // 3.1.6.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.1.6 Pronunciació", 
         "es" : "3.1.6 Pronunciación", 
         "en" : "3.1.6 Pronunciation",
       }, 
@@ -2944,7 +2944,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Està disponible un mecanisme per identificar la pronunciació específica de paraules on el significat de les paraules, en context, és ambigu sense conèixer-ne la pronunciació.", 
         "es" : "Está disponible un mecanismo para identificar la pronunciación específica de palabras donde el significado de las palabras, en contexto, es ambiguo sin conocer la pronunciación.", 
         "en" : "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.",
       },
@@ -2978,7 +2978,7 @@ const wcagObj = {
     { // 3.2.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.2.1 En focus", 
         "es" : "3.2.1 En foco", 
         "en" : "3.2.1 On Focus",
       }, 
@@ -2987,7 +2987,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan qualsevol component de la interfície dusuari rep el focus, no inicia un canvi de context.", 
         "es" : "Cuando cualquier componente de la interfaz de usuario recibe el foco, no inicia un cambio de contexto.", 
         "en" : "When any user interface component receives focus, it does not initiate a change of context.",
       },
@@ -3021,7 +3021,7 @@ const wcagObj = {
     { // 3.2.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.2.2 A l'entrada", 
         "es" : "3.2.2 En la entrada", 
         "en" : "3.2.2 On Input",
       }, 
@@ -3030,7 +3030,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Canviar la configuració de qualsevol component de la interfície d'usuari no provoca automàticament un canvi de context si no s'ha informat l'usuari sobre el comportament abans d'utilitzar el component.", 
         "es" : "Cambiar la configuración de cualquier componente de la interfaz de usuario no provoca automáticamente un cambio de contexto a menos que se haya informado al usuario sobre el comportamiento antes de usar el componente.", 
         "en" : "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.",
       },
@@ -3064,7 +3064,7 @@ const wcagObj = {
     { // 3.2.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.2.3 Navegació consistent", 
         "es" : "3.2.3 Navegación consistente", 
         "en" : "3.2.3 Consistent Navigation",
       }, 
@@ -3073,7 +3073,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Els mecanismes de navegació que es repeteixen a diverses pàgines web dins d'un conjunt de pàgines web ocorren en el mateix ordre relatiu cada vegada que es repeteixen, tret que l'usuari iniciï un canvi.", 
         "es" : "Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas web ocurren en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio.", 
         "en" : "Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
       },
@@ -3107,7 +3107,7 @@ const wcagObj = {
     { // 3.2.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.2.4 Identificació consistent", 
         "es" : "3.2.4 Identificación consistente", 
         "en" : "3.2.4 Consistent Identification",
       }, 
@@ -3116,7 +3116,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Els components que tenen la mateixa funcionalitat dins un conjunt de pàgines web sidentifiquen de forma coherent.", 
         "es" : "Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de forma coherente.", 
         "en" : "Components that have the same functionality within a set of Web pages are identified consistently.",
       },
@@ -3151,7 +3151,7 @@ const wcagObj = {
     { // 3.2.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.2.5 Canvi a comanda", 
         "es" : "3.2.5 Cambio a pedido", 
         "en" : "3.2.5 Change on Request",
       }, 
@@ -3160,7 +3160,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Els canvis de context s'inicien només per sol·licitud de l'usuari o hi ha un mecanisme disponible per desactivar aquests canvis.", 
         "es" : "Los cambios de contexto se inician solo por solicitud del usuario o hay un mecanismo disponible para desactivar dichos cambios.", 
         "en" : "Changes of context are initiated only by user request or a mechanism is available to turn off such changes.",
       },
@@ -3203,7 +3203,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a cada pàgina web dins d'un conjunt de pàgines web que proporciona una o més de les maneres següents de trobar ajuda, l'accés a almenys una forma d'ajuda s'inclou en el mateix ordre relatiu a cada pàgina:<ul><li>Detalls de contacte humà;</li><li>Mecanisme de contacte humà;</li><li>Opció d'autoajuda;</li><li>Un mecanisme de contacte totalment automatitzat.</li></ul>", 
         "es" : "	Para cada página web dentro de un conjunto de páginas web que proporciona una o más de las siguientes formas de encontrar ayuda, el acceso a al menos una forma de ayuda se incluye en el mismo orden relativo en cada página:<ul><li>Detalles de contacto humano;</li><li>Mecanismo de contacto humano;</li><li>Opción de autoayuda;</li><li>Un mecanismo de contacto totalmente automatizado.</li></ul>", 
         "en" : "For each web page within a set of web pages that provides one or more of the following ways of finding help, access to at least one form of help is included in the same relative order on each page:<ul><li>Human contact details;</li><li>Human contact mechanism;</li><li>Self-help option;</li><li>A fully automated contact mechanism.</li></ul>",
       },
@@ -3237,7 +3237,7 @@ const wcagObj = {
     { // 3.2.7.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.2.7 Controls visibles", 
         "es" : "3.2.7 Controles visibles", 
         "en" : "3.2.7 Visible Controls",
       }, 
@@ -3246,7 +3246,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Quan rebreu el cursor del punter o l'enfocament del teclat fa que els components de la interfície d'usuari siguin visibles, la informació necessària per identificar que els components de la interfície d'usuari estan disponibles és visible, excepte quan:<ul><li>La informació necessària per identificar els components de la interfície dusuari està disponible a través dun component equivalent que està visible a la mateixa pàgina o en un pas diferent en un procés de diversos passos sense necessitat de passar el punter o enfocar el teclat;</li><li>El component es proporciona específicament per millorar lexperiència de navegació amb el teclat;</li><li>Es disposa d'un mecanisme per fer visible la informació de manera persistent;</li><li>És essencial amagar la informació necessària per identificar el component.</li></ul>", 
         "es" : "Cuando recibir el cursor del puntero o el enfoque del teclado hace que los componentes de la interfaz de usuario sean visibles, la información necesaria para identificar que los componentes de la interfaz de usuario están disponibles es visible, excepto cuando:<ul><li>La información necesaria para identificar los componentes de la interfaz de usuario está disponible a través de un componente equivalente que está visible en la misma página o en un paso diferente en un proceso de varios pasos sin necesidad de pasar el puntero o enfocar el teclado;</li><li>El componente se proporciona específicamente para mejorar la experiencia de navegación con el teclado;</li><li>Se dispone de un mecanismo para hacer visible la información de forma persistente;</li><li>Es esencial ocultar la información necesaria para identificar el componente.</li></ul>", 
         "en" : "Where receiving pointer hover or keyboard focus triggers user interface components to be visible, information needed to identify that user interface components are available is visible, except when:<ul><li>The information needed to identify the user interface components is available through an equivalent component that is visible on the same page or on a different step in a multi-step process without requiring pointer hover or keyboard focus;</li><li>The component is provided specifically to enhance the experience for keyboard navigation;</li><li>A mechanism is available to make the information persistently visible;</li><li>Hiding the information needed to identify the component is essential.</li></ul>",
       },
@@ -3280,7 +3280,7 @@ const wcagObj = {
     { // 3.3.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.1 Identificació d'errades", 
         "es" : "3.3.1 Identificación de errores", 
         "en" : "3.3.1 Error Identification",
       }, 
@@ -3289,7 +3289,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Si detecta un error d'entrada automàticament, s'identifica l'element que té l'error i es descriu l'error a l'usuari en text.", 
         "es" : "Si se detecta automáticamente un error de entrada, se identifica el elemento que tiene el error y se describe el error al usuario en texto.", 
         "en" : "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
       },
@@ -3323,7 +3323,7 @@ const wcagObj = {
     { // 3.3.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.2 Etiquetes o instruccions", 
         "es" : "3.3.2 Etiquetas o instrucciones", 
         "en" : "3.3.2 Labels or Instructions",
       }, 
@@ -3332,7 +3332,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Es proporcionen etiquetes o instruccions quan el contingut requereix la intervenció de lusuari.", 
         "es" : "Se proporcionan etiquetas o instrucciones cuando el contenido requiere la intervención del usuario.", 
         "en" : "Labels or instructions are provided when content requires user input.",
       },
@@ -3366,7 +3366,7 @@ const wcagObj = {
     { // 3.3.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.3 Consell d'error", 
         "es" : "3.3.3 Sugerencia de error", 
         "en" : "3.3.3 Error Suggestion",
       }, 
@@ -3375,7 +3375,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Si es detecta automàticament un error d'entrada i es coneixen suggeriments per corregir-los, aquests suggeriments es proporcionen a l'usuari, llevat que posin en perill la seguretat o el propòsit del contingut.", 
         "es" : "Si se detecta automáticamente un error de entrada y se conocen sugerencias para su corrección, estas sugerencias se proporcionan al usuario, a menos que pongan en peligro la seguridad o el propósito del contenido.", 
         "en" : "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
       },
@@ -3409,7 +3409,7 @@ const wcagObj = {
     { // 3.3.4.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.4 Prevenció d'errades (dades financeres legals)", 
         "es" : "3.3.4 Prevención de errores (datos financieros legales)", 
         "en" : "3.3.4 Error Prevention (Legal Financial Data)",
       }, 
@@ -3418,7 +3418,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a les pàgines web que generen compromisos legals o transaccions financeres per a lusuari, que modifiquen o eliminen dades controlables per lusuari en els sistemes demmagatzematge de dades, o que envien respostes de prova de lusuari, almenys un dels següents és veritable:<ul><li>Reversible: Les presentacions són reversibles.</li><li>Verificat: les dades ingressades per l'usuari es verifiquen buscant errors d'entrada i l'usuari té l'oportunitat de corregir-los.</li><li>Confirmat: hi ha un mecanisme disponible per revisar, confirmar i corregir la informació abans de finalitzar l'enviament.</li></ul>", 
         "es" : "Para las páginas web que generan compromisos legales o transacciones financieras para el usuario, que modifican o eliminan datos controlables por el usuario en los sistemas de almacenamiento de datos, o que envían respuestas de prueba del usuario, al menos uno de los siguientes es verdadero:<ul><li>Reversible: Las presentaciones son reversibles.</li><li>Verificado: los datos ingresados por el usuario se verifican en busca de errores de entrada y el usuario tiene la oportunidad de corregirlos.</li><li>Confirmado: hay un mecanismo disponible para revisar, confirmar y corregir la información antes de finalizar el envío.</li></ul>", 
         "en" : "For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:<ul><li>Reversible : Submissions are reversible.</li><li>Checked : Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.</li><li>Confirmed : A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li></ul>",
       },
@@ -3452,7 +3452,7 @@ const wcagObj = {
     { // 3.3.5.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.5 Ajuda", 
         "es" : "3.3.5 Ayuda", 
         "en" : "3.3.5 Help",
       }, 
@@ -3461,7 +3461,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "L'ajuda sensible al context està disponible.", 
         "es" : "La ayuda sensible al contexto está disponible.", 
         "en" : "Context-sensitive help is available.",
       },
@@ -3495,7 +3495,7 @@ const wcagObj = {
     { // 3.3.6.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.6 Prevenció d'errades (Tots)", 
         "es" : "3.3.6 Prevención de errores (Todos)", 
         "en" : "3.3.6 Error Prevention (All)",
       }, 
@@ -3504,7 +3504,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a les pàgines web que requereixen que l'usuari enviï informació, almenys un dels següents és veritable:<ul><li>Reversible: Les presentacions són reversibles.</li><li>Verificat: les dades ingressades per l'usuari es verifiquen buscant errors d'entrada i l'usuari té l'oportunitat de corregir-los.</li><li>Confirmat: hi ha un mecanisme disponible per revisar, confirmar i corregir la informació abans de finalitzar l'enviament.</li></ul>", 
         "es" : "Para las páginas web que requieren que el usuario envíe información, al menos uno de los siguientes es verdadero:<ul><li>Reversible: Las presentaciones son reversibles.</li><li>Verificado: los datos ingresados por el usuario se verifican en busca de errores de entrada y el usuario tiene la oportunidad de corregirlos.</li><li>Confirmado: hay un mecanismo disponible para revisar, confirmar y corregir la información antes de finalizar el envío.</li></ul>", 
         "en" : "For Web pages that require the user to submit information, at least one of the following is true:<ul><li>Reversible : Submissions are reversible.</li><li>Checked : Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.</li><li>Confirmed : A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li></ul>",
       },
@@ -3538,7 +3538,7 @@ const wcagObj = {
     { // 3.3.7.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.7 Autenticació accessible", 
         "es" : "3.3.7 Autenticación accesible", 
         "en" : "3.3.7 Accessible Authentication",
       }, 
@@ -3547,7 +3547,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a cada pas en un procés d'autenticació que es basa en una prova de funció cognitiva, hi ha almenys un altre mètode d'autenticació disponible que no es basa en una prova de funció cognitiva, o hi ha un mecanisme disponible per ajudar l'usuari a completar la prova de funció cognitiva.", 
         "es" : "Para cada paso en un proceso de autenticación que se basa en una prueba de función cognitiva, hay al menos otro método de autenticación disponible que no se basa en una prueba de función cognitiva, o hay un mecanismo disponible para ayudar al usuario a completar la prueba de función cognitiva.", 
         "en" : "For each step in an authentication process that relies on a cognitive function test, at least one other authentication method is available that does not rely on a cognitive function test, or a mechanism is available to assist the user in completing the cognitive function test.",
       },
@@ -3581,7 +3581,7 @@ const wcagObj = {
     { // 3.3.8.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "3.3.8 Entrada redundant", 
         "es" : "3.3.8 Entrada redundante", 
         "en" : "3.3.8 Redundant entry",
       }, 
@@ -3590,7 +3590,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "La informació prèviament ingressada per o proporcionada a l'usuari que cal que s'ingressi novament en el mateix procés i en la mateixa sessió d'usuari és:<ul><li>Emplenat automàticament, o</li><li>Disponibles perquè l'usuari seleccioni.</li></ul>Excepte quan:<ul><li>Tornar a ingressar la informació és essencial,</li><li>La informació és necessària per garantir la seguretat del contingut, o</li><li>La informació que heu introduït anteriorment ja no és vàlida.</li></ul>", 
         "es" : "La información previamente ingresada por o proporcionada al usuario que se requiere que se ingrese nuevamente en el mismo proceso y en la misma sesión de usuario es:<ul><li>Rellenado automáticamente, o</li><li>Disponibles para que el usuario seleccione.</li></ul>Excepto cuando:<ul><li>Volver a ingresar la información es esencial,</li><li>La información es necesaria para garantizar la seguridad del contenido, o</li><li>La información ingresada anteriormente ya no es válida.</li></ul>", 
         "en" : "Information previously entered by or provided to the user that is required to be entered again in the same process and in the same user-session is either:<ul><li>auto-populated, or</li><li>available for the user to select.</li></ul>Except when:<ul><li>re-entering the information is essential,</li><li>the information is required to ensure the security of the content, or</li><li>previously entered information is no longer valid.</li></ul>",
       },
@@ -3624,7 +3624,7 @@ const wcagObj = {
     { // 4.1.1.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "4.1.1 Anàlisi", 
         "es" : "4.1.1 Análisis", 
         "en" : "4.1.1 Parsing",
       }, 
@@ -3633,7 +3633,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "En el contingut implementat mitjançant llenguatges de marcatge, els elements tenen etiquetes d'inici i finalització completes, els elements s'anomenen d'acord amb les especificacions, els elements no contenen atributs duplicats i qualsevol ID és únic, excepte on les especificacions permetin aquestes característiques.", 
         "es" : "En el contenido implementado mediante lenguajes de marcado, los elementos tienen etiquetas de inicio y finalización completas, los elementos se anidan de acuerdo con sus especificaciones, los elementos no contienen atributos duplicados y cualquier ID es único, excepto donde las especificaciones permitan estas características.", 
         "en" : "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.",
       },
@@ -3667,7 +3667,7 @@ const wcagObj = {
     { // 4.1.2.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "4.1.2 Nom Rol Valor", 
         "es" : "4.1.2 Nombre Rol Valor", 
         "en" : "4.1.2 Name Role Value",
       }, 
@@ -3676,7 +3676,7 @@ const wcagObj = {
       "version" : "2.0", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Per a tots els components de la interfície d'usuari (inclosos, entre d'altres: elements de formulari, enllaços i components generats per scripts), el nom i la funció es poden determinar mitjançant la programació; els estats, les propietats i els valors que l'usuari pot establir es poden establir mitjançant programació; i la notificació de canvis en aquests elements està disponible per als agents dusuari, incloses les tecnologies dassistència.", 
         "es" : "Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante programación; los estados, las propiedades y los valores que puede establecer el usuario se pueden establecer mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia.", 
         "en" : "For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.",
       },
@@ -3710,7 +3710,7 @@ const wcagObj = {
     { // 4.1.3.
       "criteria" : 
       {
-        "cat" : "", 
+        "cat" : "4.1.3 Missatges d'estat", 
         "es" : "4.1.3 Mensajes de estado", 
         "en" : "4.1.3 Status Messages",
       }, 
@@ -3719,7 +3719,7 @@ const wcagObj = {
       "version" : "2.1", 
       "goal" : 
       {
-        "cat" : "-", 
+        "cat" : "Al contingut implementat mitjançant llenguatges de marcatge, els missatges d'estat es poden determinar mitjançant programació a través del rol o les propietats, de manera que es puguin presentar a l'usuari mitjançant tecnologies d'assistència sense rebre atenció.", 
         "es" : "En el contenido implementado mediante lenguajes de marcado, los mensajes de estado se pueden determinar mediante programación a través del rol o las propiedades, de modo que se puedan presentar al usuario mediante tecnologías de asistencia sin recibir atención.", 
         "en" : "In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.",
       },
