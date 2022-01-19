@@ -25,22 +25,22 @@ let headers = [
 	{
 		"name" : "level",
 		"alias" : "Level",
-		"view" : false
+		"view" : true
 	},
 	{
 		"name" : "version",
 		"alias" : "Version",
-		"view" : false
+		"view" : true
 	},
 	{
 		"name" : "goal",
 		"alias" : "Goal",
-		"view" : false
+		"view" : true
 	},
 	{
 		"name" : "intent",
 		"alias" : "Intent",
-		"view" : false
+		"view" : true
 	},
 	{
 		"name" : "benefits",
@@ -50,12 +50,12 @@ let headers = [
 	{
 		"name" : "examples",
 		"alias" : "Examples",
-		"view" : true
+		"view" : false
 	},
 	{
 		"name" : "techniques",
 		"alias" : "Techniques",
-		"view" : true
+		"view" : false
 	},
 	{
 		"name" : "verification",
