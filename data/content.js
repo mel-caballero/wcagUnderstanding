@@ -22,16 +22,18 @@ const wcagObj = {
         
         "es" : "Las alternativas de texto son una forma principal de hacer que la información sea accesible porque se pueden presentar a través de cualquier modalidad sensorial (por ejemplo, visual, auditiva o táctil) para satisfacer las necesidades del usuario.", 
         
-        "en" : "Text alternatives are a primary way for making information accessible because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user.",
+        "en" : "The intent of this Success Criterion is to make information conveyed by non-text content accessible through the use of a text alternative. Text alternatives are a primary way for making information accessible because they can be rendered through any sensory modality (for example, visual, auditory or tactile) to match the needs of the user. Providing text alternatives allows the information to be rendered in a variety of ways by a variety of user agents. For example, a person who cannot see a picture can have the text alternative read aloud using synthesized speech. A person who cannot hear an audio file can have the text alternative displayed so that he or she can read it. In the future, text alternatives will also allow information to be more easily translated into sign language or into a simpler form of the same language.",
       },
       "benefits" :
       {
-        "cat" : "<p>Ajuda les persones que tenen dificultats per percebre el contingut visual.</p><p>Les alternatives de text poden ajudar algunes persones que tenen dificultats per comprendre el significat de fotografies, dibuixos i altres imatges (p. ex., dibuixos lineals, dissenys gràfics, pintures , tres (representacions dimensionals), gràfics, taules, animacions, etc.</p><p>Les persones sordcegues poden llegir el text en braille.</p>", 
+        "cat" : "<ul><li>Aquest criteri d'èxit ajuda les persones que tenen dificultats per percebre el contingut visual. La tecnologia d'assistència pot llegir el text en veu alta, presentar-lo visualment o convertir-lo en braille.</li><li>Les alternatives de text poden ajudar a algunes persones que tenen dificultats per entendre el significat de fotografies, dibuixos i altres imatges (per exemple, dibuixos lineals, dissenys gràfics, pintures, representacions tridimensionals), gràfics, gràfics, animacions, etc.</li><li>Les persones sordes, amb problemes d'audició o que tenen problemes per entendre la informació d'àudio per qualsevol motiu poden llegir la presentació del text. La recerca està en curs sobre la traducció automàtica de text a la llengua de signes.</li><li>Les persones sordcegues poden llegir el text en braille.</li><li>A més, les alternatives de text donen suport a la possibilitat de cercar contingut que no sigui de text i de reutilitzar el contingut de diverses maneres.</li></ul>", 
         
-        "es" : "<p>Ayuda a las personas que tienen dificultades para percibir el contenido visual.</p><p>Las alternativas de texto pueden ayudar a algunas personas que tienen dificultades para comprender el significado de fotografías, dibujos y otras imágenes (p. Ej., Dibujos lineales, diseños gráficos, pinturas, tres -representaciones dimensionales), gráficos, tablas, animaciones, etc.</p><p>Las personas sordociegas pueden leer el texto en braille.</p>", 
+        "es" : "<ul><li>Este Criterio de Conformidad ayuda a las personas que tienen dificultades para percibir el contenido visual. La tecnología de asistencia puede leer texto en voz alta, presentarlo visualmente o convertirlo a braille.</li><li>Las alternativas de texto pueden ayudar a algunas personas que tienen dificultad para comprender el significado de fotografías, dibujos y otras imágenes (por ejemplo, dibujos lineales, diseños gráficos, pinturas, representaciones tridimensionales), gráficos, cuadros, animaciones, etc.</li><li>Las personas sordas, con problemas de audición o que tienen problemas para comprender la información de audio por cualquier motivo pueden leer la presentación de texto. Se están realizando investigaciones sobre la traducción automática de texto al lenguaje de señas.</li><li>Las personas sordociegas pueden leer el texto en braille.</li><li>Además, las alternativas de texto admiten la capacidad de buscar contenido que no sea de texto y reutilizar el contenido de varias maneras.</li></ul>", 
         
-        "en" : "<p>Helps people who have difficulty perceiving visual content.</p><p>Text alternatives can help some people who have difficulty understanding the meaning of photographs, drawings, and other images (e.g., line drawings, graphic designs, paintings , three-dimensional representations), graphs, tables, animations, etc.</p><p>Deafblind people can read braille text.</p>",
+        "en" : "<ul><li>This Success Criterion helps people who have difficulty perceiving visual content. Assistive technology can read text aloud, present it visually, or convert it to braille.</li><li>Text alternatives may help some people who have difficulty understanding the meaning of photographs, drawings, and other images (e.g., line drawings, graphic designs, paintings, three-dimensional representations), graphs, charts, animations, etc.</li><li>People who are deaf, are hard of hearing, or who are having trouble understanding audio information for any reason can read the text presentation. Research is ongoing regarding automatic translation of text into sign language.</li><li>People who are deaf-blind can read the text in braille.</li><li>Additionally, text alternatives support the ability to search for non-text content and to repurpose content in a variety of ways.</li></ul>",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html#techniques",
       "verification" :
       {
         "cat" : "<ul><li>A. Tot contingut no textual ha de tenir una alternativa textual breu que proporcioni la mateixa informació o compleixi el mateix propòsit que el contingut no textual.</li><li>B. Les alternatives textuals s'han d'actualitzar quan canvieu el contingut no textual.</li><li>C. Les imatges incloses des de CSS han de ser purament decoratives i no han d'aportar informació tret que hi hagi alternativa textual a la pàgina.</li><li>D. En els grups d'imatges que transmeten una única informació de forma conjunta es proporciona en una sola de les imatges descrivint tot el grup, deixant la resta com a decoratives.</li><li>E. L'art ASCII, les emoticones i el leetspeak han de disposar d'alternatives textuals immediatament abans o després que transmetin la mateixa informació. Si amb una alternativa textual curta no és suficient per transmetre la mateixa informació o complir el mateix propòsit que el contingut no textual, aleshores a l'alternativa textual curta s'ha de proporcionar una breu descripció del contingut no textual ia més es proporciona una alternativa textual llarga que sí que transmeti la mateixa informació o compleixi el mateix propòsit.</li><li>G. Les imatges que tenen alguna funcionalitat com els enllaços, àrees actives de mapes d'imatge o botons de tipus imatge als formularis, tenen un text alternatiu que n'identifica el propòsit.</li><li>H. Els enllaços acompanyats d'imatges que actuen com a enllaç al mateix recurs han d'estar combinats en un únic enllaç. El contingut d'àudio, vídeo o multimèdia (incloent contingut en directe), els tests o exercicis que podrien ser invàlids si es mostren com a text, així com el contingut la funció principal del qual és produir una experiència sensorial específica (música, quadres, etc.) han de tenir una alternativa textual breu com a etiqueta descriptiva que almenys identifiqui quin és el contingut no textual.</li><li>J. Els CAPTCHA han de disposar d'una alternativa textual que descriu el propòsit del CAPTCHA ia més ha d'existir un CAPTCHA alternatiu que compleix el mateix propòsit però en una modalitat diferent. </li><li>K. Les imatges decoratives han de tenir un text alternatiu buit i no tenir un títol, o bé s'hi inclouen des dels fulls d'estil, de manera que puguin ser ignorats pels productes de suport.</li></ul>", 
@@ -75,10 +77,12 @@ const wcagObj = {
       },
       "benefits" :
       {
-        "cat" : "<p>Aquest criteri d'èxit ajuda les persones que tenen dificultats per percebre el contingut visual. La tecnologia d'assistència pot llegir alternatives de text en veu alta, presentar-les visualment o convertir-les en braille.</p><p>Les alternatives per a mitjans cronometrats que es basen en text poden ajudar a algunes persones que tenen dificultats per entendre el significat del contingut de vídeo pregravat.</p><p>Les persones sordes, tenen problemes d'audició o tenen problemes per entendre la informació d'àudio per qualsevol motiu poden llegir la presentació del text. S'estan realitzant investigacions sobre la traducció automàtica de text a la llengua de signes.</p><p>Les persones sordcegues poden llegir el text en braille.</p><p>A més, el text admet la possibilitat de cercar contingut que no sigui de text i de reutilitzar el contingut de diverses maneres.</p>", 
-        "es" : "<p>Este Criterio de Conformidad ayuda a las personas que tienen dificultades para percibir el contenido visual. La tecnología de asistencia puede leer alternativas de texto en voz alta, presentarlas visualmente o convertirlas a braille.</p><p>Las alternativas para los medios basados en el tiempo que se basan en texto pueden ayudar a algunas personas que tienen dificultades para comprender el significado del contenido de video pregrabado.</p><p>Las personas sordas, tienen problemas de audición o tienen problemas para comprender la información de audio por cualquier motivo pueden leer la presentación de texto. Se están realizando investigaciones sobre la traducción automática de texto al lenguaje de señas.</p><p>Las personas sordociegas pueden leer el texto en braille.</p><p>Además, el texto respalda la capacidad de buscar contenido que no es texto y de reutilizar el contenido de diversas formas.</p>", 
-        "en" : "<p>This Success Criterion helps people who have difficulty perceiving visual content. Assistive technology can read text alternatives aloud, present them visually, or convert them to braille.</p><p>Alternatives for timed-based media that are text based may help some people who have difficulty understanding the meaning of prerecorded video content.</p><p>People who are deaf, are hard of hearing, or who are having trouble understanding audio information for any reason can read the text presentation. Research is ongoing regarding automatic translation of text into sign language.</p><p>People who are deaf-blind can read the text in braille.</p><p>Additionally, text supports the ability to search for non-text content and to repurpose content in a variety of ways.</p>",
+        "cat" : "<ul><li>Aquest criteri d'èxit ajuda les persones que tenen dificultats per percebre el contingut visual. La tecnologia d'assistència pot llegir alternatives de text en veu alta, presentar-les visualment o convertir-les en braille.</li><li>Les alternatives per a mitjans cronometrats que es basen en text poden ajudar a algunes persones que tenen dificultats per entendre el significat del contingut de vídeo pregravat.</li><li>Les persones sordes, tenen problemes d'audició o tenen problemes per entendre la informació d'àudio per qualsevol motiu poden llegir la presentació del text. S'estan realitzant investigacions sobre la traducció automàtica de text a la llengua de signes.</li><li>Les persones sordcegues poden llegir el text en braille.</li><li>A més, el text admet la possibilitat de cercar contingut que no sigui de text i de reutilitzar el contingut de diverses maneres.</li></ul>", 
+        "es" : "<ul><li>Este Criterio de Conformidad ayuda a las personas que tienen dificultades para percibir el contenido visual. La tecnología de asistencia puede leer alternativas de texto en voz alta, presentarlas visualmente o convertirlas a braille.</li><li>Las alternativas para los medios basados en el tiempo que se basan en texto pueden ayudar a algunas personas que tienen dificultades para comprender el significado del contenido de video pregrabado.</li><li>Las personas sordas, tienen problemas de audición o tienen problemas para comprender la información de audio por cualquier motivo pueden leer la presentación de texto. Se están realizando investigaciones sobre la traducción automática de texto al lenguaje de señas.</li><li>Las personas sordociegas pueden leer el texto en braille.</li><li>Además, el texto respalda la capacidad de buscar contenido que no es texto y de reutilizar el contenido de diversas formas.</li></ul>", 
+        "en" : "<ul><li>This Success Criterion helps people who have difficulty perceiving visual content. Assistive technology can read text alternatives aloud, present them visually, or convert them to braille.</li><li>Alternatives for timed-based media that are text based may help some people who have difficulty understanding the meaning of prerecorded video content.</li><li>People who are deaf, are hard of hearing, or who are having trouble understanding audio information for any reason can read the text presentation. Research is ongoing regarding automatic translation of text into sign language.</li><li>People who are deaf-blind can read the text in braille.</li><li>Additionally, text supports the ability to search for non-text content and to repurpose content in a variety of ways.</li></ul>",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -112,9 +116,9 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "La intenció d'aquest criteri d'èxit és permetre que les persones sordes o amb problemes d'audició vegin presentacions multimèdia sincronitzades. Els subtítols proporcionen la part del contingut disponible a través de la pista d'àudio. Els subtítols no només inclouen diàlegs, sinó que identifiquen qui parla i inclouen informació no verbal que es transmet a través del so, inclosos efectes sonors significatius.", 
-        "es" : "La intención de este Criterio de Conformidad es permitir que las personas sordas o con dificultades auditivas vean presentaciones multimedia sincronizadas. Los subtítulos proporcionan la parte del contenido disponible a través de la pista de audio. Los subtítulos no solo incluyen diálogos, sino que identifican quién está hablando e incluyen información no verbal transmitida a través del sonido, incluidos efectos de sonido significativos.", 
-        "en" : "The intent of this Success Criterion is to enable people who are deaf or hard of hearing to watch synchronized media presentations. Captions provide the part of the content available via the audio track. Captions not only include dialogue, but identify who is speaking and include non-speech information conveyed through sound, including meaningful sound effects.",
+        "cat" : "<p>La intenció d'aquest criteri d'èxit és permetre que les persones sordes o amb problemes d'audició vegin presentacions multimèdia sincronitzades. Els subtítols proporcionen la part del contingut disponible mitjançant la pista d'àudio. Els subtítols no només inclouen diàlegs, sinó que identifiquen qui parla i inclouen informació no verbal que es transmet a través del so, inclosos efectes sonors significatius.</p><p>Es reconeix que en l'actualitat pot haver-hi dificultats per crear subtítols per a material sensible al temps i això pot fer que l'autor s'enfronti a l'opció de retardar la informació fins que els subtítols estiguin disponibles o publicar contingut sensible al temps que sigui inaccessible. als sords, almenys durant l'interval fins que els subtítols estiguin disponibles. Amb el pas del temps, les eines de subtítols i la incorporació dels subtítols al procés de lliurament poden escurçar o eliminar aquests retards.</p><p>Els subtítols no són necessaris quan el suport sincronitzat és, en si mateix, una presentació alternativa d'informació que també es presenta mitjançant text a la pàgina web. Per exemple, si la informació d'una pàgina va acompanyada d'una presentació multimèdia sincronitzada que no presenta més informació de la que ja es presenta en el text, però és més fàcil d'entendre per a persones amb discapacitats cognitives, del llenguatge o d'aprenentatge, llavors no caldria ser-ho. subtítols ja que la informació ja es presenta a la pàgina en text o en alternatives de text (per exemple, per a imatges).</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es permitir que las personas sordas o con dificultades auditivas vean presentaciones multimedia sincronizadas. Los subtítulos proporcionan la parte del contenido disponible a través de la pista de audio. Los subtítulos no solo incluyen diálogo, sino que también identifican quién está hablando e incluyen información no verbal transmitida a través del sonido, incluidos efectos de sonido significativos.</p><p>Se reconoce que en la actualidad puede haber dificultades para crear subtítulos para material sensible al tiempo y esto puede dar lugar a que el autor se enfrente a la opción de retrasar la información hasta que los subtítulos estén disponibles, o publicar contenido sensible al tiempo que es inaccesible. para los sordos, al menos durante el intervalo hasta que los subtítulos estén disponibles. Con el tiempo, las herramientas para los subtítulos, así como la integración de los subtítulos en el proceso de entrega, pueden acortar o eliminar dichos retrasos.</p><p>Los subtítulos no son necesarios cuando los medios sincronizados son, en sí mismos, una presentación alternativa de información que también se presenta mediante texto en la página web. Por ejemplo, si la información en una página va acompañada de una presentación multimedia sincronizada que no presenta más información de la que ya se presenta en el texto, pero es más fácil de entender para las personas con discapacidades cognitivas, de lenguaje o de aprendizaje, entonces no sería necesario subtitulado ya que la información ya se presenta en la página en texto o en alternativas de texto (por ejemplo, para imágenes).</p>", 
+        "en" : "<p>The intent of this Success Criterion is to enable people who are deaf or hard of hearing to watch synchronized media presentations. Captions provide the part of the content available via the audio track. Captions not only include dialogue, but identify who is speaking and include non-speech information conveyed through sound, including meaningful sound effects.</p><p>It is acknowledged that at the present time there may be difficulty in creating captions for time-sensitive material and this may result in the author being faced with the choice of delaying the information until captions are available, or publishing time-sensitive content that is inaccessible to the deaf, at least for the interval until captions are available. Over time, the tools for captioning as well as building the captioning into the delivery process can shorten or eliminate such delays.</p><p>Captions are not needed when the synchronized media is, itself, an alternate presentation of information that is also presented via text on the Web page. For example, if information on a page is accompanied by a synchronized media presentation that presents no more information than is already presented in text, but is easier for people with cognitive, language, or learning disabilities to understand, then it would not need to be captioned since the information is already presented on the page in text or in text alternatives (e.g., for images).</p>",
       },
       "benefits" :
       {
@@ -122,6 +126,8 @@ const wcagObj = {
         "es" : "Las personas sordas o con pérdida auditiva pueden acceder a la información auditiva en el contenido multimedia sincronizado a través de subtítulos.", 
         "en" : "People who are deaf or have a hearing loss can access the auditory information in the synchronized media content through captions.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -165,6 +171,8 @@ const wcagObj = {
         "es" : "Este Criterio de Conformidad puede ayudar a algunas personas que tienen dificultades para ver videos u otro contenido multimedia sincronizado, incluidas las personas que tienen dificultades para percibir o comprender imágenes en movimiento.", 
         "en" : "This Success Criterion may help some people who have difficulty watching video or other synchronized media content, including people who have difficulty perceiving or understanding moving images.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -208,6 +216,8 @@ const wcagObj = {
         "es" : "Las personas sordas o con pérdida auditiva pueden acceder a la información auditiva en el contenido multimedia sincronizado a través de subtítulos.", 
         "en" : "People who are deaf or have a hearing loss can access the auditory information in the synchronized media content through captions.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/captions-live.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -251,6 +261,8 @@ const wcagObj = {
         "es" : "Las personas ciegas o con baja visión, así como aquellas con limitaciones cognitivas que tienen dificultades para interpretar visualmente lo que está sucediendo, se benefician de la descripción de audio de la información visual.", 
         "en" : "People who are blind or have low vision as well as those with cognitive limitations who have difficulty interpreting visually what is happening benefit from audio description of visual information.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -294,6 +306,8 @@ const wcagObj = {
         "es" : "Las personas cuyo lenguaje humano es un lenguaje de signos a veces tienen una capacidad de lectura limitada. Es posible que estas personas no puedan leer y comprender los subtítulos y, por lo tanto, requieran una interpretación en lenguaje de señas para obtener acceso al contenido de los medios sincronizados.", 
         "en" : "People whose human language is a sign language sometimes have limited reading ability. These individuals may not be able to read and comprehend the captions and thus require a sign language interpretation to gain access to the synchronized media content.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/sign-language-prerecorded.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -337,6 +351,8 @@ const wcagObj = {
         "es" : "Las personas ciegas, las personas con baja visión que no pueden ver la pantalla, así como las personas con limitaciones cognitivas que tienen dificultades para interpretar visualmente lo que está sucediendo, a menudo utilizan una descripción de audio de la información visual. Sin embargo, si hay demasiado diálogo, la descripción de audio es insuficiente. La descripción de audio ampliada puede proporcionar la información adicional necesaria para comprender el video.", 
         "en" : "People who are blind, people with low vision who cannot see the screen, as well as those with cognitive limitations who have difficulty interpreting visually what is happening, often use audio description of the visual information. However, if there is too much dialogue the audio description is insufficient. Extended audio description can provide the additional information needed to understand the video.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -380,6 +396,8 @@ const wcagObj = {
         "es" : "Las personas que no pueden ver bien o en absoluto y que tampoco oyen bien o en absoluto pueden acceder a la información en presentaciones audiovisuales.", 
         "en" : "People who cannot see well or at all and who also cannot hear well or at all can get access to information in audio-visual presentations.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -419,10 +437,12 @@ const wcagObj = {
       },
       "benefits" :
       {
-        "cat" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "cat" : "", 
+        "es" : "", 
+        "en" : "",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-only-live.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/audio-only-live.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -456,16 +476,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "", 
-        "es" : "", 
-        "en" : "The intent of this Success Criterion is to ensure that information and relationships that are implied by visual or auditory formatting are preserved when the presentation format changes. For example, the presentation format changes when the content is read by a screen reader or when a user style sheet is substituted for the style sheet provided by the author.",
+        "cat" : "<p>La intenció d'aquest Criteri d'èxit és garantir que la informació i les relacions implicades pel format visual o auditiu es preservin quan canvia el format de presentació. Per exemple, el format de presentació canvia quan el contingut és llegit per un lector de pantalla o quan un full d'estil d'usuari es substitueix pel full d'estil proporcionat per l'autor.</p><p>Els usuaris vidents perceben l'estructura i les relacions a través de diversos indicis visuals: els encapçalaments solen estar en una font més gran i en negreta, separats dels paràgrafs per línies en blanc; els elements de la llista estan precedits d'una vinyeta i potser amb sagnat; els paràgrafs estan separats per una línia en blanc; els elements que comparteixen una característica comuna s'organitzen en files i columnes tabulars; els camps de formulari es poden posicionar com a grups que comparteixen etiquetes de text; es pot utilitzar un color de fons diferent per indicar que diversos elements estan relacionats entre si; les paraules que tenen un estatus especial s'indiquen canviant la família de tipus de lletra i/o en negreta, cursiva o subratllant-les; Els elements que comparteixen una característica comuna s'organitzen en una taula on la relació de les cel·les que comparteixen la mateixa fila o columna i la relació de cada cel·la amb la seva fila i/o capçalera de columna són necessàries per entendre'ls; etcètera. Tenir aquestes estructures i aquestes relacions determinades programàticament o disponibles al text garanteix que la informació important per a la comprensió serà perceptible per a tothom.</p><p>També es poden utilitzar senyals auditius. Per exemple, un timbre pot indicar l'inici d'una nova secció; es pot utilitzar un canvi en el to de la veu o la velocitat de la parla per emfatitzar informació important o per indicar el text citat; etc.</p><p>Quan aquestes relacions són perceptibles per a un conjunt d'usuaris, aquestes relacions es poden fer que siguin perceptibles per a tots. Un mètode per determinar si la informació s'ha proporcionat correctament o no a tots els usuaris és accedir a la informació en sèrie en diferents modalitats.</p><p>Si els enllaços a elements del glossari s'implementen mitjançant elements d'ancoratge (o l'element d'enllaç adequat per a la tecnologia en ús) i s'identifiquen amb una font diferent, un usuari de lector de pantalla escoltarà que l'element és un enllaç quan es trobi el terme del glossari encara que és possible que no rebin informació sobre el canvi de font. Un catàleg en línia pot indicar preus utilitzant una font més gran de color vermell. Un lector de pantalla o una persona que no pot percebre el vermell, encara té la informació sobre el preu sempre que vagi precedida del símbol de la moneda.</p><p>Algunes tecnologies no proporcionen un mitjà per determinar programàticament alguns tipus d'informació i relacions. En aquest cas, hauria d'haver una descripció de text de la informació i les relacions. Per exemple, 'tots els camps obligatoris estan marcats amb un asterisc (*)'. La descripció del text ha d'estar a prop de la informació que està descrivint (quan la pàgina està linealitzada), com ara a l'element pare o a l'element adjacent.</p><p>També hi pot haver casos en què pot ser una crida de judici sobre si les relacions s'han de determinar programàticament o presentar-se en text. No obstant això, quan les tecnologies donen suport a les relacions programàtiques, es recomana fermament que la informació i les relacions es determinin programàticament en lloc de descriure's en el text.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que la información y las relaciones implícitas en el formato visual o auditivo se conserven cuando cambie el formato de la presentación. Por ejemplo, el formato de la presentación cambia cuando un lector de pantalla lee el contenido o cuando se sustituye la hoja de estilo proporcionada por el autor por una hoja de estilo del usuario.</p><p>Los usuarios videntes perciben la estructura y las relaciones a través de varias señales visuales: los encabezados suelen estar en una fuente más grande y en negrita separados de los párrafos por líneas en blanco; los elementos de la lista están precedidos por una viñeta y tal vez sangrados; los párrafos están separados por una línea en blanco; los elementos que comparten una característica común se organizan en filas y columnas tabulares; los campos de formulario se pueden colocar como grupos que comparten etiquetas de texto; se puede utilizar un color de fondo diferente para indicar que varios elementos están relacionados entre sí; las palabras que tienen un estatus especial se indican cambiando la familia de fuentes y/o poniéndolas en negrita, cursiva o subrayadas; los elementos que comparten una característica común se organizan en una tabla donde la relación de las celdas que comparten la misma fila o columna y la relación de cada celda con su encabezado de fila y/o columna son necesarias para la comprensión; y así. Tener estas estructuras y estas relaciones determinadas programáticamente o disponibles en el texto asegura que la información importante para la comprensión sea perceptible para todos.</p><p>También se pueden usar señales auditivas. Por ejemplo, un timbre podría indicar el comienzo de una nueva sección; se puede usar un cambio en el tono de voz o la velocidad del habla para enfatizar información importante o para indicar texto citado; etc</p><p>Cuando tales relaciones son perceptibles para un conjunto de usuarios, esas relaciones pueden hacerse perceptibles para todos. Un método para determinar si la información se ha proporcionado correctamente o no a todos los usuarios es acceder a la información en serie en diferentes modalidades.</p><p>Si los enlaces a elementos del glosario se implementan mediante elementos de anclaje (o el elemento de enlace adecuado para la tecnología en uso) y se identifican con una fuente diferente, un usuario de lector de pantalla escuchará que el elemento es un enlace cuando se encuentra el término del glosario aunque es posible que no reciban información sobre el cambio en la fuente. Un catálogo en línea puede indicar los precios usando una fuente más grande de color rojo. Un lector de pantalla o una persona que no puede percibir el rojo, todavía tiene la información sobre el precio siempre que esté precedida por el símbolo de la moneda.</p><p>Algunas tecnologías no proporcionan un medio para determinar mediante programación algunos tipos de información y relaciones. En ese caso, debe haber una descripción de texto de la información y las relaciones. Por ejemplo, 'todos los campos obligatorios están marcados con un asterisco (*)'. La descripción del texto debe estar cerca de la información que describe (cuando la página está linealizada), como en el elemento principal o en el elemento adyacente.</p><p>También puede haber casos en los que puede ser un juicio en cuanto a si las relaciones deben determinarse programáticamente o presentarse en texto. Sin embargo, cuando las tecnologías respaldan las relaciones programáticas, se recomienda encarecidamente que la información y las relaciones se determinen programáticamente en lugar de describirlas en el texto.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure that information and relationships that are implied by visual or auditory formatting are preserved when the presentation format changes. For example, the presentation format changes when the content is read by a screen reader or when a user style sheet is substituted for the style sheet provided by the author.</p><p>Sighted users perceive structure and relationships through various visual cues — headings are often in a larger, bold font separated from paragraphs by blank lines; list items are preceded by a bullet and perhaps indented; paragraphs are separated by a blank line; items that share a common characteristic are organized into tabular rows and columns; form fields may be positioned as groups that share text labels; a different background color may be used to indicate that several items are related to each other; words that have special status are indicated by changing the font family and /or bolding, italicizing, or underlining them; items that share a common characteristic are organized into a table where the relationship of cells sharing the same row or column and the relationship of each cell to its row and/or column header are necessary for understanding; and so on. Having these structures and these relationships programmatically determined or available in text ensures that information important for comprehension will be perceivable to all.</p><p>Auditory cues may be used as well. For example, a chime might indicate the beginning of a new section; a change in voice pitch or speech rate may be used to emphasize important information or to indicate quoted text; etc.</p><p>When such relationships are perceivable to one set of users, those relationships can be made to be perceivable to all. One method of determining whether or not information has been properly provided to all users is to access the information serially in different modalities.</p><p>If links to glossary items are implemented using anchor elements (or the proper link element for the technology in use) and identified using a different font face, a screen reader user will hear that the item is a link when the glossary term is encountered even though they may not receive information about the change in font face. An on-line catalog may indicate prices using a larger font colored red. A screen reader or person who cannot perceive red, still has the information about the price as long as it is preceded by the currency symbol.</p><p>Some technologies do not provide a means to programmatically determine some types of information and relationships. In that case then there should be a text description of the information and relationships. For instance, 'all required fields are marked with an asterisk (*)'. The text description should be near the information it is describing (when the page is linearized), such as in the parent element or in the adjacent element.</p><p>There may also be cases where it may be a judgment call as to whether the relationships should be programmatically determined or be presented in text. However, when technologies support programmatic relationships, it is strongly encouraged that information and relationships be programmatically determined rather than described in text.</p>",
       },
       "benefits" :
       {
-        "cat" : "-", 
-        "es" : "-", 
-        "en" : "This Success Criterion helps people with different disabilities by allowing user agents to adapt content according to the needs of individual users.#Users who are blind (using a screen reader) benefit when information conveyed through color is also available in text (including text alternatives for images that use color to convey information).#Users who are deaf-blind using braille (text) refreshable displays may be unable to access color-dependent information.",
+        "cat" : "<ul><li>Aquest criteri d'èxit ajuda les persones amb diferents discapacitats permetent als agents d'usuari adaptar el contingut segons les necessitats dels usuaris individuals.</li><li>Els usuaris cecs (utilitzant un lector de pantalla) es beneficien quan la informació transmesa a través del color també està disponible en text (incloses alternatives de text per a imatges que utilitzen el color per transmetre informació).</li><li>És possible que els usuaris sordcecs que utilitzen pantalles actualitzables en braille (text) no puguin accedir a la informació depenent del color.</li></ul>", 
+        "es" : "<ul><li>Este Criterio de Conformidad ayuda a las personas con diferentes discapacidades al permitir que los agentes de usuario adapten el contenido de acuerdo con las necesidades de los usuarios individuales.</li><li>Los usuarios ciegos (que usan un lector de pantalla) se benefician cuando la información transmitida a través del color también está disponible en texto (incluidas las alternativas de texto para imágenes que usan color para transmitir información).</li><li>Es posible que los usuarios sordociegos que utilizan pantallas actualizables braille (texto) no puedan acceder a la información que depende del color.</li></ul>", 
+        "en" : "<ul><li>This Success Criterion helps people with different disabilities by allowing user agents to adapt content according to the needs of individual users.</li><li>Users who are blind (using a screen reader) benefit when information conveyed through color is also available in text (including text alternatives for images that use color to convey information).</li><li>Users who are deaf-blind using braille (text) refreshable displays may be unable to access color-dependent information.</li></ul>",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -499,16 +521,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "", 
-        "es" : "", 
-        "en" : "The intent of this Success Criterion is to enable a user agent to provide an alternative presentation of content while preserving the reading order needed to understand the meaning. It is important that it be possible to programmatically determine at least one sequence of the content that makes sense. Content that does not meet this Success Criterion may confuse or disorient users when assistive technology reads the content in the wrong order, or when alternate style sheets or other formatting changes are applied.",
+        "cat" : "<p>La intenció d'aquest criteri d'èxit és permetre que un agent d'usuari proporcioni una presentació alternativa del contingut tot conservant l'ordre de lectura necessari per comprendre el significat. És important que sigui possible determinar programàticament almenys una seqüència del contingut que tingui sentit. El contingut que no compleix aquest Criteri d'èxit pot confondre o desorientar els usuaris quan la tecnologia d'assistència llegeix el contingut en un ordre incorrecte, o quan s'apliquen fulls d'estil alternatius o altres canvis de format.</p><p>Una seqüència té sentit si l'ordre del contingut de la seqüència no es pot canviar sense afectar-ne el significat. Per exemple, si una pàgina conté dos articles independents, l'ordre relatiu dels articles pot no afectar el seu significat, sempre que no estiguin entrellaçats. En aquesta situació, els articles en si mateixos poden tenir una seqüència significativa, però el contenidor que conté els articles pot no tenir una seqüència significativa.</p><p>La semàntica d'alguns elements defineix si el seu contingut és o no una seqüència significativa. Per exemple, en HTML, el text és sempre una seqüència significativa. Les taules i les llistes ordenades són seqüències significatives, però les llistes no ordenades no ho són.</p><p>L'ordre del contingut en una seqüència no sempre és significatiu. Per exemple, l'ordre relatiu de la secció principal d'una pàgina web i d'una secció de navegació no afecta el seu significat. Poden ocórrer en qualsevol ordre en la seqüència de lectura determinada programadament. Com a altre exemple, un article de revista conté diverses barres laterals de text destacat. L'ordre de l'article i les barres laterals no afecta el seu significat. En aquests casos, hi ha una sèrie d'ordres de lectura diferents per a una pàgina web que poden satisfer el Criteri d'èxit.</p><p>Per a més claredat:</p><ol><li>Proporcionar un ordre lineal particular només és necessari quan afecta el significat.</li><li>Pot haver-hi més d'un ordre que sigui 'correcte' (segons la definició WCAG 2.0).</li><li>Només cal proporcionar una comanda correcta.</li></ol>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es permitir que un agente de usuario proporcione una presentación alternativa del contenido mientras conserva el orden de lectura necesario para comprender el significado. Es importante que sea posible determinar programáticamente al menos una secuencia del contenido que tenga sentido. El contenido que no cumple con este Criterio de Conformidad puede confundir o desorientar a los usuarios cuando la tecnología de asistencia lee el contenido en el orden incorrecto, o cuando se aplican hojas de estilo alternativas u otros cambios de formato.</p><p>Una secuencia es significativa si el orden del contenido de la secuencia no se puede cambiar sin afectar su significado. Por ejemplo, si una página contiene dos artículos independientes, es posible que el orden relativo de los artículos no afecte su significado, siempre que no estén intercalados. En tal situación, los propios artículos pueden tener una secuencia significativa, pero el contenedor que contiene los artículos puede no tener una secuencia significativa.</p><p>La semántica de algunos elementos define si su contenido es o no una secuencia significativa. Por ejemplo, en HTML, el texto siempre es una secuencia significativa. Las tablas y las listas ordenadas son secuencias significativas, pero las listas desordenadas no lo son.</p><p>El orden del contenido en una secuencia no siempre es significativo. Por ejemplo, el orden relativo de la sección principal de una página web y una sección de navegación no afecta su significado. Podrían ocurrir en cualquier orden en la secuencia de lectura determinada mediante programación. Como otro ejemplo, un artículo de revista contiene varias barras laterales de llamadas. El orden del artículo y las barras laterales no afecta su significado. En estos casos, hay varios órdenes de lectura diferentes para una página web que pueden satisfacer el Criterio de Conformidad.</p><p>Para mayor claridad:</p><ol><li>Solo se requiere proporcionar un orden lineal particular cuando afecta el significado.</li><li>Puede haber más de un pedido que sea 'correcto' (según la definición de WCAG 2.0).</li><li>Solo se debe proporcionar un pedido correcto.</li></ol>", 
+        "en" : "<p>The intent of this Success Criterion is to enable a user agent to provide an alternative presentation of content while preserving the reading order needed to understand the meaning. It is important that it be possible to programmatically determine at least one sequence of the content that makes sense. Content that does not meet this Success Criterion may confuse or disorient users when assistive technology reads the content in the wrong order, or when alternate style sheets or other formatting changes are applied.</p><p>A sequence is meaningful if the order of content in the sequence cannot be changed without affecting its meaning. For example, if a page contains two independent articles, the relative order of the articles may not affect their meaning, as long as they are not interleaved. In such a situation, the articles themselves may have meaningful sequence, but the container that contains the articles may not have a meaningful sequence.</p><p>The semantics of some elements define whether or not their content is a meaningful sequence. For instance, in HTML, text is always a meaningful sequence. Tables and ordered lists are meaningful sequences, but unordered lists are not.</p><p>The order of content in a sequence is not always meaningful. For example, the relative order of the main section of a Web page and a navigation section does not affect their meaning. They could occur in either order in the programmatically determined reading sequence. As another example, a magazine article contains several callout sidebars. The order of the article and the sidebars does not affect their meaning. In these cases there are a number of different reading orders for a Web page that can satisfy the Success Criterion.</p><p>For clarity:</p><ol><li>Providing a particular linear order is only required where it affects meaning.</li><li>There may be more than one order that is 'correct' (according to the WCAG 2.0 definition).</li><li>Only one correct order needs to be provided.</li></ol>",
       },
       "benefits" :
       {
-        "cat" : "-", 
-        "es" : "-", 
+        "cat" : "Aquest criteri d'èxit pot ajudar les persones que confien en tecnologies d'assistència que llegeixen contingut en veu alta. El significat evident en la seqüenciació de la informació a la presentació per defecte serà el mateix quan el contingut es presenti de forma oral.", 
+        "es" : "Este Criterio de Conformidad puede ayudar a las personas que dependen de tecnologías de asistencia que leen contenido en voz alta. El significado evidente en la secuencia de la información en la presentación predeterminada será el mismo cuando el contenido se presente en forma hablada.", 
         "en" : "This Success Criterion may help people who rely on assistive technologies that read content aloud. The meaning evident in the sequencing of the information in the default presentation will be the same when the content is presented in spoken form.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -542,16 +566,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "", 
-        "es" : "", 
-        "en" : "The intent of this Success Criterion is to ensure that all users can access instructions for using the content, even when they cannot perceive shape or size or use information about spatial location or orientation. Some content relies on knowledge of the shape or position of objects that are not available from the structure of the content (for example, 'round button' or 'button to the right'). Some users with disabilities are not able to perceive shape or position due to the nature of the assistive technologies they use. This Success Criterion requires that additional information be provided to clarify anything that is dependent on this kind of information.",
+        "cat" : "<p>La intenció d'aquest Criteri d'èxit és garantir que tots els usuaris puguin accedir a les instruccions per utilitzar el contingut, fins i tot quan no poden percebre la forma o la mida o utilitzar informació sobre la ubicació o l'orientació espacial. Alguns continguts es basen en el coneixement de la forma o la posició dels objectes que no estan disponibles a l'estructura del contingut (per exemple, 'botó rodó' o 'botó a la dreta'). Alguns usuaris amb discapacitat no són capaços de percebre la forma o la posició a causa de la naturalesa de les tecnologies d'assistència que utilitzen. Aquest criteri d'èxit requereix que es proporcioni informació addicional per aclarir qualsevol cosa que depengui d'aquest tipus d'informació.</p><p>Proporcionar informació mitjançant la forma i/o la ubicació, però, és un mètode eficaç per a molts usuaris, inclosos aquells amb limitacions cognitives. Aquesta disposició no hauria de desanimar aquest tipus de pistes, sempre que la informació també es proporcioni d'altres maneres.</p><p>En alguns idiomes, s'entén habitualment que 'a dalt' fa referència al contingut anterior a aquest punt del contingut i 'a sota' es refereix al contingut posterior a aquest punt. En aquests idiomes, si el contingut al qual es fa referència es troba al lloc adequat de l'ordre de lectura i les referències són inequívoques, afirmacions com ara 'trieu un dels enllaços següents' o 'tots els anteriors' s'ajustarien a aquest Criteri d'èxit.</p><p>WCAG va ser dissenyat per aplicar-se només als controls que es mostraven en una pàgina web. La intenció era evitar la descripció dels controls només mitjançant referències a indicis visuals o auditius. Quan s'aplica això a les instruccions per operar els controls físics del maquinari (per exemple, un quiosc web amb contingut dedicat), es poden descriure indicis tàctils del maquinari (per exemple, la tecla en forma de fletxa, la tecla rodona del costat dret). Aquest criteri d'èxit no pretén evitar l'ús de senyals tàctils a les instruccions.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que todos los usuarios puedan acceder a las instrucciones para usar el contenido, incluso cuando no puedan percibir la forma o el tamaño o usar información sobre la ubicación espacial o la orientación. Algunos contenidos se basan en el conocimiento de la forma o la posición de los objetos que no están disponibles en la estructura del contenido (por ejemplo, 'botón redondo' o 'botón a la derecha'). Algunos usuarios con discapacidades no pueden percibir la forma o la posición debido a la naturaleza de las tecnologías de asistencia que utilizan. Este Criterio de Conformidad requiere que se proporcione información adicional para aclarar cualquier cosa que dependa de este tipo de información.</p><p>Sin embargo, proporcionar información utilizando la forma y/o la ubicación es un método eficaz para muchos usuarios, incluidos aquellos con limitaciones cognitivas. Esta disposición no debería desalentar esos tipos de señales siempre que la información también se proporcione de otras maneras.</p><p>En algunos idiomas, se entiende comúnmente que 'arriba' se refiere al contenido anterior a ese punto en el contenido y 'abajo' se refiere al contenido después de ese punto. En dichos idiomas, si el contenido al que se hace referencia está en el lugar apropiado en el orden de lectura y las referencias no son ambiguas, afirmaciones como 'elija uno de los enlaces a continuación' o 'todos los anteriores' se ajustarían a este Criterio de Conformidad.</p><p>WCAG se diseñó para aplicarse solo a los controles que se mostraban en una página web. La intención era evitar describir los controles únicamente a través de referencias a señales visuales o auditivas. Al aplicar esto a las instrucciones para operar controles físicos de hardware (p. ej., un quiosco web con contenido dedicado), se pueden describir señales táctiles en el hardware (p. ej., la tecla con forma de flecha, la tecla redonda en el lado derecho). Este criterio de éxito no pretende evitar el uso de señales táctiles en las instrucciones.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure that all users can access instructions for using the content, even when they cannot perceive shape or size or use information about spatial location or orientation. Some content relies on knowledge of the shape or position of objects that are not available from the structure of the content (for example, 'round button' or 'button to the right'). Some users with disabilities are not able to perceive shape or position due to the nature of the assistive technologies they use. This Success Criterion requires that additional information be provided to clarify anything that is dependent on this kind of information.</p><p>Providing information using shape and/or location, however, is an effective method for many users including those with cognitive limitations. This provision should not discourage those types of cues as long as the information is also provided in other ways.</p><p>In some languages, it is commonly understood that 'above' refers to the content previous to that point in the content and 'below' refers to the content after that point. In such languages, if the content being referenced is in the appropriate place in the reading order and the references are unambiguous, statements such as 'choose one of the links below' or 'all of the above' would conform to this Success Criterion.</p><p>WCAG was designed to apply only to controls that were displayed on a web page. The intent was to avoid describing controls solely via references to visual or auditory cues. When applying this to instructions for operating physical hardware controls (e.g. a web kiosk with dedicated content), tactile cues on the hardware might be described (e.g. the arrow shaped key, the round key on the right side). This success criterion is not intended to prevent the use of tactile cues in instructions.</p>",
       },
       "benefits" :
       {
-        "cat" : "-", 
-        "es" : "-", 
+        "cat" : "Les persones cegues i les persones amb baixa visió poden no ser capaços d'entendre la informació si es transmet per forma i/o ubicació. Proporcionar informació addicional que no sigui la forma i/o la ubicació els permetrà entendre la informació que es transmet per forma i/o sols.", 
+        "es" : "Es posible que las personas ciegas y las personas con problemas de visión no puedan comprender la información si se transmite por forma y/o ubicación. Proporcionar información adicional además de la forma y/o la ubicación les permitirá comprender la información transmitida por la forma y/o solo.", 
         "en" : "People who are blind and people who have low vision may not be able to understand information if it is conveyed by shape and/or location. Providing additional information other than shape and/or location will allow them to understand the information conveyed by shape and/or alone.",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -585,16 +611,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "", 
-        "es" : "", 
-        "en" : "The intent of this Success Criterion is to ensure that content displays in the orientation (portrait or landscape) preferred by the user. Some websites and applications automatically set and restrict the screen to a particular display orientation and expect that users will respond by rotating their device to match, but this can create problems. Some users have their devices mounted in a fixed orientation (e.g. on the arm of a power wheelchair). Therefore, websites and applications need to support both orientations by not restricting the orientation. Changes in content or functionality due to the size of display are not covered by this criterion which is focused on restrictions of orientation.",
+        "cat" : "<p>La intenció d'aquest criteri d'èxit és garantir que el contingut es mostri en l'orientació (vertical o horitzontal) preferida per l'usuari. Alguns llocs web i aplicacions configuren i restringeixen automàticament la pantalla a una orientació de visualització concreta i esperen que els usuaris responguin girant el dispositiu perquè coincideixi, però això pot crear problemes. Alguns usuaris tenen els seus dispositius muntats en una orientació fixa (per exemple, al braç d'una cadira de rodes elèctrica). Per tant, els llocs web i les aplicacions han d'admetre ambdues orientacions sense restringir l'orientació. Els canvis de contingut o de funcionalitat deguts a la mida de la pantalla no estan coberts per aquest criteri que se centra en les restriccions d'orientació.</p><p>Històricament, els dispositius solien tenir una pantalla d'orientació fixa i tot el contingut es va crear per coincidir amb aquesta orientació de la pantalla. Avui en dia, la majoria de dispositius portàtils i molts altres dispositius (per exemple, monitors) tenen una capacitat de maquinari per ajustar dinàmicament l'orientació de la pantalla predeterminada en funció de la informació del sensor. L'objectiu d'aquest criteri d'èxit és que els autors mai han de restringir l'orientació del contingut, garantint així que sempre coincideixi amb l'orientació de visualització del dispositiu.</p><p>És important distingir entre la responsabilitat de l'autor de no restringir el contingut a una orientació específica i la configuració específica del dispositiu que regeix el bloqueig de l'orientació de la pantalla.</p><p>Molts dispositius de mà ofereixen un interruptor mecànic o una configuració del sistema (o tots dos) per permetre a l'usuari bloquejar la pantalla del dispositiu a una orientació específica. Quan un usuari decideix bloquejar tot el seu dispositiu a una orientació, s'espera que totes les aplicacions adoptin aquesta configuració i mostrin el contingut en conseqüència.</p><p>Aquest criteri d'èxit complementa la configuració d''orientació de bloqueig' del dispositiu. Una pàgina web que no restringeixi la seva orientació de visualització sempre admetrà la configuració d'orientació a nivell de sistema, ja que la configuració del sistema la recull l'agent d'usuari. Alternativament, si no hi ha cap bloqueig d'orientació a nivell de dispositiu, l'agent d'usuari hauria de mostrar la pàgina segons l'orientació del dispositiu (ja sigui per defecte o l'orientació actual determinada pels sensors del dispositiu).</p><p>L'excepció de les coses considerades essencials s'adreça a situacions en què el contingut només s'entendria en una determinada orientació, o en què la tecnologia restringeix les possibles orientacions. Si el contingut està dirigit a un entorn específic que només està disponible en una orientació (com ara un televisor), el contingut pot restringir l'orientació. Tecnologies com la realitat virtual utilitzen pantalles dins d'ulleres que no poden canviar l'orientació respecte als ulls de l'usuari.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure that content displays in the orientation (portrait or landscape) preferred by the user. Some websites and applications automatically set and restrict the screen to a particular display orientation and expect that users will respond by rotating their device to match, but this can create problems. Some users have their devices mounted in a fixed orientation (e.g. on the arm of a power wheelchair). Therefore, websites and applications need to support both orientations by not restricting the orientation. Changes in content or functionality due to the size of display are not covered by this criterion which is focused on restrictions of orientation.</p><p>Historically, devices tended to have a fixed-orientation display, and all content was created to match that display orientation. Today, most handhelds and many other devices (e.g., monitors) have a hardware-level ability to dynamically adjust default display orientation based on sensor information. The goal of this Success Criterion is that authors should never restrict content's orientation, thus ensuring that it always match the device display orientation.</p><p>It is important to distinguish between an author's responsibility not to restrict content to a specific orientation, and device-specific settings governing the locking of display orientation.</p><p>Many hand-held devices offer a mechanical switch or a system setting (or both) to allow the user to lock the device display to a specific orientation. Where a user decides to lock their entire device to an orientation, all applications are expected to pick up that setting and to display content accordingly.</p><p>This Success Criterion complements device 'lock orientation' settings. A web page that does not restrict its display orientation will always support the system-level orientation setting, since the system setting is picked up by the user agent. Alternatively, where a device-level orientation lock is not in place, the user agent should display the page according to the orientation of the device (either its default, or the current orientation determined by any device sensors).</p><p>The exception for things considered essential is aimed at situations where the content would only be understood in a particular orientation, or where the technology restricts the possible orientations. If content is aimed at a specific environment which is only available in one orientation (such as a television) then the content can restrict the orientation. Technologies such as virtual reality use screens within goggles that cannot change orientation relative to the user's eyes.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que el contenido se muestre en la orientación (vertical u horizontal) preferida por el usuario. Algunos sitios web y aplicaciones configuran y restringen automáticamente la pantalla a una orientación de visualización particular y esperan que los usuarios respondan girando su dispositivo para que coincida, pero esto puede crear problemas. Algunos usuarios tienen sus dispositivos montados en una orientación fija (por ejemplo, en el brazo de una silla de ruedas eléctrica). Por lo tanto, los sitios web y las aplicaciones deben admitir ambas orientaciones al no restringir la orientación. Los cambios en el contenido o la funcionalidad debido al tamaño de la pantalla no están cubiertos por este criterio que se centra en las restricciones de orientación.</p><p>Históricamente, los dispositivos tendían a tener una pantalla de orientación fija y todo el contenido se creaba para coincidir con esa orientación de pantalla. Hoy en día, la mayoría de los dispositivos portátiles y muchos otros dispositivos (por ejemplo, monitores) tienen una capacidad a nivel de hardware para ajustar dinámicamente la orientación predeterminada de la pantalla en función de la información del sensor. El objetivo de este Criterio de Conformidad es que los autores nunca deben restringir la orientación del contenido, asegurando así que siempre coincida con la orientación de visualización del dispositivo.</p><p>Es importante distinguir entre la responsabilidad del autor de no restringir el contenido a una orientación específica y la configuración específica del dispositivo que rige el bloqueo de la orientación de la pantalla.</p><p>Muchos dispositivos portátiles ofrecen un interruptor mecánico o una configuración del sistema (o ambos) para permitir que el usuario bloquee la pantalla del dispositivo en una orientación específica. Cuando un usuario decide bloquear todo su dispositivo a una orientación, se espera que todas las aplicaciones adopten esa configuración y muestren el contenido en consecuencia.</p><p>Este Criterio de Conformidad complementa la configuración de 'orientación de bloqueo' del dispositivo. Una página web que no restringe su orientación de visualización siempre admitirá la configuración de orientación a nivel del sistema, ya que la configuración del sistema la selecciona el agente de usuario. Alternativamente, cuando no se haya implementado un bloqueo de orientación a nivel de dispositivo, el agente de usuario debe mostrar la página de acuerdo con la orientación del dispositivo (ya sea su orientación predeterminada o la orientación actual determinada por los sensores del dispositivo).</p><p>La excepción de las cosas consideradas esenciales está dirigida a situaciones donde el contenido sólo se entendería en una determinada orientación, o donde la tecnología restringe las posibles orientaciones. Si el contenido está dirigido a un entorno específico que solo está disponible en una orientación (como un televisor), entonces el contenido puede restringir la orientación. Tecnologías como la realidad virtual usan pantallas dentro de gafas que no pueden cambiar la orientación en relación con los ojos del usuario.</p>",
       },
       "benefits" :
       {
-        "cat" : "-", 
-        "es" : "-", 
-        "en" : "Users with dexterity impairments, who have a mounted device will be able to use the content in their fixed orientation.#Users with low-vision will be able to view content in the orientation that works best for them, for example to increase the text size by viewing content in landscape.",
+        "cat" : "<ul><li>Els usuaris amb problemes de destresa, que tinguin un dispositiu muntat, podran utilitzar el contingut en la seva orientació fixa.</li><li>Els usuaris amb baixa visió podran veure el contingut amb l'orientació que els funcioni millor, per exemple, per augmentar la mida del text visualitzant el contingut en horitzontal.</li></ul>", 
+        "es" : "<ul><li>Los usuarios con problemas de destreza que tengan un dispositivo montado podrán usar el contenido en su orientación fija.</li><li>Los usuarios con problemas de visión podrán ver el contenido en la orientación que más les convenga, por ejemplo, para aumentar el tamaño del texto viendo el contenido en formato horizontal.</li></ul>", 
+        "en" : "<ul><li>Users with dexterity impairments, who have a mounted device will be able to use the content in their fixed orientation.</li><li>Users with low-vision will be able to view content in the orientation that works best for them, for example to increase the text size by viewing content in landscape.</li></ul>",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/orientation.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/orientation.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -628,16 +656,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "", 
-        "es" : "", 
-        "en" : "The intent of this Success Criterion is to ensure that the purpose of a form input collecting information about the user can be programmatically determined, so that user agents can extract and present this purpose to users using different modalities. The ability to programmatically declare the specific kind of data expected in a particular field makes filling out forms easier, especially for people with cognitive disabilities.",
+        "cat" : "<p>La intenció d'aquest Criteri d'èxit és garantir que el propòsit d'una entrada de formulari que recull informació sobre l'usuari es pugui determinar mitjançant programació, de manera que els agents d'usuari puguin extreure i presentar aquest propòsit als usuaris mitjançant diferents modalitats. La capacitat de declarar de manera programàtica el tipus específic de dades que s'espera en un camp concret facilita l'ompliment de formularis, especialment per a persones amb discapacitats cognitives.</p><p>Les etiquetes visibles i les instruccions adequades poden ajudar els usuaris a entendre el propòsit dels camps d'entrada del formulari, però els usuaris poden beneficiar-se de que els camps que recullen tipus específics d'informació es mostrin d'una manera inequívoca, coherent i possiblement personalitzada per a diferents modalitats, ja sigui per defecte en els seus agent d'usuari, o mitjançant l'ajuda de tecnologies d'assistència.</p><p>Per a alguns camps d'entrada, l'atribut type ja ofereix una manera d'especificar àmpliament la intenció del camp d'entrada, per exemple, input type='tel', input type='email' o input type='password'. Tanmateix, només es tracta de categories molt àmplies, que descriuen el tipus d'entrada, però no necessàriament la seva finalitat, especialment pel que fa als camps d'entrada específics de l'usuari. Com a exemple, type='email' indica que el camp és per a una adreça de correu electrònic, però no aclareix si la finalitat és introduir l'adreça de correu electrònic de l'usuari o el correu electrònic d'una altra persona.</p><p>Aquest criteri d'èxit defineix els tipus de propòsits d'entrada dels components de la interfície d'usuari, que es troben a la Secció 7 de la Recomanació WCAG 2.1 , que han de ser identificables programadament. Quan aquests propòsits d'entrada de l'usuari estan presents, i si la tecnologia admet fer-ho, el propòsit de camp ha de ser identificable programadament.</p><p>L'atribut d'autocompletar HTML només accepta un nombre determinat de valors fixos ben definits específics. Això permet una definició o identificació més precisa de la finalitat que l'atribut type, per exemple, permetent a l'autor especificar un tipus de nom específic: Nom (autocomplete='name'), Given Name (autocomplete='given-name'), Nom de família (autocomplete='nom de família'), així com Nom d'usuari (autocomplete='nom d'usuari') i Àlies (completar automàticament='àlies').</p><p>En adoptar i reutilitzar aquesta taxonomia predefinida de definicions, els agents d'usuari i les tecnologies d'assistència ara poden presentar el propòsit de les entrades als usuaris en diferents modalitats. Per exemple, les tecnologies d'assistència poden mostrar icones familiars al costat dels camps d'entrada per ajudar els usuaris que tenen dificultats per llegir. Es pot mostrar una icona d'un pastís d'aniversari davant d'un camp d'entrada amb autocomplete='bday', o la icona d'un telèfon davant d'un camp d'entrada amb autocomplete='tel'.</p><p>A més de reutilitzar aquesta taxonomia, quan s'utilitza la tècnica d'atribut d'emplenament automàtic per complir aquest criteri d'èxit, els navegadors i altres agents d'usuari poden suggerir i 'emplenar automàticament' el contingut correcte emplenant automàticament aquests camps en funció de les entrades anteriors de l'usuari emmagatzemades al navegador. En definir definicions més granulars de propòsits d'entrada habituals, per exemple, 'aniversari' (completar automàticament = 'bday'), els navegadors poden emmagatzemar valors personalitzats per a cadascun d'aquests camps (data d'aniversari de l'usuari). L'usuari se sent alleugerit d'haver d'escriure la informació i pot confirmar o, si cal, canviar el valor del camp, un avantatge significatiu per als usuaris amb problemes de memòria, dislèxia i altres discapacitats.</p><p>Si un camp d'entrada accepta dos tipus diferents de propòsit d'entrada (com en els camps combinats de nom d'usuari/correu electrònic d'usuari) i la tecnologia utilitzada no permet definir valors de propòsit múltiple, és vàlid proporcionar un valor o l'altre o deixar de banda. la designació del propòsit d'entrada en conjunt.</p><p>Quan l'agent d'usuari i el suport de tecnologia d'assistència per a altres formats de metadades maduren, es poden utilitzar esquemes de metadades com el mòdul de contingut semàntic de personalització a més o en lloc de l'atribut d'autocompletar HTML per identificar la finalitat dels camps d'entrada. També poden suportar adaptacions automatitzades que identifiquen i sincronitzen les etiquetes d'entrada proporcionades per l'autor amb vocabularis o símbols definits que s'utilitzen en el seu lloc per etiquetar les entrades.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que el propósito de una entrada de formulario que recopile información sobre el usuario pueda determinarse mediante programación, de modo que los agentes de usuario puedan extraer y presentar este propósito a los usuarios utilizando diferentes modalidades. La capacidad de declarar mediante programación el tipo específico de datos esperados en un campo en particular facilita el llenado de formularios, especialmente para las personas con discapacidades cognitivas.</p><p>Las etiquetas e instrucciones visibles apropiadas pueden ayudar a los usuarios a comprender el propósito de los campos de entrada de formulario, pero los usuarios pueden beneficiarse de tener campos que recopilan tipos específicos de información que se representan de una manera inequívoca, coherente y posiblemente personalizada para diferentes modalidades, ya sea a través de valores predeterminados en sus agente de usuario, o mediante la ayuda de tecnologías de asistencia.</p><p>Para algunos campos de entrada, el atributo de tipo ya ofrece una forma de especificar ampliamente la intención del campo de entrada, por ejemplo, tipo de entrada='tel', tipo de entrada='correo electrónico' o tipo de entrada='contraseña'. Sin embargo, estas son solo categorías muy amplias, que describen el tipo de entrada, pero no necesariamente su propósito, especialmente en lo que se refiere a los campos de entrada específicos del usuario. Como ejemplo, type='email' indica que el campo es para una dirección de correo electrónico pero no aclara si el propósito es ingresar la dirección de correo electrónico del usuario o el correo electrónico de alguna otra persona.</p><p>Este criterio de éxito define los tipos de propósitos de entrada del componente de la interfaz de usuario, que se encuentran en la Sección 7 de la Recomendación WCAG 2.1 , que deben ser identificables mediante programación. Cuando estos propósitos de entrada del usuario están presentes, y si la tecnología lo permite, el propósito del campo debe ser identificable mediante programación.</p><p>El atributo de autocompletar de HTML solo acepta un cierto número de valores fijos específicos bien definidos. Esto permite una definición o identificación de propósito más detallada que el atributo de tipo, por ejemplo, al permitir que el autor especifique un tipo específico de nombre: Nombre (autocomplete='nombre'), Nombre (autocomplete='nombre'), Apellido (autocompletar='nombre-de-familia'), así como Nombre de usuario (autocompletar='nombre de usuario') y Apodo (autocompletar='apodo').</p><p>Al adoptar y reutilizar esta taxonomía predefinida de definiciones, los agentes de usuario y las tecnologías de asistencia ahora pueden presentar el propósito de las entradas a los usuarios en diferentes modalidades. Por ejemplo, las tecnologías de asistencia pueden mostrar íconos familiares junto a los campos de entrada para ayudar a los usuarios que tienen dificultades para leer. Se puede mostrar un icono de un pastel de cumpleaños delante de un campo de entrada con autocompletar='cumpleaños', o el icono de un teléfono delante de un campo de entrada con autocompletar='tel'.</p><p>Además de reutilizar esta taxonomía, cuando se usa la técnica de atributo de autocompletar para cumplir con este Criterio de Conformidad, los navegadores y otros agentes de usuario pueden sugerir y 'autocompletar' el contenido correcto completando automáticamente estos campos en función de la entrada del usuario anterior almacenada en el navegador. Al definir definiciones más granulares de propósitos de entrada comunes, por ejemplo, 'Cumpleaños' (autocompletar = 'cumpleaños'), los navegadores pueden almacenar valores personalizados para cada uno de estos campos (la fecha de cumpleaños del usuario). El usuario se libera de tener que escribir la información y, en cambio, puede confirmar o, si es necesario, cambiar el valor del campo, un beneficio significativo para los usuarios con problemas de memoria, dislexia y otras discapacidades.</p><p>Si un campo de entrada acepta dos tipos diferentes de propósito de entrada (como en los campos combinados de nombre de usuario/correo electrónico de usuario) y la tecnología utilizada no permite definir valores de propósitos múltiples, es válido proporcionar uno u otro valor o dejar de lado la designación del propósito de entrada en conjunto.</p><p>Cuando la compatibilidad con el agente de usuario y la tecnología de asistencia para otros formatos de metadatos madura, se pueden usar esquemas de metadatos como el Módulo de contenido de semántica de personalización además o en lugar del atributo de autocompletar HTML para identificar el propósito de los campos de entrada. También pueden admitir adaptaciones automatizadas que identifican y relacionan las etiquetas de entrada proporcionadas por el autor con vocabularios o símbolos definidos que se utilizan en su lugar para etiquetar las entradas.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure that the purpose of a form input collecting information about the user can be programmatically determined, so that user agents can extract and present this purpose to users using different modalities. The ability to programmatically declare the specific kind of data expected in a particular field makes filling out forms easier, especially for people with cognitive disabilities.</p><p>Appropriate visible labels and instruction can help users understand the purpose of form input fields, but users may benefit from having fields that collect specific types of information be rendered in an unambiguous, consistent, and possibly customized way for different modalities - either through defaults in their user agent, or through the aid of assistive technologies.</p><p>For some input fields, the type attribute already offers a way to broadly specify the intention of the input field, for example, input type='tel', input type='email', or input type='password'. However, these are only very broad categories, describing the type of input, but not necessarily its purpose, especially as it relates to user-specific input fields. As an example, type='email' indicates that the field is for an e-mail address but does not clarify if the purpose is for entering the user's e-mail address or some other person's e-mail.</p><p>his success criterion defines the types of user interface component input purposes, found in Section 7 of the WCAG 2.1 Recommendation, that must be programmatically identifiable. When these user input purposes are present, and if the technology supports doing so, the field purpose must be programmatically identifiable.</p><p>This success criterion defines the types of user interface component input purposes, found in Section 7 of the WCAG 2.1 Recommendation, that must be programmatically identifiable. When these user input purposes are present, and if the technology supports doing so, the field purpose must be programmatically identifiable.</p><p>The HTML autocomplete attribute only accepts a certain number of specific well-defined fixed values. This allows a more fine-grained definition or identification of purpose than the type attribute, for example, by allowing the author to specify a specific type of name: Name (autocomplete='name'), Given Name (autocomplete='given-name'), Family Name (autocomplete='family-name'), as well as Username (autocomplete='username'), and Nickname (autocomplete='nickname').</p><p>By adopting and repurposing this predefined taxonomy of definitions, user agents and assistive technologies can now present the purpose of the inputs to users in different modalities. For example, assistive technologies may display familiar icons next to input fields to help users who have difficulties reading. An icon of a birthday cake may be shown in front of an input field with autocomplete='bday', or the icon of a telephone in front of an input field with autocomplete='tel'.</p><p>In addition to repurposing this taxonomy, when the autocomplete attribute technique is used to meet this Success Criterion, browsers and other user-agents can suggest and 'autofill' the right content by autocompleting these fields based on past user input stored in the browser. By defining more granular definitions of common input purposes, for example “Birthday” (autocomplete=”bday”), browsers can store personalized values for each of these fields (the user's birthday date). The user is relieved of having to type the information and can instead confirm or, if needed, change the value of the field, a significant benefit for users with memory issues, dyslexia, and other disabilities. Because the autocomplete values are independent of language, users that may not be familiar with the text used to visually identify user input fields (the label) can still have that purpose consistently identified to them due to the fixed taxonomy of terms.</p><p>If an input field accepts two different types of input purpose (as in combined user name/user email fields) and the technology used does not allow multiple purpose values to be defined, it is valid to provide either one or the other value or leave out the designation of input purpose altogether.</p><p>When the user agent and assistive technology support for other metadata formats matures, metadata schemes like the Personalization Semantics Content Module may be used in addition or instead of the HTML autocomplete attribute to identify the purpose of input fields. They can also support automated adaptations that identify and match author-provided input labels to defined vocabularies or symbols that are used instead for labelling inputs.</p>",
       },
       "benefits" :
       {
-        "cat" : "-", 
-        "es" : "-", 
-        "en" : "People with language and memory related disabilities or disabilities that affects executive function and decision-making benefit from the browser auto-filling personal information (such as name or address) when the autocomplete attribute is used to meet this Success Criterion, which means information does not need to be remembered by the user.#People with cerebral palsy, stroke, head injury, motor neuron disease or learning disability sometimes prefer images for communication. They can employ assistive technology which adds icons to input fields to communicate the purpose of the fields visually.#People with motor impairments also benefit from reducing the need for manual input when filling out forms.",
+        "cat" : "<ul><li>Les persones amb discapacitats relacionades amb el llenguatge i la memòria o les discapacitats que afecten la funció executiva i la presa de decisions es beneficien de la informació personal d'emplenament automàtic del navegador (com ara el nom o l'adreça) quan s'utilitza l'atribut d'emplenament automàtic per complir aquest criteri d'èxit, la qual cosa significa que la informació no han de ser recordats per l'usuari.</li><li>Les persones amb paràlisi cerebral, ictus, lesions al cap, malalties de la neurona motora o discapacitat d'aprenentatge de vegades prefereixen imatges per a la comunicació. Poden utilitzar tecnologia d'assistència que afegeix icones als camps d'entrada per comunicar visualment el propòsit dels camps.</li><li>Les persones amb discapacitat motriu també es beneficien de reduir la necessitat d'introduir manualment a l'hora d'omplir formularis.</li>/ul>", 
+        "es" : "<ul><li>Las personas con discapacidad motora también se benefician de la reducción de la necesidad de entrada manual al completar formularios.</li><li>Las personas con discapacidad motora también se benefician de la reducción de la necesidad de entrada manual al completar formularios.</li><li>Las personas con discapacidad motora también se benefician de la reducción de la necesidad de entrada manual al completar formularios.</li>/ul>", 
+        "en" : "<ul><li>People with language and memory related disabilities or disabilities that affects executive function and decision-making benefit from the browser auto-filling personal information (such as name or address) when the autocomplete attribute is used to meet this Success Criterion, which means information does not need to be remembered by the user.</li><li>People with cerebral palsy, stroke, head injury, motor neuron disease or learning disability sometimes prefer images for communication. They can employ assistive technology which adds icons to input fields to communicate the purpose of the fields visually.</li><li>People with motor impairments also benefit from reducing the need for manual input when filling out forms.</li>/ul>",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -671,16 +701,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "cat" : "", 
-        "es" : "", 
-        "en" : "The intent of this Success Criterion is to ensure that the purpose of many elements on a page can be programmatically determined, so that user agents can extract and present that purpose to users using different modalities.#Many users with limited vocabularies rely on familiar terms or symbols in order to use the web. However, what is familiar to one user may not be familiar to another. When authors indicate the purpose, users can take advantage of personalization and user preferences to load a set of symbols or vocabulary familiar to them.#This Success Criterion requires the author to programmatically associate the purpose of icons, regions and components (such as buttons, links, and fields) so that user agents can determine the purpose of each and adapt indicators or terminology to make them understandable for the user. It is achieved by adding semantics or metadata that provide this context.#Identifying regions of the page allows people to remove or highlight regions with their user agent.#Products for people who are non-vocal often use symbols to help users communicate. These symbols are in fact people's language. Unfortunately, many of these symbols are both subject to copyright and not interoperable. That means end users can only use one device, and cannot use content, apps, or assistive technologies that have not been made by a single company.#This Success Criterion enables symbols to be interoperable so that symbol users can understand different content that was not just made by one company. When users' symbols are mapped to the same nodes, then user agents can load the user-understandable symbol. People can then buy the symbols and use them across different devices or applications. (Note that the symbols would still be proprietary, but they could then be interoperable.)",
+        "cat" : "<p>La intenció d'aquest criteri d'èxit és garantir que el propòsit de molts elements d'una pàgina es pugui determinar mitjançant programació, de manera que els agents d'usuari puguin extreure i presentar aquest propòsit als usuaris mitjançant diferents modalitats.</p><p>Molts usuaris amb vocabulari limitat es basen en termes o símbols coneguts per utilitzar el web. No obstant això, el que és familiar per a un usuari pot no ser conegut per a un altre. Quan els autors indiquen el propòsit, els usuaris poden aprofitar la personalització i les preferències de l'usuari per carregar un conjunt de símbols o vocabulari conegut.</p><p>Aquest Criteri d'èxit requereix que l'autor associ programàticament el propòsit de les icones, les regions i els components (com ara botons, enllaços i camps) perquè els agents d'usuari puguin determinar el propòsit de cadascun i adaptar els indicadors o la terminologia perquè siguin comprensibles per a l'usuari. S'aconsegueix afegint semàntica o metadades que proporcionen aquest context. És semblant a afegir informació sobre el rol (com exigeix la 4.2.1), però en comptes de proporcionar informació sobre què és el component de la interfície d'usuari (com ara una imatge), proporciona informació sobre què representa el component (com ara un enllaç a la pàgina d'inici).</p><p>La identificació de regions de la pàgina permet a les persones eliminar o destacar regions amb el seu agent d'usuari.</p><p>Els productes per a persones que no són vocals sovint utilitzen símbols per ajudar els usuaris a comunicar-se. Aquests símbols són de fet el llenguatge de la gent. Malauradament, molts d'aquests símbols estan subjectes a drets d'autor i no són interoperables. Això vol dir que els usuaris finals només poden utilitzar un dispositiu i no poden utilitzar contingut, aplicacions o tecnologies d'assistència que no hagin estat creats per una sola empresa.</p><p>Aquest criteri d'èxit permet que els símbols siguin interoperables perquè els usuaris de símbols puguin entendre contingut diferent que no només ha estat creat per una empresa. Quan els símbols dels usuaris s'assignen als mateixos nodes, els agents d'usuari poden carregar el símbol comprensible per l'usuari. Aleshores, la gent pot comprar els símbols i utilitzar-los en diferents dispositius o aplicacions. (Tingueu en compte que els símbols encara serien propietaris, però llavors podrien ser interoperables.)</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que el propósito de muchos elementos en una página se pueda determinar mediante programación, de modo que los agentes de usuario puedan extraer y presentar ese propósito a los usuarios utilizando diferentes modalidades.</p><p>Muchos usuarios con vocabularios limitados confían en términos o símbolos familiares para usar la web. Sin embargo, lo que es familiar para un usuario puede no serlo para otro. Cuando los autores indican el propósito, los usuarios pueden aprovechar la personalización y las preferencias del usuario para cargar un conjunto de símbolos o vocabulario familiar para ellos.</p><p>Este Criterio de Conformidad requiere que el autor asocie mediante programación el propósito de íconos, regiones y componentes (como botones, enlaces y campos) para que los agentes de usuario puedan determinar el propósito de cada uno y adaptar indicadores o terminología para hacerlos comprensibles para el usuario. Se logra agregando semántica o metadatos que proporcionan este contexto. Es similar a agregar información de roles (como lo requiere 4.2.1), pero en lugar de proporcionar información sobre qué es el componente de la interfaz de usuario (como una imagen), proporciona información sobre lo que representa el componente (como un enlace a la página de inicio).</p><p>La identificación de regiones de la página permite a las personas eliminar o resaltar regiones con su agente de usuario.</p><p>Los productos para personas que no hablan a menudo usan símbolos para ayudar a los usuarios a comunicarse. Estos símbolos son, de hecho, el lenguaje de las personas. Desafortunadamente, muchos de estos símbolos están sujetos a derechos de autor y no son interoperables. Eso significa que los usuarios finales solo pueden usar un dispositivo y no pueden usar contenido, aplicaciones o tecnologías de asistencia que no hayan sido creados por una sola empresa.</p><p>Este Criterio de Conformidad permite que los símbolos sean interoperables para que los usuarios de símbolos puedan comprender diferentes contenidos que no fueron creados por una sola empresa. Cuando los símbolos de los usuarios se asignan a los mismos nodos, los agentes de usuario pueden cargar el símbolo comprensible para el usuario. Luego, las personas pueden comprar los símbolos y usarlos en diferentes dispositivos o aplicaciones. (Tenga en cuenta que los símbolos seguirían siendo propietarios, pero luego podrían ser interoperables).</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure that the purpose of many elements on a page can be programmatically determined, so that user agents can extract and present that purpose to users using different modalities.</p><p>Many users with limited vocabularies rely on familiar terms or symbols in order to use the web. However, what is familiar to one user may not be familiar to another. When authors indicate the purpose, users can take advantage of personalization and user preferences to load a set of symbols or vocabulary familiar to them.</p><p>This Success Criterion requires the author to programmatically associate the purpose of icons, regions and components (such as buttons, links, and fields) so that user agents can determine the purpose of each and adapt indicators or terminology to make them understandable for the user. It is achieved by adding semantics or metadata that provide this context.</p><p>Identifying regions of the page allows people to remove or highlight regions with their user agent.</p><p>Products for people who are non-vocal often use symbols to help users communicate. These symbols are in fact people's language. Unfortunately, many of these symbols are both subject to copyright and not interoperable. That means end users can only use one device, and cannot use content, apps, or assistive technologies that have not been made by a single company.</p><p>This Success Criterion enables symbols to be interoperable so that symbol users can understand different content that was not just made by one company. When users' symbols are mapped to the same nodes, then user agents can load the user-understandable symbol. People can then buy the symbols and use them across different devices or applications. (Note that the symbols would still be proprietary, but they could then be interoperable.)</p>",
       },
       "benefits" :
       {
-        "cat" : "-", 
-        "es" : "-", 
-        "en" : "People who benefit have many different cognitive disabilities including:#Memory#Focus and attention#Language-related#Executive function and decision making.#Meeting this Success Criterion helps users who need extra support or a familiar interface, including the need for:#Symbols and graphics with which users are familiar#Fewer features and less cognitive overload#Keyboard shortcuts",
+        "cat" : "<ul><li>Memòria</li><li>Concentració i atenció</li><li>Relacionat amb la llengua</li><li>Funció executiva i presa de decisions.</li></ul>El compliment d'aquest criteri d'èxit ajuda els usuaris que necessiten suport addicional o una interfície familiar, inclosa la necessitat de:<ul><li>Símbols i gràfics que els usuaris estan familiaritzats</li><li>Menys funcions i menys sobrecàrrega cognitiva</li><li>Dreceres de teclat</li></ul>", 
+        "es" : "<ul><li>Memoria</li><li>Enfoque y atención</li><li>Relacionado con el idioma</li><li>Función ejecutiva y toma de decisiones.</li></ul>Cumplir este Criterio de Conformidad ayuda a los usuarios que necesitan soporte adicional o una interfaz familiar, incluida la necesidad de:<ul><li>Símbolos y gráficos con los que los usuarios están familiarizados</li><li>Menos funciones y menos sobrecarga cognitiva</li><li>Atajos de teclado</li></ul>", 
+        "en" : "People who benefit have many different cognitive disabilities including:<ul><li>Memory.</li><li>Focus and attention.</li><li>Language-related.</li><li>Executive function and decision making.</li></ul>Meeting this Success Criterion helps users who need extra support or a familiar interface, including the need for:<ul><li>Symbols and graphics with which users are familiar.</li><li>Fewer features and less cognitive overload.</li><li>Keyboard shortcuts</li>/ul>",
       },
+      "examples" : "https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG21/Understanding/identify-purpose.html#techniques",
       "verification" :
       {
         "cat" : "-", 
@@ -724,6 +756,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Users with partial sight often experience limited color vision.#Some older users may not be able to see color well.#Users who have color-blindness benefit when information conveyed by color is available in other visual ways.#People using text-only, limited color, or monochrome displays may be unable to access color-dependent information.#Users who have problems distinguishing between colors can look or listen for text cues.#People using Braille displays or other tactile interfaces can detect text cues by touch.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -767,6 +802,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Individuals who use screen reading technologies can hear the screen reader without other sounds playing. This is especially important for those who are hard of hearing and for those whose screen readers use the system volume (so they cannot turn sound down and screen reader up).#This Success Criterion also benefits people who have difficulty focusing on visual content (including text) when audio is playing.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -810,6 +848,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with low vision often have difficulty reading text that does not contrast with its background. This can be exacerbated if the person has a color vision deficiency that lowers the contrast even further. Providing a minimum luminance contrast ratio between the text and its background can make the text more readable even if the person does not see the full range of colors. It also works for the rare individuals who see no color.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -853,6 +894,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion helps people with low vision by letting them increase text size in content so that they can read it.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -896,6 +940,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with low vision (who may have trouble reading the text with the authored font family, size and/or color).#People with visual tracking problems (who may have trouble reading the text with the authored line spacing and/or alignment).#People with cognitive disabilities that affect reading.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -939,6 +986,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with low vision often have difficulty reading text that does not contrast with its background. This can be exacerbated if the person has a color vision deficiency that lowers the contrast even further. Providing a minimum luminance contrast ratio between the text and its background can make the text more readable even if the person does not see the full range of colors. It also works for the rare individuals who see no color.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -982,6 +1032,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People who are hard of hearing often have great difficulty separating speech from background sound.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1025,6 +1078,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion helps low vision users by letting them see text without distracting presentational features. It lets them configure text in ways that will be easier for them to see by letting them control the color and size of blocks of text.#This Success Criterion helps people with cognitive, language and learning disabilities perceive text and track their location within blocks of text.#People with some cognitive disabilities can read text better when they select their own foreground and background color combinations.#People with some cognitive disabilities can track their locations more easily when blocks of text are narrow and when they can configure the amount of space between lines and paragraphs.#People with some cognitive disabilities can read text more easily when the spacing between words is regular.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1068,6 +1124,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "A quote.#Navigation items.#A logo containing text.#Representation of a font family.#A representation of a letter.#Symbolic text characters.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1111,6 +1170,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "One column view in responsive design. A site uses responsive design. When a person zooms in to over 300%, the layout is reflowed to one column. The user can read the content easily and does not have to scroll sideways to read.#PDF offering reflow. In a PDF created to conform to PDF/Universal Accessibility (ISO 14289), the content can be reflowed and zoomed in to make reading possible for someone with low-vision.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1154,6 +1216,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with low vision often have difficulty perceiving graphics that have insufficient contrast. This can be exacerbated if the person has a color vision deficiency that lowers the contrast even further. Providing a relative luminance (lightness difference) of 3:1 or greater can make these items more distinguishable when the person does not see a full range of colors.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1197,6 +1262,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with low vision who require increased space between lines, words, and letters are able to read text.#People with dyslexia may increase space between lines, words, and letters to increase reading speed.#Although not required by this SC, white space between blocks of text can help people with cognitive disabilities discern sections and call out boxes.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1240,6 +1308,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Users with low vision who view content under magnification will be better able to view content on hover or focus without reducing their desired magnification.#Users who increase the size of mouse cursors via platform settings or assistive technology will be able to employ a technique to view obscured content on hover.#Users with low vision or cognitive disabilities will have adequate time to perceive additional content appearing on hover or focus and to view the trigger content with less distraction.#Users with low pointer accuracy will be able to more easily dismiss unintentionally-triggered additional content",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1283,6 +1354,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People who are blind (who cannot use devices such as mice that require eye-hand coordination).#People with low vision (who may have trouble finding or tracking a pointer indicator on screen).#Some people with hand tremors find using a mouse very difficult and therefore usually use a keyboard.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1326,6 +1400,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People who rely on a keyboard or keyboard interface to use the Web including people who are blind and people with physical disabilities.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1369,6 +1446,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1412,6 +1492,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Speech users will be able to turn off single-key shortcuts so they can avoid accidentally firing batches of them at once. This will allow speech users to make full use of programs that offer single-key shortcuts to keyboard users.#Keyboard-only users who have dexterity challenges can also be prone to accidentally hitting keys. Those users would be able to avoid problematic single character shortcuts by turning them off or modifying them to include at least one non-character key.#Allowing all shortcut keys to be remapped can help users with some cognitive disabilities, since the same shortcuts can be assigned to perform the same actions across different applications.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1455,6 +1538,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with physical disabilities often need more time to react, to type and to complete activities. People with low vision need more time to locate things on screen and to read. People who are blind and using screen readers may need more time to understand screen layouts, to find information and to operate controls. People who have cognitive or language limitations need more time to read and to understand. People who are deaf and communicate in sign language may need more time to read information printed in text (which may be a second language for some).#In circumstances where a sign-language interpreter may be relating audio content to a user who is deaf, control over time limits is also important.#People with reading disabilities, cognitive limitations, and learning disabilities who may need more time to read or comprehend information can have additional time to read the information by pausing the content.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1498,6 +1584,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing content that stops blinking after five seconds or providing a mechanism for users to stop blinking content allows people with certain disabilities to interact with the Web page.#One use of content that blinks is to draw the visitor's attention to that content. Although this is an effective technique for all users with vision, it can be a problem for some users if it persists. For certain groups, including people with low literacy, reading and intellectual disabilities, and people with attention deficit disorders, content that blinks may make it difficult or even impossible to interact with the rest of the Web page.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1541,6 +1630,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with physical disabilities often need more time to react, to type and to complete activities. People with low vision need more time to locate things on screen and to read. People who are blind and using screen readers may need more time to understand screen layouts, to find information and to operate controls. People who have cognitive or language limitations need more time to read and to understand. People who are deaf and communicate in sign language may need more time to read information printed in text (which may be a second language for some).#In circumstances where a sign-language interpreter may be relating audio content to a user who is deaf, control over time limits is also important.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1584,6 +1676,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Individuals with attention deficit disorders can focus on content without distraction.#Individuals with low vision or who use screen readers will not have content updated while they are viewing it (which can lead to discontinuity and misunderstanding if they start reading in one topic and finish in another).",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1627,6 +1722,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion benefits people who may require additional time to complete an activity. People with cognitive limitations may read slowly and require additional time to read and respond to a questionnaire. Users interacting via a screen reader may need extra time to navigate and complete a complicated form. A person with motor impairments or who navigates with an alternative input device may require additional time to navigate through or complete input within a form.#In circumstances where a sign-language interpreter may be relating audio content to a user who is deaf, control over time limits is also important.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1670,6 +1768,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion helps users by ensuring they are notified about timeouts related to inactivity.#When a user knows how much time they are allowed for a task, they will know whether they can take a needed break and resume their work without needing to start again. This enables many users to complete tasks online that they otherwise could not do. If a situation exists where a timeout is necessary, the user is warned at the start of the task about the length of inactivity that would generate a timeout. The user can then decide if they can manage this task or not in the given time, or if they need to prepare materials in advance of starting a process. This will reduce the frustration of losing work due to a timeout.#This Success Criterion helps people with many different cognitive disabilities, including people with:#language-related disabilities;#  memory-related disabilities;#focus-and-attention-related disabilities; and#disabilities that affect executive function and decision making.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1713,6 +1814,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Individuals who have seizures when viewing flashing material will be able to view all of the material on a site without having a seizure and without having to miss the full experience of the content by being limited to text alternatives. This includes people with photosensitive epilepsy as well as other photosensitive seizure disorders.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1756,6 +1860,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Individuals who have seizures when viewing flashing material will be able to view all of the material on a site without having a seizure and without having to miss the full experience of the content by being limited to text alternatives. This includes people with photosensitive epilepsy as well as other photosensitive seizure disorders.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1799,6 +1906,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Vestibular Disorder#People with vestibular disorders need control over movement triggered by interactions. Non-essential movement can trigger vestibular disorder reactions. Vestibular (inner ear) disorder reactions include distraction, dizziness, headaches and nausea.#Persona Quote: 'Stop that extra movement! You are making me so dizzy I cannot concentrate. Now I have to turn off my computer and go lie down.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1842,6 +1952,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "When this Success Criterion is not satisfied, it may be difficult for people with some disabilities to reach the main content of a Web page quickly and easily:#Screen reader users who visit several pages on the same site can avoid having to hear all heading graphics and dozens of navigation links on every page before the main content is spoken.#People who use only the keyboard or a keyboard interface can reach content with fewer keystrokes. Otherwise, they might have to make dozens of keystrokes before reaching a link in the main content area. This can take a long time and may cause severe physical pain for some users.#People who use screen magnifiers do not have to search through the same headings or other blocks of information to find where the content begins each time they enter a new page.#People with cognitive limitations as well as people who use screen readers may benefit when links are grouped into lists",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1885,6 +1998,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This criterion benefits all users in allowing users to quickly and easily identify whether the information contained in the Web page is relevant to their needs.#People with visual disabilities will benefit from being able to differentiate content when multiple Web pages are open.#People with cognitive disabilities, limited short-term memory and reading disabilities also benefit from the ability to identify content by its title.#This criterion also benefits people with severe mobility impairments whose mode of operation relies on audio when navigating between Web pages.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1928,6 +2044,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People with mobility impairments who must rely on keyboard access for operating a page benefit from a logical, usable focus order.#People with disabilities that make reading difficult can become disoriented when tabbing takes focus someplace unexpected. They benefit from a logical focus order.#People with visual impairments can become disoriented when tabbing takes focus someplace unexpected or when they cannot easily find the content surrounding an interactive element.#Only a small portion of the page may be visible to an individual using a screen magnifier at a high level of magnification. Such a user may interpret a field in the wrong context if the focus order is not logical.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -1971,6 +2090,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "A link contains text that gives a description of the information at that URI.#A link is preceded by a text description of the information at that URI.#Both an icon and text are included in the same link.#A list of book titles.#News article summaries.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2014,6 +2136,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing an opportunity to navigate sites in more than one manner can help people find information faster. Users with visual impairments may find it easier to navigate to the correct part of the site by using a search, rather than scrolling through a large navigation bar using a screen magnifier or screen reader. A person with cognitive disabilities may prefer a table of contents or site map that provides an overview of the site rather than reading and traversing through several Web pages. Some users may prefer to explore the site in a sequential manner, moving from Web page to Web page in order to best understand the concepts and layout.#Individuals with cognitive limitations may find it easier to use search features than to use a hierarchical navigation scheme that is difficult to understand.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2057,6 +2182,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Descriptive headings are especially helpful for users who have disabilities that make reading slow and for people with limited short-term memory. These people benefit when section titles make it possible to predict what each section contains.#Form input controls with labels that clearly describe the content that is expected to be entered helps users know how to successfully complete the form.#When headings and labels are also correctly marked up and identified in accordance with 1.3.1: Info and Relationships, this Success Criterion helps people who use screen readers by ensuring that labels and headings are meaningful when read out of context, for example, in an automatically generated list of headings/table of contents, or when jumping from heading to heading within a page.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2100,6 +2228,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Descriptive headings are especially helpful for users who have disabilities that make reading slow and for people with limited short-term memory. These people benefit when section titles make it possible to predict what each section contains.#Form input controls with labels that clearly describe the content that is expected to be entered helps users know how to successfully complete the form.#When headings and labels are also correctly marked up and identified in accordance with 1.3.1: Info and Relationships, this Success Criterion helps people who use screen readers by ensuring that labels and headings are meaningful when read out of context, for example, in an automatically generated list of headings/table of contents, or when jumping from heading to heading within a page.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2143,6 +2274,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion is helpful for people with a short attention span who may become confused when following a long series of navigation steps to a Web page. It is also helpful when a user follows a link directly to a page deep within a set of Web pages and needs to navigate that Web site to understand the content of that page or to find more related information.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2186,6 +2320,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion helps people with motion impairment by letting them skip Web pages that they are not interested in, avoiding the keystrokes needed to visit the referenced content and then return to the current content.#People with cognitive limitations will not become disoriented by extra navigation to and from content they are not interested in.#People with visual disabilities will benefit from not losing their place in the content when they return to the original page. The screen reader's list of links is more useful for finding information because the target of the links are described.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2229,6 +2366,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People who are blind will know when they have moved from one section of a Web page to another and will know the purpose of each section.#People with some learning disabilities will be able to use the headings to understand the overall organization of the page content more easily.#People who navigate content by keyboard will be able to jump the focus from heading to heading, enabling them to find quickly content of interest.#In pages where content in part of the page updates, headings can be used to quickly access updated content.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2272,6 +2412,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2315,6 +2458,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2358,6 +2504,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2401,6 +2550,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2444,6 +2596,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "A web site includes a map view that supports the pinch gesture to zoom into the map content. User interface controls offer the operation using plus and minus buttons to zoom in and out.#A news site has a horizontal content slider with hidden news teasers that can moved into the viewport via horizontal swiping. It also offers forward and backward arrow buttons for single-point activation to navigate to adjacent slider content.#A kanban widget with several vertical areas representing states in a defined process allows the user to right- or left-swipe elements to move them to an adjacent silo. The user can also accomplish this by selecting the element with a single tap or click, and then activating an arrow button to move the selected element.#A custom slider requires movement in a strict left/right direction when operated by dragging the thumb control. Buttons on both sides of the slider increment and decrement the selected value and update the thumb position.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2487,6 +2642,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Speech-input users can directly activate controls on a page with fewer surprising changes of focus.#Text-to-speech users will have a better experience because the labels that they hear match the visible text labels that they see on the screen.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2530,6 +2688,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion helps people who may be unable to perform particular motions (such as tilting, shaking, or gesturing) because the device may be mounted or users may be physically unable to perform the necessary movement. This success criterion ensures that users can still operate all functionality by other means such as touch or via assistive technologies.#Other users will benefit in situations where they are unable to move their devices.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2573,6 +2734,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Users who use a mobile device where touch screen is the primary mode of interaction;#Users with mobility impairments such as hand tremors;#Users who use a mobile device in environments where they are exposed to shaking such as public transportation;#Users who have difficulty with fine motor movements;#Users who access a device using one hand;#Users with large fingers, or who are operating the device with only a part of their finger or knuckle;#Users who have low vision may better see the target.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2616,6 +2780,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Users can interact with web content with whichever input mechanism is preferred and available to them.#Users may switch between input mechanisms when they desire or the circumstances require it.#Users are allowed to add and remove input mechanisms at any point, where supported by the operating system.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2659,6 +2826,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2702,6 +2872,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2745,6 +2918,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "people who use screen readers or other technologies that convert text into synthetic speech;#people who find it difficult to read written material with fluency and accuracy, such as recognizing characters and alphabets or decoding words;#people with certain cognitive, language and learning disabilities who use text-to-speech software#people who rely on captions for synchronized media.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2788,6 +2964,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People who use screen readers or other technologies that convert text into synthetic speech;#people who find it difficult to read written material with fluency and accuracy, such as recognizing characters and alphabets, decoding words, and understanding words and phrases;#people with certain cognitive, language and learning disabilities who use text-to-speech software;#people who rely on captions to recognize language changes in the soundtrack of synchronized media content.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2831,6 +3010,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion may help people with cognitive, language and learning disabilities who:#have difficulty decoding words#have difficulty understanding words and phrases#have difficulty using context to aid understanding#It would also help people with visual disabilities who:#lose context when zoomed-in with a screen magnifier.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2874,6 +3056,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Have difficulty decoding words;#rely on screen magnifiers (magnification may reduce contextual cues);#have limited memory;#have difficulty using context to aid understanding.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2917,6 +3102,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Have difficulty comprehending and interpreting written language (e.g., articles, instructions, or newspapers in text or braille), for the purpose of obtaining general knowledge or specific information",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -2960,6 +3148,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Have difficulty decoding words#have difficulty using context to aid understanding#use technologies that read the words aloud.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3003,6 +3194,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion helps people with visual disabilities, cognitive limitations, and motor impairments by reducing the chance that a change of context will occur unexpectedly.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3046,6 +3240,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "This Success Criterion helps users with disabilities by making interactive content more predictable. Unexpected changes of context can be so disorienting for users with visual disabilities or cognitive limitations that they are unable to use the content.# Individuals who are unable to detect changes of context are less likely to become disoriented while navigating a site. For example:#  Individuals who are blind or have low vision may have difficulty knowing when a visual context change has occurred, such as a new window popping up. In this case, warning users of context changes in advance minimizes confusion when the user discovers that the back button no longer behaves as expected.#Some individuals with low vision, with reading and intellectual disabilities, and others who have difficulty interpreting visual cues may benefit from additional cues in order to detect changes of context.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3089,6 +3286,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Ensuring that repeated components occur in the same order on each page of a site helps users become comfortable that they will able to predict where they can find things on each page. This helps users with cognitive limitations, users with low vision, users with intellectual disabilities, and also those who are blind.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3133,6 +3333,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "People who learn functionality on one page on a site can find the desired functions on other pages if they are present.#When non-text content is used in a consistent way to identify components with the same functionality, people with difficulty reading text or detecting text alternatives can interact with the Web without depending on text alternatives.#People who depend on text alternatives can have a more predictable experience. They can also search for the component if it has a consistent label on different pages.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3176,6 +3379,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Individuals who are unable to detect changes of context or may not realize that the context has changed are less likely to become disoriented while navigating a site. For example:#individuals who are blind or have low vision may have difficulty knowing when a visual context change has occurred, such as a new window popping up. In this case, warning users of context changes in advance minimizes confusion when the user discovers that the back button no longer behaves as expected.#Some individuals with low vision, with reading and intellectual disabilities, and who have difficulty interpreting visual cues may benefit from additional cues in order to detect changes of context.#People with certain cognitive limitations do not get confused if automatic redirects are performed by the Web server instead of the browser.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3219,6 +3425,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3262,6 +3471,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3305,6 +3517,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing information about input errors in text allows users who are blind or colorblind to perceive the fact that an error occurred.#This Success Criterion may help people with cognitive, language, and learning disabilities who have difficulty understanding the meaning represented by icons and other visual cues.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3348,6 +3563,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing clear and unambiguous labels and instructions (including examples of expected data formats) helps all users - but particularly those with cognitive, language, and learning disabilities - to enter information correctly.#Providing clear and unambiguous labels and instructions (including clear identification of required fields) can prevent users from making incomplete or incorrect form submissions, which prevents users from having to navigate once more through a page/form in order to fix submission errors.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3391,6 +3609,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing information about how to correct input errors allows users who have learning disabilities to fill in a form successfully. Users who are blind or have impaired vision understand more easily the nature of the input error and how to correct it. People with motion impairment can reduce the number of times they need to change an input value.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3434,6 +3655,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing safeguards to avoid serious consequences resulting from mistakes helps users with all disabilities who may be more likely to make mistakes.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3477,6 +3701,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Assistance for text input helps individuals with writing disabilities and people with reading and intellectual disabilities who often have difficulty writing text in forms or other places that need text input.#Additionally, these kinds of assistance help people who are aging and have the same difficulty in text input and/or mouse operation.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3520,6 +3747,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing safeguards to avoid consequences resulting from mistakes helps users with all disabilities who may be more likely to make mistakes.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3563,6 +3793,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3606,6 +3839,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "-",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3649,6 +3885,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Ensuring that Web pages have complete start and end tags and are nested according to specification helps ensure that assistive technologies can parse the content accurately and without crashing.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3692,6 +3931,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "Providing role, state, and value information on all user interface components enables compatibility with assistive technology, such as screen readers, screen magnifiers, and speech recognition software, used by people with disabilities.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
@@ -3735,6 +3977,9 @@ const wcagObj = {
         "es" : "-", 
         "en" : "When appropriate roles or properties are assigned to status messages, the new content is spoken by screen readers in such a way as to assist blind and low vision users. Most sighted users can observe text peripherally added to the viewport. Such content provides additional information without affecting the user's current point of regard. The ability of an assistive technology to announce such new important text content allows more users to benefit from an awareness of the information in an equivalent manner.#Assigning proper roles or properties to status messages provides possible future uses and personalization opportunities, such as the potential to be exploited by assistive technologies created for users with some cognitive disabilities. Where page authors elect to design additions to the screen which do not change the user's context (i.e., take focus), the information is arguably of less importance than something presented using a modal dialog, which must be acknowledged by the user. As such, depending on the user's preferences, an assistive technology may choose to delay, suppress, or transform such messages so a user is not unnecessarily interrupted; or conversely the assistive technology may highlight such messages where the user finds it optimal to do so.",
       },
+      "examples" : "",
+      "techniques" : "",
+      "failures" : "",
       "verification" :
       {
         "cat" : "-", 
