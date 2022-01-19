@@ -43,16 +43,16 @@
 			<fieldset class="col-6 row justify-content-end btns" style="padding:20px">
 				<legend class="col" style="text-align: right;">Idioma</legend>
 				<ul class="col">
+					<li><button id="en" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">English</button></li>
 					<li><button id="cat" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Català</button></li>
 					<li><button id="es" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Español</button></li>
-					<li><button id="en" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">English</button></li>
 				</ul>
 			</fieldset>
 		</div>
 
 		<div class="row">
 			<div class="col-12">
-				<p id="resume">
+				<p id="resume" role="status">
 				</p>
 			</div>
 		</div>
@@ -120,6 +120,14 @@
 					<li>
 						<label for="benefits">Benefits</label>
 						<input type="checkbox" id="benefits" value="Benefits" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="examples">Examples</label>
+						<input type="checkbox" id="examples" value="examples" onchange="showColumns(this)">
+					</li>
+					<li>
+						<label for="techniques">Techniques</label>
+						<input type="checkbox" id="techniques" value="techniques" onchange="showColumns(this)">
 					</li><!--
 					<li>
 						<label for="verification">Verification</label>

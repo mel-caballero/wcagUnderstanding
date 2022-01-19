@@ -8,59 +8,69 @@ let category = 'All';
 const resume = document.getElementById('resume');
 let message;
 
-//const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'verification', 'tools', 'category'];
-const checks = ['level', 'version', 'goal', 'intent', 'benefits'];
+//const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'examples', 'techniques', 'verification', 'tools', 'category'];
+const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'examples', 'techniques'];
 
 let headers = [
 	{
-		"name": "criteria",
-		"alias": "Criteria",
-		"view": true
+		"name" : "criteria",
+		"alias" : "Criteria",
+		"view" : true
 	},
 	{
-		"name": "link",
-		"alias": "Link",
-		"view": false
+		"name" : "link",
+		"alias" : "Link",
+		"view" : false
 	},
 	{
-		"name": "level",
-		"alias": "Level",
-		"view": true
+		"name" : "level",
+		"alias" : "Level",
+		"view" : false
 	},
 	{
-		"name": "version",
-		"alias": "Version",
-		"view": true
+		"name" : "version",
+		"alias" : "Version",
+		"view" : false
 	},
 	{
-		"name": "goal",
-		"alias": "Goal",
-		"view": true
+		"name" : "goal",
+		"alias" : "Goal",
+		"view" : false
 	},
 	{
-		"name": "intent",
-		"alias": "Intent",
-		"view": false
+		"name" : "intent",
+		"alias" : "Intent",
+		"view" : false
 	},
 	{
-		"name": "benefits",
-		"alias": "Benefits",
-		"view": false
+		"name" : "benefits",
+		"alias" : "Benefits",
+		"view" : false
 	},
 	{
-		"name": "verification",
-		"alias": "Verification",
-		"view": false
+		"name" : "examples",
+		"alias" : "Examples",
+		"view" : true
 	},
 	{
-		"name": "tools",
-		"alias": "Tools",
-		"view": false
+		"name" : "techniques",
+		"alias" : "Techniques",
+		"view" : true
 	},
 	{
-		"name": "category",
-		"alias": "Category",
-		"view": false
+		"name" : "verification",
+		"alias" : "Verification",
+		"view" : false
+	},
+	{
+		"name" : "tools",
+		"alias" : "Tools",
+		"view" : false
+	},
+	{
+		"name" : "category",
+		"alias" : "Category",
+		"view" : false
 	}
 ];
 
@@ -98,25 +108,102 @@ const createTable = () => {
     tr = document.createElement('tr')
     headers.forEach(head => {
       if (head.view===true && (item.category.includes(category) || category === 'All') && (filterLevel.find(lev => lev === item.level) || filterLevel[0] === 'All') && (filterVersion.find(lev => lev === item.version) || filterVersion[0] === 'All')) {
-				
+				const a = document.createElement('a');
 				const td = document.createElement('td');
+				let linkText;
         if (typeof item[head.name] === 'object') {
-					switch (lang) {
-						case 'cat':
-							td.innerHTML = item[head.name].cat;
-							break;
-						case 'es':
-							td.innerHTML = item[head.name].es;
-							break;
-						case 'en':
-							td.innerHTML = item[head.name].en;
-							break;
-						default:
-							td.innerHTML = item[head.name].en;
-							break;
+					if (head.name === 'criteria') {
+						td.setAttribute('scope', 'row');
+						
+						switch (lang) {
+							case 'cat':
+								linkText = document.createTextNode(item.criteria.cat);
+								a.title = item.criteria.cat;
+								break;
+							case 'es':
+								linkText = document.createTextNode(item.criteria.es);
+								a.title = item.criteria.es;
+								break;
+							case 'en':
+								linkText = document.createTextNode(item.criteria.en);
+								a.title = item.criteria.en;
+								break;
+							default:
+								linkText = document.createTextNode(item.criteria.en);
+								a.title = item.criteria.en;
+								break;	
+						}
+						a.appendChild(linkText);
+						a.target = '_blank';
+						a.href = item.link;
+						td.appendChild(a);
+					} else {
+						switch (lang) {
+							case 'cat':
+								td.innerHTML = item[head.name].cat;
+								break;
+							case 'es':
+								td.innerHTML = item[head.name].es;
+								break;
+							case 'en':
+								td.innerHTML = item[head.name].en;
+								break;
+							default:
+								td.innerHTML = item[head.name].en;
+								break;
+						}
 					}
 				} else {
+					if (head.name === 'examples' && item.examples != '') {
+						switch (lang) {
+							case 'cat':
+								linkText = document.createTextNode(item.criteria.cat + ' Exemples');
+								a.title = item.criteria.cat + ' Exemples';
+								break;
+							case 'es':
+								linkText = document.createTextNode(item.criteria.es + ' Ejemplos');
+								a.title = item.criteria.es + ' Ejemplos';
+								break;
+							case 'en':
+								linkText = document.createTextNode(item.criteria.en + ' Examples');
+								a.title = item.criteria.en + ' Examples';
+								break;
+							default:
+								linkText = document.createTextNode(item.criteria.en + ' Examples');
+								a.title = item.criteria.en + ' Examples';
+								break;	
+						}
+						a.appendChild(linkText);
+						a.target = '_blank';
+						a.href = item.examples;
+						td.appendChild(a);
+					} else if (head.name === 'techniques' && item.techniques != '') {
+						switch (lang) {
+							case 'cat':
+								linkText = document.createTextNode(item.criteria.cat + ' Tècniques');
+								a.title = item.criteria.cat + ' Tècniques';
+								break;
+							case 'es':
+								linkText = document.createTextNode(item.criteria.es + ' Tecnicas');
+								a.title = item.criteria.es + ' Tecnicas';
+								break;
+							case 'en':
+								linkText = document.createTextNode(item.criteria.en + ' Techniques');
+								a.title = item.criteria.en + ' Techniques';
+								break;
+							default:
+								linkText = document.createTextNode(item.criteria.en + ' Techniques');
+								a.title = item.criteria.en + ' Techniques';
+								break;	
+						}
+						a.appendChild(linkText);
+						a.target = '_blank';
+						a.href = item.techniques;
+						td.appendChild(a);
+					} else {
 						td.innerHTML = item[head.name];
+					}
+					
 				}
         tr.appendChild(td);
       }
