@@ -109,11 +109,11 @@ const createTable = () => {
     headers.forEach(head => {
       if (head.view===true && (item.category.includes(category) || category === 'All') && (filterLevel.find(lev => lev === item.level) || filterLevel[0] === 'All') && (filterVersion.find(lev => lev === item.version) || filterVersion[0] === 'All')) {
 				const a = document.createElement('a');
-				const td = document.createElement('td');
 				let linkText;
         if (typeof item[head.name] === 'object') {
 					if (head.name === 'criteria') {
-						td.setAttribute('scope', 'row');
+						const th = document.createElement('th')
+						th.setAttribute('scope', 'row');
 						
 						switch (lang) {
 							case 'cat':
@@ -136,8 +136,11 @@ const createTable = () => {
 						a.appendChild(linkText);
 						a.target = '_blank';
 						a.href = item.link;
-						td.appendChild(a);
-					} else {
+						th.appendChild(a);
+						tr.appendChild(th);
+					} 
+					else {
+						const td = document.createElement('td');
 						switch (lang) {
 							case 'cat':
 								td.innerHTML = item[head.name].cat;
@@ -152,8 +155,11 @@ const createTable = () => {
 								td.innerHTML = item[head.name].en;
 								break;
 						}
+						tr.appendChild(td);
 					}
-				} else {
+				} 
+				else {
+					const td = document.createElement('td');
 					if (head.name === 'examples' && item.examples != '') {
 						switch (lang) {
 							case 'cat':
@@ -177,7 +183,8 @@ const createTable = () => {
 						a.target = '_blank';
 						a.href = item.examples;
 						td.appendChild(a);
-					} else if (head.name === 'techniques' && item.techniques != '') {
+					} 
+					else if (head.name === 'techniques' && item.techniques != '') {
 						switch (lang) {
 							case 'cat':
 								linkText = document.createTextNode(item.criteria.cat + ' Tècniques');
@@ -200,12 +207,13 @@ const createTable = () => {
 						a.target = '_blank';
 						a.href = item.techniques;
 						td.appendChild(a);
-					} else {
+					} 
+					else {
 						td.innerHTML = item[head.name];
-					}
-					
+					}	
+					tr.appendChild(td);
 				}
-        tr.appendChild(td);
+        
       }
     });
 		if (tr.firstElementChild != null){
