@@ -14,7 +14,11 @@ const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'examples', 't
 let headers = [
 	{
 		"name" : "criteria",
-		"alias" : "Criteria",
+		"alias" : {
+			"cat" : "Criteri",
+			"es" : "Criterio",
+			"en" : "Criteria"
+		},
 		"view" : true
 	},
 	{
@@ -24,52 +28,92 @@ let headers = [
 	},
 	{
 		"name" : "level",
-		"alias" : "Level",
+		"alias" : {
+			"cat" : "Nivell",
+			"es" : "Nivel",
+			"en" : "Level"
+		},
 		"view" : true
 	},
 	{
 		"name" : "version",
-		"alias" : "Version",
+		"alias" : {
+			"cat" : "Versió",
+			"es" : "Versión",
+			"en" : "Version"
+		},
 		"view" : true
 	},
 	{
 		"name" : "goal",
-		"alias" : "Goal",
+		"alias" : {
+			"cat" : "Objectiu",
+			"es" : "Objetivo",
+			"en" : "Goal"
+		},
 		"view" : true
 	},
 	{
 		"name" : "intent",
-		"alias" : "Intent",
+		"alias" : {
+			"cat" : "Intenció",
+			"es" : "Intención",
+			"en" : "Intent"
+		},
 		"view" : true
 	},
 	{
 		"name" : "benefits",
-		"alias" : "Benefits",
+		"alias" : {
+			"cat" : "Beneficis",
+			"es" : "Beneficios",
+			"en" : "Benefits"
+		},
 		"view" : false
 	},
 	{
 		"name" : "examples",
-		"alias" : "Examples",
+		"alias" : {
+			"cat" : "Exemples",
+			"es" : "Ejemplos",
+			"en" : "Examples"
+		},
 		"view" : false
 	},
 	{
 		"name" : "techniques",
-		"alias" : "Techniques",
+		"alias" : {
+			"cat" : "Tècniques",
+			"es" : "Técnicas",
+			"en" : "Techniques"
+		},
 		"view" : false
 	},
 	{
 		"name" : "verification",
-		"alias" : "Verification",
+		"alias" : {
+			"cat" : "Verificació",
+			"es" : "Verificación",
+			"en" : "Verification"
+		},
 		"view" : false
 	},
 	{
 		"name" : "tools",
-		"alias" : "Tools",
+		"alias" : {
+			"cat" : "Eines",
+			"es" : "Herramientas",
+			"en" : "Tools"
+		},
 		"view" : false
 	},
 	{
 		"name" : "category",
-		"alias" : "Category",
+		"alias" : {
+			"cat" : "Categoria",
+			"es" : "Categoria",
+			"en" : "Category"
+		},
 		"view" : false
 	}
 ];
@@ -96,8 +140,21 @@ const createTable = () => {
     if (item.view) {
       const th = document.createElement('th')
 			th.setAttribute('scope', 'column')
-      const alias = document.createTextNode(item.alias)
-      th.appendChild(alias)
+			switch (lang) {
+				case 'cat':
+					th.innerHTML = item.alias.cat;
+					break;
+				case 'es':
+					th.innerHTML = item.alias.es;
+					break;
+				case 'en':
+					console.log(item.alias.en)
+					th.innerHTML = item.alias.en;
+					break;
+				default:
+					th.innerHTML = item.alias.en;
+					break;
+			}
       tr.appendChild(th)
     }
   })
