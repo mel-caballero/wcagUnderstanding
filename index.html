@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<style>
 
@@ -40,8 +40,8 @@
 			<div class="col-6 row btns" style="padding:20px">
 				<h1>WCAG</h1>
 			</div>
-			<fieldset class="col-6 row justify-content-end btns" style="padding:20px">
-				<legend class="col" style="text-align: right;">Idioma</legend>
+			<fieldset id="btnLang" class="col-6 row justify-content-end btns" style="padding:20px">
+				<legend class="col" style="text-align: right;">Language</legend>
 				<ul class="col">
 					<li><button id="en" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">English</button></li>
 					<li><button id="cat" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Català</button></li>
@@ -51,107 +51,100 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12">
-				<p id="resume" role="status">
-				</p>
+			<div class="col-6">
+				<p id="resume" role="status"></p>
 			</div>
-		</div>
-
-		<div class="row">
-			<fieldset id="versionbtn" class="col-6 row btns" style="padding:20px">
+		
+			<fieldset id="btnVersion" class="col-3 row btns" style="padding:20px">
 				<legend class="col-3">Version</legend>
 				<ul class="col justify-content-start">
-					<li><button type="button" onclick="btnVersion(this)" class="btn btn-primary btn-sm version">All</button></li>
+					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">All</button></li>
 					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.0</button></li>
 					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.1</button></li>
 					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.2</button></li>
 				</ul>
 			</fieldset>
 
-			<fieldset id="levelbtn" class="col-6 row justify-content-end btns" style="padding:20px">
+			<fieldset id="btnLevel" class="col-3 row justify-content-end btns" style="padding:20px">
 				<legend class="col-3">Level</legend>
 				<ul class="col">
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-primary btn-sm level">All</button></li>
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-info dark-text btn-sm level">A</button></li>
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-warning dark-text btn-sm level">AA</button></li>
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-danger btn-sm level">AAA</button></li>
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">All</button></li>
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">A</button></li>
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">AA</button></li>
+					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">AAA</button></li>
 				</ul>
 			</fieldset>
 		</div>
-<!--
+
 		<div class="row">
-			<fieldset id="categorybtn" class="col-12 row btns" style="padding:20px">
-				<legend class="col-3">Category</legend>
-				<ul class="col" style="text-align:right">
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-primary btn-sm category">All</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">content</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">forms-and-UI</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">audio-video</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">structure</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">colour</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">font-size</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">dynamic-content</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">keyboard</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category">link</button></li>
-				</ul>
-			</fieldset>
-		</div>
--->
-		<div class="row">
-			<fieldset id="columns" class="col-12 row btns" style="padding:20px">
-				<legend class="col-3">Show columns</legend>
-				<ul class="col" style="text-align:right">
+			<fieldset id="columns" class="col-6 row btns" style="padding:20px">
+				<legend class="">Show columns</legend>
+				<ul class="" style="text-align:right">
 					<li>
-						<label for="level">Level</label>
+						<label class="checks" for="level">Level</label>
 						<input type="checkbox" id="level" value="Level" onchange="showColumns(this)">
 					</li>
 					<li>
-						<label for="version">Version</label>
+						<label class="checks" for="version">Version</label>
 						<input type="checkbox" id="version" value="Version" onchange="showColumns(this)">
 					</li>
 					<li>
-						<label for="goal">Goal</label>
+						<label class="checks" for="goal">Goal</label>
 						<input type="checkbox" id="goal" value="Goal" onchange="showColumns(this)">
 					</li>
 					<li>
-						<label for="intent">Intent</label>
+						<label class="checks" for="intent">Intent</label>
 						<input type="checkbox" id="intent" value="Intent" onchange="showColumns(this)">
 					</li>
 					<li>
-						<label for="benefits">Benefits</label>
+						<label class="checks" for="benefits">Benefits</label>
 						<input type="checkbox" id="benefits" value="Benefits" onchange="showColumns(this)">
 					</li>
 					<li>
-						<label for="examples">Examples</label>
+						<label class="checks" for="examples">Examples</label>
 						<input type="checkbox" id="examples" value="examples" onchange="showColumns(this)">
 					</li>
 					<li>
-						<label for="techniques">Techniques</label>
+						<label class="checks" for="techniques">Techniques</label>
 						<input type="checkbox" id="techniques" value="techniques" onchange="showColumns(this)">
-					</li><!--
-					<li>
-						<label for="verification">Verification</label>
-						<input type="checkbox" id="verification" value="Verification" onchange="showColumns(this)">
 					</li>
 					<li>
-						<label for="tools">Tools</label>
-						<input type="checkbox" id="tools" value="Tools" onchange="showColumns(this)">
+						<label class="checks" for="verification">Verification</label>
+						<input type="checkbox" id="verification" value="Verification" onchange="showColumns(this)" disabled>
 					</li>
 					<li>
-						<label for="category">Category</label>
-						<input type="checkbox" id="category" value="Category" onchange="showColumns(this)">
-					</li>-->
+						<label class="checks" for="tools">Tools</label>
+						<input type="checkbox" id="tools" value="Tools" onchange="showColumns(this)" disabled>
+					</li>
+					<li>
+						<label class="checks" for="category">Category</label>
+						<input type="checkbox" id="category" value="Category" onchange="showColumns(this)" disabled>
+					</li>
+				</ul>
+			</fieldset>
+
+			<fieldset id="btnCategory" class="col-6 row btns" style="padding:20px">
+				<legend class="">Category</legend>
+				<ul class="" style="text-align:right">
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>All</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>content</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>forms-and-UI</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>audio-video</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>structure</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>colour</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>font-size</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>dynamic-content</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>keyboard</button></li>
+					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>link</button></li>
 				</ul>
 			</fieldset>
 		</div>
 
 		<div style="overflow-x: auto;">
-		<table id="wcagTable" class="table" style="width:100%">
-			<thead id="thead">
-			</thead>
-			<tbody id="tbody">
-			</tbody>
-		</table>
+			<table id="wcagTable" class="table" style="width:100%">
+				<thead id="thead"></thead>
+				<tbody id="tbody"></tbody>
+			</table>
 		</div>
 		
 	</div>
