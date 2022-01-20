@@ -1,5 +1,5 @@
 const criteria = wcagObj['criterion'];
-let lang = 'en';
+let lang = 'cat';
 let totalElem = "78";
 let version = 'All';
 let level = 'All';
@@ -8,8 +8,88 @@ let category = 'All';
 const resume = document.getElementById('resume');
 let message;
 
-//const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'examples', 'techniques', 'verification', 'tools', 'category'];
-const checks = ['level', 'version', 'goal', 'intent', 'benefits', 'examples', 'techniques'];
+let checksAlias = [
+	{
+		"name" : "level",
+		"alias" : {
+			"cat" : "Nivell",
+			"es" : "Nivel",
+			"en" : "Level"
+		}
+	},
+	{
+		"name" : "version",
+		"alias" : {
+			"cat" : "Versió",
+			"es" : "Versión",
+			"en" : "Version"
+		}
+	},
+	{
+		"name" : "goal",
+		"alias" : {
+			"cat" : "Objectiu",
+			"es" : "Objetivo",
+			"en" : "Goal"
+		}
+	},
+	{
+		"name" : "intent",
+		"alias" : {
+			"cat" : "Intenció",
+			"es" : "Intención",
+			"en" : "Intent"
+		}
+	},
+	{
+		"name" : "benefits",
+		"alias" : {
+			"cat" : "Beneficis",
+			"es" : "Beneficios",
+			"en" : "Benefits"
+		}
+	},
+	{
+		"name" : "examples",
+		"alias" : {
+			"cat" : "Exemples",
+			"es" : "Ejemplos",
+			"en" : "Examples"
+		}
+	},
+	{
+		"name" : "techniques",
+		"alias" : {
+			"cat" : "Tècniques",
+			"es" : "Técnicas",
+			"en" : "Techniques"
+		}
+	},
+	{
+		"name" : "verification",
+		"alias" : {
+			"cat" : "Verificació",
+			"es" : "Verificación",
+			"en" : "Verification"
+		}
+	},
+	{
+		"name" : "tools",
+		"alias" : {
+			"cat" : "Eines",
+			"es" : "Herramientas",
+			"en" : "Tools"
+		}
+	},
+	{
+		"name" : "category",
+		"alias" : {
+			"cat" : "Categoria",
+			"es" : "Categoría",
+			"en" : "Category"
+		}
+	}
+];
 
 let headers = [
 	{
@@ -118,7 +198,7 @@ let headers = [
 	}
 ];
 
-const createTable = () => {
+function createTable() {
 	const filterLevel = level.split(",");
 	const filterVersion = version.split(",");
 	const tableHeader = document.getElementById('thead');
@@ -140,21 +220,7 @@ const createTable = () => {
     if (item.view) {
       const th = document.createElement('th')
 			th.setAttribute('scope', 'column')
-			switch (lang) {
-				case 'cat':
-					th.innerHTML = item.alias.cat;
-					break;
-				case 'es':
-					th.innerHTML = item.alias.es;
-					break;
-				case 'en':
-					console.log(item.alias.en)
-					th.innerHTML = item.alias.en;
-					break;
-				default:
-					th.innerHTML = item.alias.en;
-					break;
-			}
+			th.innerHTML = item.alias[lang];
       tr.appendChild(th)
     }
   })
@@ -171,77 +237,44 @@ const createTable = () => {
 					if (head.name === 'criteria') {
 						const th = document.createElement('th')
 						th.setAttribute('scope', 'row');
-						
-						switch (lang) {
-							case 'cat':
-								linkText = document.createTextNode(item.criteria.cat);
-								a.title = item.criteria.cat;
-								break;
-							case 'es':
-								linkText = document.createTextNode(item.criteria.es);
-								a.title = item.criteria.es;
-								break;
-							case 'en':
-								linkText = document.createTextNode(item.criteria.en);
-								a.title = item.criteria.en;
-								break;
-							default:
-								linkText = document.createTextNode(item.criteria.en);
-								a.title = item.criteria.en;
-								break;	
-						}
+						linkText = document.createTextNode(item.criteria[lang]);
 						a.appendChild(linkText);
+						a.title = item.criteria[lang];
 						a.target = '_blank';
 						a.href = item.link;
 						th.appendChild(a);
 						tr.appendChild(th);
-					} 
-					else {
+					} else {
 						const td = document.createElement('td');
-						switch (lang) {
-							case 'cat':
-								td.innerHTML = item[head.name].cat;
-								break;
-							case 'es':
-								td.innerHTML = item[head.name].es;
-								break;
-							case 'en':
-								td.innerHTML = item[head.name].en;
-								break;
-							default:
-								td.innerHTML = item[head.name].en;
-								break;
-						}
+						td.innerHTML = item[head.name][lang];
 						tr.appendChild(td);
 					}
-				} 
-				else {
+				} else {
 					const td = document.createElement('td');
 					if (head.name === 'examples' && item.examples != '') {
 						switch (lang) {
 							case 'cat':
-								linkText = document.createTextNode(item.criteria.cat + ' Exemples');
-								a.title = item.criteria.cat + ' Exemples';
+								linkText = document.createTextNode(item.criteria[lang] + ' Exemples');
+								a.title = item.criteria[lang] + ' Exemples';
 								break;
 							case 'es':
-								linkText = document.createTextNode(item.criteria.es + ' Ejemplos');
-								a.title = item.criteria.es + ' Ejemplos';
+								linkText = document.createTextNode(item.criteria[lang] + ' Ejemplos');
+								a.title = item.criteria[lang] + ' Ejemplos';
 								break;
 							case 'en':
-								linkText = document.createTextNode(item.criteria.en + ' Examples');
-								a.title = item.criteria.en + ' Examples';
+								linkText = document.createTextNode(item.criteria[lang] + ' Examples');
+								a.title = item.criteria[lang] + ' Examples';
 								break;
 							default:
-								linkText = document.createTextNode(item.criteria.en + ' Examples');
-								a.title = item.criteria.en + ' Examples';
+								linkText = document.createTextNode(item.criteria[lang] + ' Examples');
+								a.title = item.criteria[lang] + ' Examples';
 								break;	
 						}
 						a.appendChild(linkText);
 						a.target = '_blank';
 						a.href = item.examples;
 						td.appendChild(a);
-					} 
-					else if (head.name === 'techniques' && item.techniques != '') {
+					}  else if (head.name === 'techniques' && item.techniques != '') {
 						switch (lang) {
 							case 'cat':
 								linkText = document.createTextNode(item.criteria.cat + ' Tècniques');
@@ -264,13 +297,11 @@ const createTable = () => {
 						a.target = '_blank';
 						a.href = item.techniques;
 						td.appendChild(a);
-					} 
-					else {
+					} else {
 						td.innerHTML = item[head.name];
 					}	
 					tr.appendChild(td);
 				}
-        
       }
     });
 		if (tr.firstElementChild != null){
@@ -281,23 +312,95 @@ const createTable = () => {
 	updateResume();
 }
 
+function translateInterface() {
+	const legendLang = document.getElementById('btnLang').firstElementChild;
+	switch (lang) {
+		case 'cat':
+			legendLang.innerHTML = 'Idioma';
+			break;
+		case 'es':
+			legendLang.innerHTML = 'Idioma';
+			break;
+		case 'en':
+		default:
+			legendLang.innerHTML = 'Language';
+			break;	
+	}
+	const legendVersion = document.getElementById('btnVersion').firstElementChild;
+	switch (lang) {
+		case 'cat':
+			legendVersion.innerHTML = 'Versió';
+			break;
+		case 'es':
+			legendVersion.innerHTML = 'Versión';
+			break;
+		case 'en':
+		default:
+			legendVersion.innerHTML = 'Version';
+			break;	
+	}
+	const legendLevel = document.getElementById('btnLevel').firstElementChild;
+	switch (lang) {
+		case 'cat':
+			legendLevel.innerHTML = 'Nivell';
+			break;
+		case 'es':
+			legendLevel.innerHTML = 'Nivel';
+			break;
+		case 'en':
+		default:
+			legendLevel.innerHTML = 'Level';
+			break;	
+	}
+	const legendColumns = document.getElementById('columns').firstElementChild;
+	switch (lang) {
+		case 'cat':
+			legendColumns.innerHTML = 'Columnes a mostrar';
+			break;
+		case 'es':
+			legendColumns.innerHTML = 'Columnas a mostrar';
+			break;
+		case 'en':
+		default:
+			legendColumns.innerHTML = 'Show columns';
+			break;	
+	}
+	const checks = document.getElementsByClassName('checks');
+	for (i=0; i < checks.length; i++) {
+		checks[i].innerHTML = checksAlias[i].alias[lang];
+	}
+	const legendCategory = document.getElementById('btnCategory').firstElementChild;
+	switch (lang) {
+		case 'cat':
+			legendCategory.innerHTML = 'Categoria';
+			break;
+		case 'es':
+			legendCategory.innerHTML = 'Categoría';
+			break;
+		case 'en':
+		default:
+			legendCategory.innerHTML = 'Category';
+			break;	
+	}
+}
+
 function updateResume() {
 	switch (lang) {
 		case 'cat':
-			//message = 'Mostrar <span class="btn btn-primary btn-sm">' + total + '</span> tests. Versió <span class="btn btn-primary btn-sm">' + version + '</span> nivell <span class="btn btn-primary btn-sm">' + level + '</span>. Categoritzats en <span class="btn btn-primary btn-sm">' + category + '</span> criteris.';
-			message = 'Mostrar <span class="btn btn-primary btn-sm">' + total + '</span> tests. Versió <span class="btn btn-primary btn-sm">' + version + '</span> nivell <span class="btn btn-primary btn-sm">' + level + '</span>.';
+			//message = 'Mostrar <span class="btn btn-info btn-sm">' + total + '</span> tests. Versió <span class="btn btn-info btn-sm">' + version + '</span> nivell <span class="btn btn-info btn-sm">' + level + '</span>. Categoritzats en <span class="btn btn-info btn-sm">' + category + '</span> criteris.';
+			message = 'Mostrant <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Versió <span class="btn btn-info btn-sm">' + version + '</span> nivell <span class="btn btn-info btn-sm">' + level + '</span>.';
 		break;
 		case 'es':
-			//message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>. Categorised by <span class="btn btn-primary btn-sm">' + category + '</span> criterios.';
-			message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>.';
+			//message = 'Showing <span class="btn btn-info btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>. Categorised by <span class="btn btn-info btn-sm">' + category + '</span> criterios.';
+			message = 'Mostrando <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Versión <span class="btn btn-info btn-sm">' + version + '</span> nivel <span class="btn btn-info btn-sm">' + level + '</span>.';
 		break;
 		case 'en':
-			//message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>. Categorised by <span class="btn btn-primary btn-sm">' + category + '</span> criteria.';
-			message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>.';
+			//message = 'Showing <span class="btn btn-info btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>. Categorised by <span class="btn btn-info btn-sm">' + category + '</span> criteria.';
+			message = 'Showing <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>.';
 		break;
 		default:
-			//message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>. Categorised by <span class="btn btn-primary btn-sm">' + category + '</span> criteria.';
-			message = 'Showing <span class="btn btn-primary btn-sm">' + total + '</span> tests. Version <span class="btn btn-primary btn-sm">' + version + '</span> level <span class="btn btn-primary btn-sm">' + level + '</span>.';
+			//message = 'Showing <span class="btn btn-info btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>. Categorised by <span class="btn btn-info btn-sm">' + category + '</span> criteria.';
+			message = 'Showing <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>.';
 		break;
 	}
 	resume.innerHTML = message;
@@ -305,67 +408,108 @@ function updateResume() {
 
 function btnLang(btn) {
 	lang = btn.id
-	createTable()
+	const btns = document.getElementsByClassName('language');
+	for (i=0; i< btns.length; i++) {
+		if (btns[i].id === btn.id) {
+			btns[i].ariaPressed = true;
+			btns[i].classList.remove('btn-secondary');
+			btns[i].classList.add('btn-primary')
+		} else {
+			btns[i].ariaPressed = false;
+			btns[i].classList.remove('btn-primary');
+			btns[i].classList.add('btn-secondary')
+		}
+	}
+	translateInterface();
+	createTable();
 }
 
 function btnVersion(btn) {
-	const contentVersion = btn.textContent
-	const arrayVersions = version.split(",")
+	const versions = document.getElementsByClassName('version');
+	const arrayVersions = [];
+	let checker = false;
 
-	if (contentVersion == "All") {
-		version = 'All'
-	}
-	else if (arrayVersions.indexOf(contentVersion) !== -1) {
-		const newArray = arrayVersions.filter(item => item != contentVersion)
-		version = newArray.join()
-		if (version == "") {
-			version = 'All'
+	if (btn.textContent === 'All') {
+		for (i=0; i< versions.length; i++) {
+			versions[i].ariaPressed = false;
 		}
+		versions[0].ariaPressed = true;
+	} else {
+		versions[0].ariaPressed = false;
+		btn.ariaPressed === 'true' ? btn.ariaPressed = false : btn.ariaPressed = true;
 	}
-	else {
 
-		if (arrayVersions.indexOf('All') !== -1) {
-			arrayVersions.splice(arrayVersions.indexOf('All'), 1)
-			version = arrayVersions.join()
-		}
-		arrayVersions.push(contentVersion)
-		if (arrayVersions.length === 3) {
-			version = 'All'
+	for (i=0; i< versions.length; i++) {
+		if (versions[i].ariaPressed === 'true') {
+			checker = true;
+			versions[i].classList.remove('btn-secondary');
+			versions[i].classList.add('btn-primary');
+			arrayVersions.push(versions[i].textContent);
 		} else {
-		version = arrayVersions.join()
+			versions[i].ariaPressed = false;
+			versions[i].classList.remove('btn-primary');
+			versions[i].classList.add('btn-secondary');
 		}
+		console.log(versions[i].ariaPressed)
 	}
+
+	if (checker === false) {
+		versions[0].ariaPressed = true;
+		versions[0].classList.remove('btn-secondary');
+		versions[0].classList.add('btn-primary');
+		arrayVersions.push(versions[0].textContent);
+	}
+	version = arrayVersions.join();
 	createTable()
 }
 
 function btnLevel(btn) {
-	const contentLevel = btn.textContent
-	const arrayLevels = level.split(",")
+	const levels = document.getElementsByClassName('level');
+	const arrayLevels = [];
+	let checker = false;
 
-	if (contentLevel == "All") {
-		level = 'All'
-	}
-	else if (arrayLevels.indexOf(contentLevel) !== -1) {
-		const newArray = arrayLevels.filter(item => item != contentLevel)
-		level = newArray.join()
-		if (level == "") {
-			level = 'All'
+	if (btn.textContent === 'All') {
+		for (i=0; i< levels.length; i++) {
+			levels[i].ariaPressed = false;
 		}
+		levels[0].ariaPressed = true;
+	} else {
+		levels[0].ariaPressed = false;
+		btn.ariaPressed === 'true' ? btn.ariaPressed = false : btn.ariaPressed = true;
 	}
-	else {
 
-		if (arrayLevels.indexOf('All') !== -1) {
-			arrayLevels.splice(arrayLevels.indexOf('All'), 1)
-			level = arrayLevels.join()
-		}
-		arrayLevels.push(contentLevel)
-		if (arrayLevels.length === 3) {
-			level = 'All'
+	for (i=0; i< levels.length; i++) {
+		if (levels[i].ariaPressed === 'true') {
+			checker = true;
+			levels[i].classList.remove('btn-secondary');
+			levels[i].classList.add('btn-primary');
+			arrayLevels.push(levels[i].textContent);
 		} else {
-		level = arrayLevels.join()
+			levels[i].ariaPressed = false;
+			levels[i].classList.remove('btn-primary');
+			levels[i].classList.add('btn-secondary');
 		}
 	}
+	
+	if (checker === false) {
+		levels[0].ariaPressed = true;
+		levels[0].classList.remove('btn-secondary');
+		levels[0].classList.add('btn-primary');
+		arrayLevels.push(levels[0].textContent);
+	}
+	level = arrayLevels.join();
+	
 	createTable()
+}
+
+function showColumns(check){
+	headers.forEach(item => {
+		if (item.name === check.id) {
+			console.log(item.view)
+			item.view ? item.view = false : item.view = true;
+		}
+	})
+	createTable();
 }
 
 function btnCategory(btn) {
@@ -373,28 +517,46 @@ function btnCategory(btn) {
 	createTable()
 }
 
-function showColumns(check){
-	headers.forEach(item => {
-		if (item.name === check.id) { 
-			check.checked ? item.view = true : item.view = false; 
-		}
-	})
-	createTable();
-}	
+function init() {
+	const btnLang = document.getElementsByClassName('language');
+	const btnVersion = document.getElementsByClassName('version')[0];
+	const btnLevel = document.getElementsByClassName('level')[0];
+	const btnCategory = document.getElementsByClassName('level')[0];
 
-function checksInit() {
-	checks.forEach(item => {
-		headers.forEach(header => {
-			if (item == header.name) {
-				header.view === true ? document.getElementById(item).checked = true : document.getElementById(item).checked = false;
-				
+	for (i=0; i < btnLang.length; i++) {
+		if (btnLang[i].id === lang) {
+			btnLang[i].ariaPressed = true;
+			btnLang[i].classList.remove('btn-secondary');
+			btnLang[i].classList.add('btn-primary')
+		}
+	}
+
+	btnVersion.ariaPressed = true;
+	btnVersion.classList.remove('btn-secondary');
+	btnVersion.classList.add('btn-primary')
+
+	btnLevel.ariaPressed = true;
+	btnLevel.classList.remove('btn-secondary');
+	btnLevel.classList.add('btn-primary')
+
+	btnCategory.ariaPressed = true;
+	btnCategory.classList.remove('btn-secondary');
+	btnCategory.classList.add('btn-primary')
+	
+	headers.forEach(item => {
+		if (item.name !== 'criteria' && item.name !== 'link') {
+			if (item.view === true) {
+				document.getElementById(item.name).checked = true;
+				document.getElementById(item.name).ariaPressed = true;
+			} else {
+				document.getElementById(item.name).checked = false;
+				document.getElementById(item.name).ariaPressed = false;
 			}
-		})
+		}
+		
 	})
 }
 
-checksInit();
+init();
+translateInterface();
 createTable();
-
-// TODO element.ariaPressed = true || false
-// TODO traducir botones
