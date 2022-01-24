@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
 	<title>WCAG</title>
 
@@ -43,9 +43,9 @@
 			<fieldset id="btnLang" class="col-6 row justify-content-end btns" style="padding:20px">
 				<legend class="col" style="text-align: right;">Language</legend>
 				<ul class="col">
-					<li><button id="en" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">English</button></li>
-					<li><button id="cat" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Català</button></li>
-					<li><button id="es" type="button" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Español</button></li>
+					<li><button id="en" type="button" aria-pressed="false" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">English</button></li>
+					<li><button id="ca" type="button" aria-pressed="false" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Català</button></li>
+					<li><button id="es" type="button" aria-pressed="false" onclick="btnLang(this)" class="btn btn-secondary btn-sm language">Español</button></li>
 				</ul>
 			</fieldset>
 		</div>
@@ -58,20 +58,20 @@
 			<fieldset id="btnVersion" class="col-3 row btns" style="padding:20px">
 				<legend class="col-3">Version</legend>
 				<ul class="col justify-content-start">
-					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">All</button></li>
-					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.0</button></li>
-					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.1</button></li>
-					<li><button type="button" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.2</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">All</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.0</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.1</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnVersion(this)" class="btn btn-secondary btn-sm version">2.2</button></li>
 				</ul>
 			</fieldset>
 
 			<fieldset id="btnLevel" class="col-3 row justify-content-end btns" style="padding:20px">
 				<legend class="col-3">Level</legend>
 				<ul class="col">
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">All</button></li>
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">A</button></li>
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">AA</button></li>
-					<li><button type="button" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">AAA</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">All</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">A</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">AA</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnLevel(this)" class="btn btn-secondary btn-sm level">AAA</button></li>
 				</ul>
 			</fieldset>
 		</div>
@@ -126,16 +126,16 @@
 			<fieldset id="btnCategory" class="col-6 row btns" style="padding:20px">
 				<legend class="">Category</legend>
 				<ul class="" style="text-align:right">
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>All</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>content</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>forms-and-UI</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>audio-video</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>structure</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>colour</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>font-size</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>dynamic-content</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>keyboard</button></li>
-					<li><button type="button" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>link</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>All</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>content</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>forms-and-UI</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>audio-video</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>structure</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>colour</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>font-size</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>dynamic-content</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>keyboard</button></li>
+					<li><button type="button" aria-pressed="false" onclick="btnCategory(this)" class="btn btn-secondary btn-sm category" disabled>link</button></li>
 				</ul>
 			</fieldset>
 		</div>

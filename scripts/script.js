@@ -1,5 +1,5 @@
 const criteria = wcagObj['criterion'];
-let lang = 'cat';
+let lang = document.documentElement.getAttribute('lang');
 let totalElem = "78";
 let version = 'All';
 let level = 'All';
@@ -12,7 +12,7 @@ let checksAlias = [
 	{
 		"name" : "level",
 		"alias" : {
-			"cat" : "Nivell",
+			"ca" : "Nivell",
 			"es" : "Nivel",
 			"en" : "Level"
 		}
@@ -20,7 +20,7 @@ let checksAlias = [
 	{
 		"name" : "version",
 		"alias" : {
-			"cat" : "Versió",
+			"ca" : "Versió",
 			"es" : "Versión",
 			"en" : "Version"
 		}
@@ -28,7 +28,7 @@ let checksAlias = [
 	{
 		"name" : "goal",
 		"alias" : {
-			"cat" : "Objectiu",
+			"ca" : "Objectiu",
 			"es" : "Objetivo",
 			"en" : "Goal"
 		}
@@ -36,7 +36,7 @@ let checksAlias = [
 	{
 		"name" : "intent",
 		"alias" : {
-			"cat" : "Intenció",
+			"ca" : "Intenció",
 			"es" : "Intención",
 			"en" : "Intent"
 		}
@@ -44,7 +44,7 @@ let checksAlias = [
 	{
 		"name" : "benefits",
 		"alias" : {
-			"cat" : "Beneficis",
+			"ca" : "Beneficis",
 			"es" : "Beneficios",
 			"en" : "Benefits"
 		}
@@ -52,7 +52,7 @@ let checksAlias = [
 	{
 		"name" : "examples",
 		"alias" : {
-			"cat" : "Exemples",
+			"ca" : "Exemples",
 			"es" : "Ejemplos",
 			"en" : "Examples"
 		}
@@ -60,7 +60,7 @@ let checksAlias = [
 	{
 		"name" : "techniques",
 		"alias" : {
-			"cat" : "Tècniques",
+			"ca" : "Tècniques",
 			"es" : "Técnicas",
 			"en" : "Techniques"
 		}
@@ -68,7 +68,7 @@ let checksAlias = [
 	{
 		"name" : "verification",
 		"alias" : {
-			"cat" : "Verificació",
+			"ca" : "Verificació",
 			"es" : "Verificación",
 			"en" : "Verification"
 		}
@@ -76,7 +76,7 @@ let checksAlias = [
 	{
 		"name" : "tools",
 		"alias" : {
-			"cat" : "Eines",
+			"ca" : "Eines",
 			"es" : "Herramientas",
 			"en" : "Tools"
 		}
@@ -84,7 +84,7 @@ let checksAlias = [
 	{
 		"name" : "category",
 		"alias" : {
-			"cat" : "Categoria",
+			"ca" : "Categoria",
 			"es" : "Categoría",
 			"en" : "Category"
 		}
@@ -95,7 +95,7 @@ let headers = [
 	{
 		"name" : "criteria",
 		"alias" : {
-			"cat" : "Criteri",
+			"ca" : "Criteri",
 			"es" : "Criterio",
 			"en" : "Criteria"
 		},
@@ -109,7 +109,7 @@ let headers = [
 	{
 		"name" : "level",
 		"alias" : {
-			"cat" : "Nivell",
+			"ca" : "Nivell",
 			"es" : "Nivel",
 			"en" : "Level"
 		},
@@ -118,7 +118,7 @@ let headers = [
 	{
 		"name" : "version",
 		"alias" : {
-			"cat" : "Versió",
+			"ca" : "Versió",
 			"es" : "Versión",
 			"en" : "Version"
 		},
@@ -127,7 +127,7 @@ let headers = [
 	{
 		"name" : "goal",
 		"alias" : {
-			"cat" : "Objectiu",
+			"ca" : "Objectiu",
 			"es" : "Objetivo",
 			"en" : "Goal"
 		},
@@ -136,7 +136,7 @@ let headers = [
 	{
 		"name" : "intent",
 		"alias" : {
-			"cat" : "Intenció",
+			"ca" : "Intenció",
 			"es" : "Intención",
 			"en" : "Intent"
 		},
@@ -145,7 +145,7 @@ let headers = [
 	{
 		"name" : "benefits",
 		"alias" : {
-			"cat" : "Beneficis",
+			"ca" : "Beneficis",
 			"es" : "Beneficios",
 			"en" : "Benefits"
 		},
@@ -154,7 +154,7 @@ let headers = [
 	{
 		"name" : "examples",
 		"alias" : {
-			"cat" : "Exemples",
+			"ca" : "Exemples",
 			"es" : "Ejemplos",
 			"en" : "Examples"
 		},
@@ -163,7 +163,7 @@ let headers = [
 	{
 		"name" : "techniques",
 		"alias" : {
-			"cat" : "Tècniques",
+			"ca" : "Tècniques",
 			"es" : "Técnicas",
 			"en" : "Techniques"
 		},
@@ -172,7 +172,7 @@ let headers = [
 	{
 		"name" : "verification",
 		"alias" : {
-			"cat" : "Verificació",
+			"ca" : "Verificació",
 			"es" : "Verificación",
 			"en" : "Verification"
 		},
@@ -181,7 +181,7 @@ let headers = [
 	{
 		"name" : "tools",
 		"alias" : {
-			"cat" : "Eines",
+			"ca" : "Eines",
 			"es" : "Herramientas",
 			"en" : "Tools"
 		},
@@ -190,7 +190,7 @@ let headers = [
 	{
 		"name" : "category",
 		"alias" : {
-			"cat" : "Categoria",
+			"ca" : "Categoria",
 			"es" : "Categoria",
 			"en" : "Category"
 		},
@@ -253,7 +253,7 @@ function createTable() {
 					const td = document.createElement('td');
 					if (head.name === 'examples' && item.examples != '') {
 						switch (lang) {
-							case 'cat':
+							case 'ca':
 								linkText = document.createTextNode(item.criteria[lang] + ' Exemples');
 								a.title = item.criteria[lang] + ' Exemples';
 								break;
@@ -276,7 +276,7 @@ function createTable() {
 						td.appendChild(a);
 					}  else if (head.name === 'techniques' && item.techniques != '') {
 						switch (lang) {
-							case 'cat':
+							case 'ca':
 								linkText = document.createTextNode(item.criteria.cat + ' Tècniques');
 								a.title = item.criteria.cat + ' Tècniques';
 								break;
@@ -315,7 +315,7 @@ function createTable() {
 function translateInterface() {
 	const legendLang = document.getElementById('btnLang').firstElementChild;
 	switch (lang) {
-		case 'cat':
+		case 'ca':
 			legendLang.innerHTML = 'Idioma';
 			break;
 		case 'es':
@@ -328,7 +328,7 @@ function translateInterface() {
 	}
 	const legendVersion = document.getElementById('btnVersion').firstElementChild;
 	switch (lang) {
-		case 'cat':
+		case 'ca':
 			legendVersion.innerHTML = 'Versió';
 			break;
 		case 'es':
@@ -341,7 +341,7 @@ function translateInterface() {
 	}
 	const legendLevel = document.getElementById('btnLevel').firstElementChild;
 	switch (lang) {
-		case 'cat':
+		case 'ca':
 			legendLevel.innerHTML = 'Nivell';
 			break;
 		case 'es':
@@ -354,7 +354,7 @@ function translateInterface() {
 	}
 	const legendColumns = document.getElementById('columns').firstElementChild;
 	switch (lang) {
-		case 'cat':
+		case 'ca':
 			legendColumns.innerHTML = 'Columnes a mostrar';
 			break;
 		case 'es':
@@ -371,7 +371,7 @@ function translateInterface() {
 	}
 	const legendCategory = document.getElementById('btnCategory').firstElementChild;
 	switch (lang) {
-		case 'cat':
+		case 'ca':
 			legendCategory.innerHTML = 'Categoria';
 			break;
 		case 'es':
@@ -386,36 +386,31 @@ function translateInterface() {
 
 function updateResume() {
 	switch (lang) {
-		case 'cat':
-			//message = 'Mostrar <span class="btn btn-info btn-sm">' + total + '</span> tests. Versió <span class="btn btn-info btn-sm">' + version + '</span> nivell <span class="btn btn-info btn-sm">' + level + '</span>. Categoritzats en <span class="btn btn-info btn-sm">' + category + '</span> criteris.';
-			message = 'Mostrant <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Versió <span class="btn btn-info btn-sm">' + version + '</span> nivell <span class="btn btn-info btn-sm">' + level + '</span>.';
+		case 'ca':
+			message = 'Mostrant <span class="btn btn-info dark-text btn-sm">' + total + '</span> criteris. Versió <span class="btn btn-info btn-sm">' + version + '</span> nivell <span class="btn btn-info btn-sm">' + level + '</span>.';
 		break;
 		case 'es':
-			//message = 'Showing <span class="btn btn-info btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>. Categorised by <span class="btn btn-info btn-sm">' + category + '</span> criterios.';
-			message = 'Mostrando <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Versión <span class="btn btn-info btn-sm">' + version + '</span> nivel <span class="btn btn-info btn-sm">' + level + '</span>.';
+			message = 'Mostrando <span class="btn btn-info dark-text btn-sm">' + total + '</span> criterios. Versión <span class="btn btn-info btn-sm">' + version + '</span> nivel <span class="btn btn-info btn-sm">' + level + '</span>.';
 		break;
 		case 'en':
-			//message = 'Showing <span class="btn btn-info btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>. Categorised by <span class="btn btn-info btn-sm">' + category + '</span> criteria.';
-			message = 'Showing <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>.';
-		break;
 		default:
-			//message = 'Showing <span class="btn btn-info btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>. Categorised by <span class="btn btn-info btn-sm">' + category + '</span> criteria.';
-			message = 'Showing <span class="btn btn-info dark-text btn-sm">' + total + '</span> tests. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>.';
+			message = 'Showing <span class="btn btn-info dark-text btn-sm">' + total + '</span> criterias. Version <span class="btn btn-info btn-sm">' + version + '</span> level <span class="btn btn-info btn-sm">' + level + '</span>.';
 		break;
 	}
 	resume.innerHTML = message;
 }
 
 function btnLang(btn) {
-	lang = btn.id
+	document.documentElement.setAttribute("lang", btn.id);
+	lang = document.documentElement.getAttribute('lang');
 	const btns = document.getElementsByClassName('language');
 	for (i=0; i< btns.length; i++) {
 		if (btns[i].id === btn.id) {
-			btns[i].ariaPressed = true;
+			btns[i].ariaPressed = 'true';
 			btns[i].classList.remove('btn-secondary');
 			btns[i].classList.add('btn-primary')
 		} else {
-			btns[i].ariaPressed = false;
+			btns[i].ariaPressed = 'false';
 			btns[i].classList.remove('btn-primary');
 			btns[i].classList.add('btn-secondary')
 		}
@@ -431,12 +426,12 @@ function btnVersion(btn) {
 
 	if (btn.textContent === 'All') {
 		for (i=0; i< versions.length; i++) {
-			versions[i].ariaPressed = false;
+			versions[i].ariaPressed = 'false';
 		}
-		versions[0].ariaPressed = true;
+		versions[0].ariaPressed = 'true';
 	} else {
-		versions[0].ariaPressed = false;
-		btn.ariaPressed === 'true' ? btn.ariaPressed = false : btn.ariaPressed = true;
+		versions[0].ariaPressed = 'false';
+		btn.ariaPressed === 'true' ? btn.ariaPressed = 'false' : btn.ariaPressed = 'true';
 	}
 
 	for (i=0; i< versions.length; i++) {
@@ -446,15 +441,14 @@ function btnVersion(btn) {
 			versions[i].classList.add('btn-primary');
 			arrayVersions.push(versions[i].textContent);
 		} else {
-			versions[i].ariaPressed = false;
+			versions[i].ariaPressed = 'false';
 			versions[i].classList.remove('btn-primary');
 			versions[i].classList.add('btn-secondary');
 		}
-		console.log(versions[i].ariaPressed)
 	}
 
 	if (checker === false) {
-		versions[0].ariaPressed = true;
+		versions[0].ariaPressed = 'true';
 		versions[0].classList.remove('btn-secondary');
 		versions[0].classList.add('btn-primary');
 		arrayVersions.push(versions[0].textContent);
@@ -470,12 +464,12 @@ function btnLevel(btn) {
 
 	if (btn.textContent === 'All') {
 		for (i=0; i< levels.length; i++) {
-			levels[i].ariaPressed = false;
+			levels[i].ariaPressed = 'false';
 		}
-		levels[0].ariaPressed = true;
+		levels[0].ariaPressed = 'true';
 	} else {
-		levels[0].ariaPressed = false;
-		btn.ariaPressed === 'true' ? btn.ariaPressed = false : btn.ariaPressed = true;
+		levels[0].ariaPressed = 'false';
+		btn.ariaPressed === 'true' ? btn.ariaPressed = 'false' : btn.ariaPressed = 'true';
 	}
 
 	for (i=0; i< levels.length; i++) {
@@ -525,21 +519,21 @@ function init() {
 
 	for (i=0; i < btnLang.length; i++) {
 		if (btnLang[i].id === lang) {
-			btnLang[i].ariaPressed = true;
+			btnLang[i].ariaPressed = 'true';
 			btnLang[i].classList.remove('btn-secondary');
 			btnLang[i].classList.add('btn-primary')
 		}
 	}
 
-	btnVersion.ariaPressed = true;
+	btnVersion.ariaPressed = 'true';
 	btnVersion.classList.remove('btn-secondary');
 	btnVersion.classList.add('btn-primary')
 
-	btnLevel.ariaPressed = true;
+	btnLevel.ariaPressed = 'true';
 	btnLevel.classList.remove('btn-secondary');
 	btnLevel.classList.add('btn-primary')
 
-	btnCategory.ariaPressed = true;
+	btnCategory.ariaPressed = 'true';
 	btnCategory.classList.remove('btn-secondary');
 	btnCategory.classList.add('btn-primary')
 	
@@ -547,10 +541,10 @@ function init() {
 		if (item.name !== 'criteria' && item.name !== 'link') {
 			if (item.view === true) {
 				document.getElementById(item.name).checked = true;
-				document.getElementById(item.name).ariaPressed = true;
+				document.getElementById(item.name).ariaPressed = 'true';
 			} else {
 				document.getElementById(item.name).checked = false;
-				document.getElementById(item.name).ariaPressed = false;
+				document.getElementById(item.name).ariaPressed = 'false';
 			}
 		}
 		
