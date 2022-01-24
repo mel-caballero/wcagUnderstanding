@@ -1,6 +1,6 @@
 const criteria = wcagObj['criterion'];
 let lang = document.documentElement.getAttribute('lang');
-let totalElem = "78";
+let total = "87";
 let version = 'All';
 let level = 'All';
 let category = 'All';
@@ -382,6 +382,7 @@ function translateInterface() {
 			legendCategory.innerHTML = 'Category';
 			break;	
 	}
+	updateResume();
 }
 
 function updateResume() {
