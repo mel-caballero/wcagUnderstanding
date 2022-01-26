@@ -595,7 +595,7 @@ const wcagObj = {
       "category" : ["content"]
     },
     
-    { // *** 1.3.4.
+    { // 1.3.4.
       "criteria" : 
       {
         "ca" : "1.3.4 Orientació", 
@@ -640,7 +640,7 @@ const wcagObj = {
       "category" : ["structure"]
     },
     
-    { // *** 1.3.5.
+    { // 1.3.5.
       "criteria" : 
       {
         "ca" : "1.3.5 Identificar el propòsit d'entrada", 
@@ -1135,7 +1135,7 @@ const wcagObj = {
       "category" : [""]
     },
     
-    { // *** 1.4.10.
+    { // 1.4.10.
       "criteria" : 
       {
         "ca" : "1.4.10 Reflux", 
@@ -1180,7 +1180,7 @@ const wcagObj = {
       "category" : ["structure"]
     },
     
-    { // *** 1.4.11.
+    { // 1.4.11.
       "criteria" : 
       {
         "ca" : "1.4.11 Contrast sense text", 
@@ -1225,7 +1225,7 @@ const wcagObj = {
       "category" : ["colour", "forms-and-UI"]
     },
     
-    { // *** 1.4.12.
+    { // 1.4.12.
       "criteria" : 
       {
         "ca" : "1.4.12 Espaiat de text", 
@@ -1270,7 +1270,7 @@ const wcagObj = {
       "category" : ["structure"]
     },
     
-    { // *** 1.4.13.
+    { // 1.4.13.
       "criteria" : 
       {
         "ca" : "1.4.13 Contingut en passar el ratolí o enfocar", 
@@ -1450,7 +1450,7 @@ const wcagObj = {
       "category" : [""]
     },
     
-    { // *** 2.1.4.
+    { // 2.1.4.
       "criteria" : 
       {
         "ca" : "2.1.4 Accessos directes de tecles de caràcters", 
@@ -2111,7 +2111,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2157,7 +2156,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2203,7 +2201,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2249,7 +2246,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2295,7 +2291,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2341,7 +2336,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2357,7 +2351,7 @@ const wcagObj = {
       "category" : [""]
     },
 
-    { // ****** 2.4.11.
+    { // 2.4.11.
       "criteria" : 
       {
         "ca" : "2.4.11 Aspecte d'enfocament (mínim)", 
@@ -2375,19 +2369,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>L'objectiu d'aquest criteri d'èxit és garantir que un indicador de focus del teclat sigui clarament visible i perceptible. Aquest criteri està estretament relacionat amb 2.4.7 Focus Visible i 1.4.11 Contrast sense text. Quan el focus visible només requereix un indicador d'enfocament visible, 2.4.11 defineix un nivell mínim de visibilitat. Quan el contrast sense text requereix que un component tingui un contrast adequat contra el fons en cadascun dels seus estats, 2.4.11 requereix un contrast suficient entre els estats enfocat i no enfocat.</p><p>Per a persones vidents amb discapacitat de mobilitat que utilitzen un dispositiu semblant al teclat (p. ex., un interruptor, entrada de veu), conèixer el punt d'enfocament actual és molt important. L'enfocament visible també ha de satisfer les necessitats dels usuaris amb poca visió, que també poden ser usuaris només de teclat.</p><p>Un indicador d'enfocament de teclat pot adoptar diferents formes; aquest criteri d'èxit estableix un requisit perquè es pugui distingir clarament. Per exemple, l'ús d'un contorn gruixut que contrasti amb el fons que hi ha darrere del component superarà aquest criteri.</p><p>El requisit de mida mínima per a cada indicador de focus que es mostra a dalt són:</p><ul><li>A 1 píxel CSS contorn fosc fora del botó, separat del botó per 1 píxel;</li><li>Un contorn clar de 2 píxels de gruix dins del botó;</li><li>Un contorn fosc de 2 píxels de gruix al voltant el botó.</li></ul><p>Els indicadors de focus predeterminats en alguns navegadors poden ser difícils de veure, com ara un contorn de punts d'1 px o un indicador blau que passa a estar sobre un fons blau. En general, és millor definir un estil d'enfocament del teclat que compleixi aquest criteri o provar els estils de focus als navegadors en què es confia per a la seva conformitat.</p>", 
+        "es" : "<p>El propósito de este Criterio de Conformidad es garantizar que el indicador de enfoque del teclado sea claramente visible y perceptible. Este criterio está estrechamente relacionado con 2.4.7 Foco visible y 1.4.11 Contraste sin texto. Donde Foco Visible simplemente requiere un indicador de foco visible, 2.4.11 define un nivel mínimo de visibilidad. Donde Non-text Contrast requiere que un componente tenga un contraste adecuado contra el fondo en cada uno de sus estados, 2.4.11 requiere suficiente contraste entre los estados enfocado y no enfocado.</p><p>Para personas videntes con problemas de movilidad que usan un dispositivo similar a un teclado (p. ej., un interruptor, entrada de voz), conocer el punto de enfoque actual es muy importante. El enfoque visible también debe satisfacer las necesidades de los usuarios con baja visión, que también pueden ser usuarios de solo teclado.</p><p>Un indicador de enfoque del teclado puede tomar diferentes formas; este Criterio de Conformidad establece un requisito para hacerlo claramente distinguible. Por ejemplo, el uso de un contorno grueso que contraste con el fondo detrás del componente pasaría este criterio.</p><p>El requisito de tamaño mínimo para cada indicador de enfoque que se muestra arriba es:</p><ul><li>A 1 contorno oscuro de píxel CSS fuera del botón, separado del botón por 1 píxel;</li><li>Un contorno claro de 2 píxeles de grosor dentro del botón;</li><li>Un contorno oscuro de 2 píxeles de grosor alrededor el botón.</li></ul><p>Los indicadores de enfoque predeterminados en algunos navegadores pueden ser difíciles de ver, como un contorno punteado de 1 px o un indicador azul que resulta estar sobre un fondo azul. Por lo general, es mejor definir un estilo de enfoque de teclado que cumpla con este criterio o probar los estilos de enfoque en los navegadores en los que se confía para la conformidad.</p>", 
+        "en" : "<p>The purpose of this Success Criterion is to ensure a keyboard focus indicator is clearly visible and discernible. This criterion is closely related to 2.4.7 Focus Visible and 1.4.11 Non-text Contrast. Where Focus Visible merely requires a visible focus indicator, 2.4.11 defines a minimum level of visibility. Where Non-text Contrast requires a component to have adequate contrast against the background in each of its states, 2.4.11 requires sufficient contrast between the focused and unfocused states.</p><p>For sighted people with mobility impairments who use a keyboard-like device (e.g., a switch, voice input), knowing the current point of focus is very important. Visible focus must also meet the needs of low-vision users, who may also be keyboard-only users.</p><p>A keyboard focus indicator can take different forms; this Success Criterion sets a requirement to make it clearly distinguishable. For example, using a thick outline that contrasts with the background behind the component would pass this criterion.</p><p>The minimum size requirement for each focus indicator shown above are:</p><ul><li>A 1 CSS pixel dark outline outside the button, separated from the button by 1 pixel;</li><li>A 2-pixel thick light outline inside the button;</li><li>A 2-pixel thick dark outline around the button.</li></ul><p>The default focus indicators in some browsers can be difficult to see, such as a 1px dotted outline, or a blue indicator which happens to be on a blue background. It is generally best to either define a keyboard focus style which meets this criterion, or test the focus styles across the browsers that are relied upon for conformance.</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "<ul><li>Aquest criteri d'èxit ajuda qualsevol persona que confia en el teclat per fer servir la pàgina, ja que els permet determinar visualment el component en què interactuaran les operacions del teclat en qualsevol moment.</li><li>Persones amb atenció. les limitacions, les limitacions de la memòria a curt termini o les limitacions en els processos executius es beneficien de poder descobrir on es troba el focus.</li></ul>", 
+        "es" : "<ul><li>Este Criterio de Conformidad ayuda a cualquiera que utilice el teclado para operar la página, permitiéndole determinar visualmente el componente en el que las operaciones del teclado interactuarán en cualquier momento.</li><li>Personas con atención Las limitaciones, las limitaciones de la memoria a corto plazo o las limitaciones en los procesos ejecutivos se benefician al poder descubrir dónde se encuentra el foco.</li></ul>", 
+        "en" : "<ul><li>This Success Criterion helps anyone who relies on the keyboard to operate the page, by letting them visually determine the component on which keyboard operations will interact at any point in time.</li><li>People with attention limitations, short term memory limitations, or limitations in executive processes benefit by being able to discover where the focus is located.</li></ul>",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -2421,19 +2414,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>L'objectiu d'aquest criteri d'èxit és garantir que un indicador de focus del teclat sigui molt visible. Aquest criteri està estretament relacionat amb el Criteri d'èxit 2.4.11 Aspecte del focus (mínim) i defineix un nivell més alt de visibilitat per a l'indicador de focus.</p><p>En relació al Focus Visible (millorat), aquest criteri:</p> <ul><li>Amplia l'àrea mínima a 2 píxels CSS al voltant del perímetre.</li><li>Augmenta el canvi de contrast a 4,5:1.</li><li>No permet cap part del l'indicador d'enfocament es veu enfosquit per altres continguts creats per l'autor.</li></ul><p>La resta d'aspectes del criteri d'èxit són els mateixos que el focus visible (mínim).</p>", 
+        "es" : "<p>El propósito de este Criterio de Conformidad es garantizar que el indicador de enfoque del teclado sea muy visible. Este criterio está estrechamente relacionado con el Criterio de Conformidad 2.4.11 Aspecto del foco (mínimo) y define un mayor nivel de visibilidad para el indicador de foco.</p><p>En relación con el foco visible (mejorado), este criterio:</p> <ul><li>Expande el área mínima a 2 píxeles CSS alrededor del perímetro.</li><li>Aumenta el cambio de contraste a 4,5:1.</li><li>No permite ninguna parte del el indicador de foco sea oscurecido por otro contenido creado por el autor.</li></ul><p>Los otros aspectos del Criterio de Conformidad son los mismos que Foco Visible (Mínimo).</p>", 
+        "en" : "<p>The purpose of this Success Criterion is to ensure a keyboard focus indicator is highly visible. This criterion is closely related to Success Criterion 2.4.11 Focus Appearance (Minimum) and defines a higher level of visibility for the focus indicator.</p><p>In relation to Focus Visible (enhanced) this criterion:</p><ul><li>Expands the minimum area to 2 CSS pixels around the perimeter.</li><li>Increases the change of contrast to 4.5:1.</li><li>Does not allow for any part of the focus indicator to be obscured by other, author-created content.</li></ul><p>The other aspects of the Success Criterion are the same as Focus Visible (Minimum).</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "<p>Els avantatges d'aquest criteri d'èxit són similars a l'aspecte del focus (mínim).</p><ul><li>Els usuaris de teclat visuals poden determinar visualment amb quin component interaccionarà mitjançant les operacions del teclat.</li><li. >Les persones amb baixa visió poden seguir millor un indicador d'enfocament molt visible.</li><li>Les persones amb limitacions d'atenció, limitacions de memòria a curt termini o limitacions en els processos executius es beneficien de poder descobrir on es troba el focus. </li></ul>", 
+        "es" : "<p>Los beneficios de este Criterio de Conformidad son similares a la Apariencia de Enfoque (Mínima).</p><ul><li>Los usuarios de teclados videntes pueden determinar visualmente con qué componente se interactuará usando las operaciones del teclado.</li><li >Las personas con baja visión pueden seguir mejor un indicador de enfoque muy visible.</li><li>Las personas con limitaciones de atención, limitaciones de memoria a corto plazo o limitaciones en los procesos ejecutivos se benefician al poder descubrir dónde se encuentra el foco. </li></ul>", 
+        "en" : "<p>The benefits of this Success Criterion are similar to Focus Appearance (Minimum).</p><ul><li>Sighted keyboard users can visually determine which component will be interacted with using keyboard operations.</li><li>People with low vision are better able to follow a highly visible focus indicator.</li><li>People with attention limitations, short term memory limitations, or limitations in executive processes benefit by being able to discover where the focus is located.</li></ul>",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -2449,7 +2441,7 @@ const wcagObj = {
       "category" : [""]
     },
     
-    { // ****** 2.4.13.
+    { // 2.4.13.
       "criteria" : 
       {
         "ca" : "2.4.13 Navegació de salt de pàgina", 
@@ -2467,19 +2459,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>L'objectiu d'aquest Criteri d'èxit és permetre que tots els usuaris localitzin el mateix contingut mitjançant localitzadors de salts de pàgina, independentment de si utilitzen versions impresas o digitals d'una publicació. Això és important per als usuaris amb discapacitat que poden transformar la informació per consumir-la més fàcilment.</p><p>La numeració de pàgines ha estat durant molt de temps una manera fonamental d'identificar i comunicar la ubicació de parts específiques del contingut publicat. Els números de pàgina s'utilitzen en referències, notes al peu, notes finals, bibliografies i taules de contingut. En particular, són crítics en entorns acadèmics i d'aprenentatge. Quan els participants utilitzen la mateixa edició d'un llibre imprès, els números de pàgina proporcionen un mitjà per assegurar-se que tothom està 'a la mateixa pàgina'.</p><p>La publicació digital, alhora que ofereix un major accés a la informació, amenaça la capacitat de tothom per localitza la informació per número de pàgina. Això es deu al fet que la mida de la pantalla i les preferències de l'usuari poden alterar el contingut. En una implementació, una pantalla de contingut es pot considerar una pàgina i la paginació es pot actualitzar perquè coincideixi amb el nombre de pantalles de contingut en un dispositiu específic. En un altre, la numeració de pàgines pot deixar d'utilitzar-se en una versió digital. En qualsevol cas, un usuari la numeració de les pàgines del qual ja no coincideix amb la versió impresa no pot trobar fàcilment la informació per referències de números de pàgina.</p><p>La publicació digital ofereix un accés crucial al contingut per a persones cegues, amb baixa visió, dislèxia o altres discapacitats cognitives. És probable que aquests usuaris adaptin el contingut mitjançant un disseny diferent o una tecnologia d'assistència. Proporcionar un mecanisme pel qual els usuaris de versions digitals puguin navegar mitjançant números de pàgina, garanteix que tots els usuaris puguin arribar fàcilment a la mateixa ubicació del document.</p><p>L'abast d'aquest criteri és el contingut web que forma part d'una pàgina web. EPUB pot complir aquesta definició si està disponible per llegir-la en un URI. El cas més comú que està a l'abast és un llibre EPUB convertit per ser llegit per un navegador web.</p>", 
+        "es" : "<p>El propósito de este Criterio de Conformidad es permitir que todos los usuarios ubiquen el mismo contenido usando localizadores de saltos de página, independientemente de si usan versiones impresas o digitales de una publicación. Esto es importante para los usuarios con discapacidades que pueden transformar la información para consumirla más fácilmente.</p><p>La numeración de páginas ha sido durante mucho tiempo una forma fundamental de identificar y comunicar la ubicación de partes específicas del contenido publicado. Los números de página se utilizan en referencias, notas al pie, notas al final, bibliografías y tablas de contenido. En particular, son fundamentales en entornos académicos y de aprendizaje. Cuando los participantes usan la misma edición de un libro impreso, los números de página brindan un medio para garantizar que todos estén 'en la misma página'.</p><p>La publicación digital, si bien brinda un mayor acceso a la información, amenaza la capacidad de todos para localizar información por número de página. Esto se debe a que el tamaño de la pantalla y las preferencias del usuario pueden alterar el contenido. En una implementación, una pantalla de contenido puede considerarse una página y la paginación puede actualizarse para que coincida con el número de pantallas de contenido en un dispositivo específico. En otro, la numeración de páginas puede dejar de utilizarse en una versión digital. En cualquier caso, un usuario cuya numeración de páginas ya no coincida con la versión impresa no podrá ubicar fácilmente la información mediante las referencias de números de página.</p><p>La publicación digital proporciona un acceso crucial al contenido para las personas ciegas, con problemas de visión, dislexia o otras discapacidades cognitivas. Es probable que dichos usuarios adapten el contenido utilizando un diseño diferente o tecnología de asistencia. Proporcionar un mecanismo mediante el cual los usuarios de las versiones digitales puedan navegar a través de los números de página garantiza que todos los usuarios puedan llegar fácilmente a la misma ubicación del documento.</p><p>El alcance de este criterio es el contenido web que forma parte de una página web. EPUB puede cumplir con esta definición si está disponible para leer en un URI. El caso más común que está en el alcance es un libro EPUB convertido para ser leído por un navegador web.</p>", 
+        "en" : "<p>The purpose of this Success Criterion is to let all users locate the same content using page break locators, regardless of whether they use print or digital versions of a publication. This is important to users with disabilities who may transform the information to more easily consume it.</p><p>Page numbering has long been a fundamental way to identify and communicate the location of specific parts of published content. Page numbers are used in references, footnotes, endnotes, bibliographies, and tables of content. Particularly, they are critical in academic and learning environments. When participants use the same edition of a printed book, page numbers provide a means to ensure everyone is 'on the same page.'</p><p>Digital publishing, while providing greater access to information, threatens the ability for everyone to locate information by page number. This is because screen size and user preferences can alter content. In one implementation, a screen of content may be considered a page, and the pagination may be updated to match the number of screens of content on a specific device. In another, the page numbering may cease to be used at all in a digital version. In either case, a user whose page numbering no longer matches the printed version cannot easily locate information by page number references.</p><p>Digital publishing provides crucial access to content for people who are blind, have low vision, dyslexia or other cognitive disabilities. Such users are likely to adapt content by using a different layout or assistive technology. Providing a mechanism by which users of digital versions can navigate via page numbers, ensures all users can easily reach the same document location.</p><p>The scope of this criterion is web content that is part of a Web page. EPUB can fulfill this definition if it is available to read at a URI. The more common case that is in scope is an EPUB book converted to be read by a web browser.</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "Les persones que utilitzin un lector de pantalla o adaptin la visualització del contingut encara podran trobar el seu lloc i trobar referències a continguts basats en números de pàgina de la versió impresa o predeterminada de la publicació.", 
+        "es" : "Las personas que usan un lector de pantalla o adaptan la visualización del contenido aún podrán encontrar su lugar y encontrar referencias al contenido que se basan en los números de página de la versión impresa o predeterminada de la publicación.", 
+        "en" : "People who use a screenreader or adapt the display of the content will still be able to find their place and find references to content that are based on page numbers of the print or default version of the publication.",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/page-break-navigation.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/page-break-navigation.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -2495,7 +2486,7 @@ const wcagObj = {
       "category" : [""]
     },
 
-    { // *** 2.5.1.
+    { // 2.5.1.
       "criteria" : 
       {
         "ca" : "2.5.1 Gestos de punter", 
@@ -2540,7 +2531,7 @@ const wcagObj = {
       "category" : ["custom-controls"]
     },
     
-    { // *** 2.5.2.
+    { // 2.5.2.
       "criteria" : 
       {
         "ca" : "2.5.2 Cancel·lació de punter", 
@@ -2585,7 +2576,7 @@ const wcagObj = {
       "category" : ["custom-controls"]
     },
     
-    { // *** 2.5.3.
+    { // 2.5.3.
       "criteria" : 
       {
         "ca" : "2.5.3 Etiqueta en Nom", 
@@ -2630,7 +2621,7 @@ const wcagObj = {
       "category" : ["custom-controls", "forms-and-UI"]
     },
     
-    { // *** 2.5.4.
+    { // 2.5.4.
       "criteria" : 
       {
         "ca" : "2.5.4 Actuació de moviment", 
@@ -2705,7 +2696,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2751,7 +2741,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2767,7 +2756,7 @@ const wcagObj = {
       "category" : [""]
     },
     
-    { // ****** 2.5.7.
+    { // 2.5.7.
       "criteria" : 
       {
         "ca" : "2.5.7 Moviments d'arrossegament", 
@@ -2785,19 +2774,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>La intenció d'aquest criteri d'èxit és garantir que la funcionalitat que utilitza un moviment d'arrossegament (p. ex., controls lliscants, interfícies d'arrossegar i deixar anar) tingui un altre mode de funcionament d'un punter únic sense necessitat de la destresa necessària per arrossegar elements.</p> p><p>Algunes persones no poden realitzar moviments d'arrossegament d'una manera precisa. Altres utilitzen un dispositiu d'entrada especialitzat o adaptat, com ara un punter de cap, un sistema de mira o un emulador de ratolí controlat per veu, que fa que l'arrossegament sigui complicat, propens a errors o totalment impossible.</p><p>Quan s'implementa una interfície. La funcionalitat que utilitza els moviments d'arrossegament, els usuaris realitzen quatre accions discretes:</p><ol><li>Toqueu o feu clic per establir un punt de partida i, a continuació,</li><li>Manteniu premut aquest contacte mentre...</ li><li>Realitzar una reposició del punter, abans de...</li><li>Alliberar el punter al punt final.</li></ol><p>No tots els usuaris poden mantenir premut amb precisió. aquest contacte alhora que reposiciona el punter. S'ha de proporcionar un mètode alternatiu perquè els usuaris amb problemes de mobilitat que utilitzen un punter (ratolí, bolígraf o contacte tàctil) puguin utilitzar la funcionalitat.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que la funcionalidad que utiliza un movimiento de arrastre (por ejemplo, controles deslizantes, interfaces de arrastrar y soltar) tenga otro modo de operación de puntero único sin la necesidad de la destreza necesaria para arrastrar elementos.</p> p><p>Algunas personas no pueden realizar movimientos de arrastre de manera precisa. Otros usan un dispositivo de entrada especializado o adaptado, como un puntero de cabeza, un sistema de mirada o un emulador de mouse controlado por voz, lo que hace que arrastrar sea engorroso, propenso a errores o completamente imposible.</p><p>Cuando una interfaz implementa funcionalidad que usa movimientos de arrastre, los usuarios realizan cuatro acciones discretas:</p><ol><li>Toque o haga clic para establecer un punto de inicio, luego</li><li>Presione y mantenga presionado ese contacto mientras...</ li><li>Realizando un reposicionamiento del puntero, antes de...</li><li>Soltar el puntero en el punto final.</li></ol><p>No todos los usuarios pueden mantener presionado con precisión ese contacto mientras también reposiciona el puntero. Se debe proporcionar un método alternativo para que los usuarios con problemas de movilidad que usan un puntero (mouse, bolígrafo o contacto táctil) puedan usar la funcionalidad.</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure functionality that uses a dragging movement (e.g., sliders, drag-and-drop interfaces) has another single pointer mode of operation without the need for the dexterity required to drag elements.</p><p>Some people cannot perform dragging motions in a precise manner. Others use a specialized or adapted input device such as a head pointer, eye-gaze system, or speech-controlled mouse emulator, which makes dragging cumbersome, error-prone, or outright impossible.</p><p>When an interface implements functionality that uses dragging motions, users perform four discrete actions:</p><ol><li>Tap or click to establish a starting point, then</li><li>Press and hold that contact while...</li><li>Performing a respositioning of the pointer, before...</li><li>Releasing the pointer at the end point.</li></ol><p>Not all users can accurately press and hold that contact while also repositioning the pointer. An alternative method must be provided so that users with mobility impairments who use a pointer (mouse, pen, or touch contact) can use the functionality.</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "Els usuaris que lluiten amb la realització de moviments d'arrossegament encara poden utilitzar una interfície amb una interfície de punter.", 
+        "es" : "Los usuarios que tienen dificultades para realizar movimientos de arrastre aún pueden operar una interfaz con una interfaz de puntero.", 
+        "en" : "Users who struggle with performing dragging motions can still operate an interface with a pointer interface.",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -2813,7 +2801,7 @@ const wcagObj = {
       "category" : [""]
     },
 
-    { // ****** 2.5.8.
+    { // 2.5.8.
       "criteria" : 
       {
         "ca" : "2.5.8 Grandària de l'objectiu (mínim)", 
@@ -2831,19 +2819,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>La intenció d'aquest criteri d'èxit és ajudar a garantir que els objectius es puguin activar fàcilment sense activar accidentalment un objectiu adjacent. Quan els objectius són petits, és difícil que els usuaris amb tremolors a les mans i aquells que tenen dificultats amb el moviment motor fi els activin amb precisió. Proporcionar una mida suficient, o un espai suficient entre els objectius, reduirà la probabilitat d'activar accidentalment un control incorrecte.</p><p>Aquest Criteri d'èxit defineix una mida mínima; fer servir mides més grans ajudarà a moltes persones a utilitzar objectius més fàcilment. Es recomana complir la mida de l'objectiu 2.5.5 (millorada) sempre que sigui possible.</p><p>El requisit és que els objectius tinguin una mida mínima de 24 per 24 píxels CSS. Hi ha tres excepcions:</p><ol><li>Si un objectiu és més petit que 24 per 24 píxels CSS però té un espai suficient, passa. L'espaiat és suficient si el desplaçament entre objectius és d'almenys 24 píxels CSS. La compensació de l'objectiu mesura la distància entre objectius, mesurada des del punt més llunyà d'un objectiu fins al punt més proper de l'objectiu adjacent, i s'avalua per a cadascun dels objectius adjacents. Quina vora de l'objectiu és més llunyana depèn de la posició relativa de l'objectiu veí. Per exemple, si es té en compte la distància per sobre de l'objectiu, la vora més llunyana seria la part inferior de l'objectiu i el desplaçament es mesuraria des d'aquesta vora inferior fins a la vora inferior de l'objectiu veí superior. Tingueu en compte que quan els objectius difereixen en mida o forma, el desplaçament entre els objectius també pot ser diferent. La distància de desplaçament ha de ser com a mínim de 24 píxels CSS en tots els casos per caure en aquesta excepció.</li><li>El criteri d'èxit no s'aplica als objectius en línia en blocs de text, per exemple, enllaços de text dins d'una frase o paràgraf. . Aquesta excepció està permesa perquè el reflux de text basat en la mida de la finestra gràfica fa impossible que els autors anticipin on es poden situar els enllaços entre si. Quan s'incrusten diversos enllaços en blocs de text amb mides de text més petites, mantenir un desplaçament de 24 píxels CSS entre enllaços de línies de text adjacents requeriria una alçada de línia gran que pot ser indesitjable en molts contextos de disseny. A més, les notes a peu de pàgina numèriques en línia habituals en textos científics poden tenir de vegades una amplada molt per sota dels 24 píxels CSS. Nota: les llistes apilades d'enllaços, com a les estructures de navegació, no compten com a enllaços en línia. Els autors poden anticipar la posició relativa d'aquests enllaços i adaptar-se a un espai suficient entre els objectius.</li><li>Si l'espai entre els objectius és essencial per a la informació que es transmet, s'aplica l'excepció 'Essencial'. Per exemple, en els mapes digitals, la posició de les agulles és anàloga a la posició dels llocs que es mostren al mapa. Si hi ha molts pins junts, el desplaçament entre els pins i els pins veïns sovint serà inferior a 24 píxels CSS. És essencial mostrar les agulles a la ubicació correcta del mapa, per tant s'aplica l'excepció essencial.</li><li>Algunes jurisdiccions exigeixen legalment que els formularis en línia reprodueixin formularis en paper, la qual cosa pot imposar restriccions a la mida dels objectius. En aquests casos, s'aplica l'excepció 'Legal'.</li></ol><p>[...]</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es ayudar a garantizar que los objetivos se puedan activar fácilmente sin activar accidentalmente un objetivo adyacente. Cuando los objetivos son pequeños, es difícil para los usuarios con temblores en las manos y aquellos que tienen dificultades con el movimiento motor fino para activarlos con precisión. Proporcionar un tamaño suficiente o un espacio suficiente entre los objetivos reducirá la probabilidad de activar accidentalmente el control incorrecto.</p><p>Este Criterio de Conformidad define un tamaño mínimo; el uso de tamaños más grandes ayudará a muchas personas a usar objetivos más fácilmente. Se recomienda cumplir con 2.5.5 Tamaño objetivo (mejorado) siempre que sea posible.</p><p>El requisito es que los objetivos tengan un tamaño mínimo de 24 x 24 píxeles CSS. Hay tres excepciones:</p><ol><li>Si un objetivo es más pequeño que 24 por 24 píxeles CSS pero tiene suficiente espacio, pasa. El espaciado es suficiente si el desplazamiento entre objetivos es de al menos 24 píxeles CSS. El desplazamiento del objetivo mide la distancia entre los objetivos, medida desde el punto más lejano de un objetivo hasta el punto más cercano del objetivo adyacente, y se evalúa para cada uno de los objetivos adyacentes. Qué borde del objetivo está más alejado depende de la posición relativa del objetivo vecino. Por ejemplo, si considera la distancia por encima del objetivo, el borde más alejado sería la parte inferior del objetivo, y el desplazamiento se mediría desde este borde inferior hasta el borde inferior del objetivo vecino que se encuentra arriba. Tenga en cuenta que cuando los objetivos difieren en tamaño o forma, el desplazamiento entre objetivos también puede diferir. La distancia de compensación debe ser de al menos 24 píxeles CSS en todos los casos para estar dentro de esta excepción.</li><li>El Criterio de Conformidad no se aplica a objetivos en línea en bloques de texto, por ejemplo, enlaces de texto dentro de una oración o párrafo . Esta excepción está permitida porque el reflujo de texto basado en el tamaño de la ventana gráfica hace imposible que los autores anticipen dónde se pueden colocar los enlaces entre sí. Cuando se incrustan múltiples enlaces en bloques de texto en tamaños de texto más pequeños, mantener un desplazamiento de 24 píxeles CSS entre enlaces en líneas de texto adyacentes requeriría una gran altura de línea que puede ser indeseable en muchos contextos de diseño. Además, las notas a pie de página numéricas en línea comunes en los textos científicos a veces pueden tener un ancho muy por debajo de los 24 píxeles CSS. Nota: Las listas apiladas de enlaces, como en las estructuras de navegación, no cuentan como enlaces en línea. Los autores pueden anticipar la posición relativa de estos enlaces y acomodar suficiente espacio entre los objetivos.</li><li>Si el espacio entre los objetivos es esencial para la información que se transmite, se aplica la excepción 'Esencial'. Por ejemplo, en los mapas digitales, la posición de los pines es análoga a la posición de los lugares que se muestran en el mapa. Si hay muchos pines juntos, el desplazamiento entre los pines y los pines vecinos a menudo será inferior a 24 píxeles CSS. Es esencial mostrar los pines en la ubicación correcta del mapa, por lo tanto, se aplica la excepción Esencial.</li><li>Algunas jurisdicciones exigen legalmente formularios en línea para replicar formularios en papel, lo que puede imponer restricciones en el tamaño de los objetivos. En estos casos, se aplica la excepción 'Legal'.</li></ol><p>[...]</p>", 
+        "en" : "<p>The intent of this Success Criterion is to help ensure targets can be easily activated without accidentally activating an adjacent target. When targets are small, it is difficult for users with hand tremors and those who have difficulty with fine motor movement to activate them accurately. Providing sufficient size, or sufficient spacing between targets, will reduce the likelihood of accidentally activating the wrong control.</p><p>This Success Criterion defines a minimum size; using larger sizes will help many people use targets more easily. Meeting 2.5.5 Target Size (Enhanced) is recommended whenever possible.</p><p>The requirement is for targets to be at least 24 by 24 CSS pixels in size. There are three exceptions:</p><ol><li>If a target is smaller than 24 by 24 CSS pixels but has sufficient spacing, it passes. The spacing is sufficient if the offset between targets is at least 24 CSS pixels. Target offset measures the distance between targets, measured from the farthest point of one target to the nearest point of the adjacent target, and is assessed for each of the adjacent targets. What edge of the target is farthest depends on the relative position of the neighboring target. For example, if considering distance above the target, the farthest edge would be the bottom of the target, and the offset would be measured from this bottom edge to the bottom edge of the neighboring target above. Note that where the targets differ in size or shape, the offset between targets may also differ. The offset distance must be at least 24 CSS pixels in all cases to fall under this exception.</li><li>The Success Criterion does not apply to inline targets in blocks of text - for example, text links inside a sentence or paragraph. This exception is allowed because text reflow based on viewport size makes it impossible for authors to anticipate where links may be positioned relative to one another. When multiple links are embedded in blocks of texts in smaller text sizes, maintaining a 24 CSS pixels offset between links in adjacent lines of text would require a large line height which can be undesirable in many design contexts. Also, inline numeric footnotes common in scientific texts may sometimes have a width well below 24 CSS pixels. Note: Stacked lists of links, as in navigation structures, do not count as inline links. Authors can anticipate the relative position of these links and accommodate sufficient target spacing.</li><li>If the spacing of the targets is essential to the information being conveyed, the 'Essential' exception applies. For example, in digital maps, the position of pins is analogous to the position of places shown on the map. If there are many pins close together, the offset between pins and neighboring pins will often be below 24 CSS pixels. It is essential to show the pins at the correct map location, therefore the Essential exception applies.</li><li>Some jurisdictions legally require online forms to replicate paper forms, which can impose constraints on the size of targets. In these cases, the 'Legal' exception applies.</li></ol><p>[...]</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "<p>Tenir objectius amb una mida suficient (o, en cas contrari, un espai d'objectius suficient) pot ajudar tots els usuaris que tinguin dificultats per orientar-se amb seguretat o fer servir petits controls. Els usuaris que es beneficien inclouen, entre d'altres:</p><ul><li>Les persones que utilitzen un dispositiu mòbil on la pantalla tàctil és el mode d'interacció principal;</li><li>Les persones que utilitzen el ratolí, el llapis llapis o d'entrada tàctil que tinguin problemes de mobilitat, com ara tremolors a les mans;</li><li>Persones que utilitzen un dispositiu en entorns on estan exposats a sacsejades, com ara el transport públic;</li><li>Usuaris de ratolí que tenen dificultats amb la multa moviments motors;</li><li>Persones que accedeixen a un dispositiu amb una sola mà;</li><li>Persones amb dits grans o que operen el dispositiu només amb una part del dit o de l'artilleria.</li ></ul>", 
+        "es" : "<p>Tener objetivos con el tamaño suficiente, o en su defecto, suficiente espacio entre objetivos, puede ayudar a todos los usuarios que pueden tener dificultades para apuntar u operar controles pequeños con confianza. Los usuarios que se benefician incluyen, pero no se limitan a:</p><ul><li>Personas que usan un dispositivo móvil donde la pantalla táctil es el modo principal de interacción;</li><li>Personas que usan mouse, lápiz óptico o entrada táctil que tienen problemas de movilidad, como temblores en las manos;</li><li>Personas que usan un dispositivo en entornos donde están expuestos a temblores, como el transporte público;</li><li>Usuarios de mouse que tienen dificultades con movimientos motores;</li><li>Personas que acceden a un dispositivo con una mano;</li><li>Personas con dedos grandes o que operan el dispositivo con solo una parte del dedo o nudillo.</li ></ul>", 
+        "en" : "<p>Having targets with sufficient size - or failing that, sufficient target spacing - can help all users who may have difficulty in confidently targeting or operating small controls. Users who benefit include, but are not limited to:</p><ul><li>People who use a mobile device where the touch screen is the primary mode of interaction;</li><li>People using mouse, stylus or touch input who have mobility impairments such as hand tremors;</li><li>People using a device in environments where they are exposed to shaking such as public transportation;</li><li>Mouse users who have difficulty with fine motor movements;</li><li>People who access a device using one hand;</li><li>People with large fingers, or who are operating the device with only a part of their finger or knuckle.</li></ul>",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -2889,7 +2876,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2935,7 +2921,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -2981,7 +2966,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3027,7 +3011,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3073,7 +3056,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3119,7 +3101,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3165,7 +3146,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3211,7 +3191,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3257,7 +3236,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3304,7 +3282,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3350,7 +3327,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3366,7 +3342,7 @@ const wcagObj = {
       "category" : [""]
     },
     
-    { // ****** 3.2.6.
+    { // 3.2.6.
       "criteria" : 
       {
         "ca" : "3.2.6. Ajuda consistent", 
@@ -3384,19 +3360,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>La intenció d'aquest criteri d'èxit és garantir que els usuaris puguin trobar ajuda per completar tasques en un lloc web, quan estigui disponible. Això és diferent de l'ajuda a nivell d'interfície, com ara l'ajuda contextual, funcions com els correctors ortogràfics i el text instructiu en un formulari.</p><p>Ubicar el mecanisme d'ajuda en una ubicació coherent entre les pàgines facilita la cerca dels usuaris. això. Per exemple, quan un mecanisme o enllaç es troba a la capçalera d'una pàgina web, serà més fàcil trobar si es troba a la capçalera d'altres pàgines. El mecanisme d'ajuda, com ara un número de telèfon de contacte, es pot proporcionar directament a la pàgina, però també pot ser un enllaç directe a una pàgina de contacte diferent. Independentment de quin enfocament s'utilitzi, el mecanisme s'ha de localitzar en el mateix ordre relatiu a cada pàgina dins del conjunt de pàgines.</p><p>Quan es prova aquest SC, és l'element d'ajuda el que és relatiu a la resta de pàgines. el contingut. Quan es prova una pàgina, un altre contingut que estigui present al conjunt de pàgines web i que estigui abans de l'element d'ajuda hauria d'estar abans de l'element d'ajuda d'aquesta pàgina. Els elements que estan després de l'element d'ajuda d'altres pàgines haurien d'anar després de l'element d'ajuda d'aquesta pàgina.</p><p>La ubicació en una finestra gràfica més petita pot ser diferent que en una finestra gràfica més gran, però el millor és que el mecanisme o l'enllaç és coherent en un conjunt de pàgines web. Una ubicació coherent, tant visual com programàticament, és la més utilitzable.</p><p>Quan tens problemes per completar una tasca en un lloc web (o part d'un lloc web, el que anomenem un conjunt de pàgines web), les persones amb alguns tipus de discapacitat és possible que no pugui resoldre el problema sense més ajuda. Els problemes poden incloure dificultats: omplir un formulari o trobar un document o una pàgina que proporcioni la informació necessària per completar una tasca.</p><p>Sense ajuda, alguns usuaris poden abandonar la tasca. També poden no completar correctament una tasca o poden necessitar ajuda de persones que no necessàriament mantenen la informació privada segura.</p><p>[...]</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que los usuarios puedan encontrar ayuda para completar tareas en un sitio web, cuando esté disponible. Esto es distinto de la ayuda a nivel de interfaz, como la ayuda contextual, funciones como correctores ortográficos y texto instructivo en un formulario.</p><p>Ubicar el mecanismo de ayuda en una ubicación uniforme en todas las páginas hace que sea más fácil para los usuarios encontrar eso. Por ejemplo, cuando un mecanismo o enlace está ubicado en el encabezado de una página Web, será más fácil encontrarlo si está en el encabezado de otras páginas. El mecanismo de ayuda, como un número de teléfono de contacto, se puede proporcionar directamente en la página, pero también puede ser un enlace directo a una página de contacto diferente. Independientemente del enfoque que se utilice, el mecanismo debe ubicarse en el mismo orden relativo en cada página dentro del conjunto de páginas.</p><p>Al probar este SC, es el elemento de ayuda el que es relativo al resto de el contenido. Al probar una página, otro contenido que esté presente en el conjunto de páginas web y que esté antes del elemento de ayuda debe estar antes del elemento de ayuda en esta página. Los elementos que están después del elemento de ayuda en otras páginas deben estar después del elemento de ayuda en esta página.</p><p>La ubicación en una ventana gráfica más pequeña puede ser diferente a la de una ventana gráfica más grande, pero es mejor si el mecanismo o enlace es consistente en un conjunto de páginas web. Una ubicación consistente, tanto visual como programáticamente, es la más utilizable.</p><p>Cuando tienen problemas para completar una tarea en un sitio web (o parte de un sitio web, lo que llamamos un conjunto de páginas web), las personas con algunos tipos de discapacidades puede que no sea capaz de solucionar el problema sin más ayuda. Los problemas pueden incluir dificultades: completar un formulario o encontrar un documento o una página que proporcione la información necesaria para completar una tarea.</p><p>Sin ayuda, algunos usuarios pueden abandonar la tarea. También es posible que no completen correctamente una tarea o que necesiten la ayuda de personas que no necesariamente mantienen segura la información privada.</p><p>[...]</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure users can find help for completing tasks on a Web site, when it is available. This is distinct from interface-level help, such as contextual help, features like spell checkers, and instructional text in a form.</p><p>Locating the help mechanism in a consistent location across pages makes it easier for users to find it. For example, when a mechanism or link is located in the header of one Web page, it will be easier to find if it is in the header of other pages. The help mechanism, such as a contact phone number, may be provided directly on the page but it may also be a direct link to a different contact page. Regardless of which approach is used, the mechanism must be located in the same relative order on each page within the set of pages.</p><p>When testing this SC, it is the help item which is relative to the rest of the content. When testing a page, other content that is present across the set of web pages and is before the help item should be before the help item on this page. Items which are after the help item on other pages should be after the help item on this page.</p><p>The location in a smaller viewport may be different than in a larger viewport but it is best if the mechanism or link is consistent across a set of web pages. A consistent location, both visually and programmatically, is the most usable.</p><p>When having problems completing a task on a Web site (or part of a Web site, what we call a set of Web pages), people with some types of disabilities may not be able to work through the issue without further help. Issues could include difficulty: completing a form, or finding a document or page which provides information required to complete a task.</p><p>Without help, some users may abandon the task. They may also fail to correctly complete a task, or they may require assistance from people who do not necessarily keep private information secure.</p><p>[...]</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "<ul><li>Aquest criteri d'èxit ajuda les persones que poden tenir dificultats per localitzar ajuda que no forma part de la pàgina que estan utilitzant. Assegurar-se que es poden connectar amb ajuda els permet completar la tasca.</li><li>Quan un usuari pot trobar ajuda fàcilment per a les seves preguntes específiques, té més èxit en completar les tasques.</li><li>Usuaris amb experiència cognitiva la fatiga o l'aturada cognitiva podran reservar la seva energia per a la tasca, en lloc d'utilitzar-la per trobar suport.</li><li>Permetre als usuaris (especialment aquells amb discapacitats cognitives) trobar solucions mentre expressen la seva pregunta amb la seva pròpia pregunta. Les paraules augmenta les seves possibilitats d'èxit per completar una tasca.</li></ul><p>Els mecanismes d'ajuda típics inclouen:</p><ul><li>Les dades de contacte humans com ara un número de telèfon, adreça de correu electrònic, horari. de funcionament.</li><li>Mecanisme de contacte humà, com ara un sistema de missatgeria, un client de xat, un formulari de contacte, un canal de xarxes socials.</li><li>Opció d'autoajuda, com ara una pregunta freqüent actualitzada. Preguntes, pàgina Com puc, pàgina d'assistència.</li><li>Un mecanisme de contacte totalment automatitzat, com ara un chatbot.</li></ul><p>[...]</p>", 
+        "es" : "<ul><li>Este Criterio de Conformidad ayuda a las personas que pueden tener dificultades para encontrar ayuda que no forma parte de la página que están utilizando. Asegurarse de que puedan conectarse con ayuda les permite completar la tarea.</li><li>Cuando un usuario puede encontrar fácilmente ayuda para sus preguntas específicas, tiene más éxito al completar tareas.</li><li>Usuarios que experimentan la fatiga o el bloqueo cognitivo podrán reservar su energía para la tarea, en lugar de usarla para encontrar apoyo.</li><li>Permitir a los usuarios (especialmente aquellos con discapacidades cognitivas) encontrar soluciones mientras expresan su pregunta usando sus propios palabras aumenta sus posibilidades de éxito para completar una tarea.</li></ul><p>Los mecanismos de ayuda típicos incluyen:</p><ul><li>Datos de contacto humano como número de teléfono, dirección de correo electrónico, horario de funcionamiento.</li><li>Mecanismo de contacto humano, como un sistema de mensajería, un cliente de chat, un formulario de contacto, un canal de redes sociales.</li><li>Opción de autoayuda, como una sección actualizada de Preguntas frecuentes Preguntas, página Cómo hago, página de soporte.</li><li>Un mecanismo de contacto totalmente automatizado, como un chatbot.</li></ul><p>[...]</p>", 
+        "en" : "<ul><li>This Success Criterion helps people who may have difficulty locating help that is not part of the page they are using. Ensuring they can connect with help allows them to complete the task.</li><li>When a user can easily find help for their specific questions, they are more successful completing tasks.</li><li>Users that experience cognitive fatigue or cognitive shut down will be able to reserve their energy for the task, instead of using it to find support.</li><li>Enabling users (especially those with cognitive disabilities) to find solutions while expressing their question using their own words increases their chances of success for completing a task.</li></ul><p>Typical help mechanisms include:</p><ul><li>Human contact details such as a phone number, email address, hours of operation.</li><li>Human contact mechanism such as a messaging system, chat client, contact form, social media channel.</li><li>Self-help option such as an up-to-date Frequently Asked Questions, How Do I page, Support page.</li><li>A fully automated contact mechanism such as a chatbot.</li></ul><p>[...]</p>",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/consistent-help.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -3412,7 +3387,7 @@ const wcagObj = {
       "category" : [""]
     },
 
-    { // ****** 3.2.7.
+    { // 3.2.7.
       "criteria" : 
       {
         "ca" : "3.2.7 Controls visibles", 
@@ -3430,19 +3405,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>La intenció d'aquest criteri d'èxit és garantir que els components de la interfície d'usuari (controls) els puguin trobar fàcilment les persones amb discapacitats cognitives, pèrdua de visió i deficiències de mobilitat i motor.</p><p>Alguns enfocaments de disseny amaguen els controls. i requereixen determinades interaccions de l'usuari (com ara passar el ratolí) per mostrar-les. Quan els controls ocults són necessaris per completar les tasques, la dificultat per descobrir-los pot deixar alguns usuaris amb discapacitat sense cap manera de progressar.</p><p>Persones amb baixa funció executiva, problemes de memòria i altres discapacitats cognitives i d'aprenentatge. és possible que no pugui trobar controls ocults. Si es necessita un control ocult per avançar, això pot impedir que alguns usuaris completin una tasca. És possible que els usuaris que descobreixen controls que es mostren al passar el cursor no recordin com mostrar i operar els controls la propera vegada que interaccionin amb el lloc. Així, fins i tot quan un usuari pot continuar, el temps en la tasca es pot veure afectat tant per a usos puntuals com repetits.</p><p>Un dels principals reptes per a les persones amb pèrdua de visió és simplement localitzar els controls relacionats a la pantalla. , movent el ratolí de control a control i fent que el focus del teclat coincideixi amb el lloc on estan mirant. Aquest criteri d'èxit pot ajudar a reduir aquesta càrrega acumulada.</p><p>És possible que les persones amb pèrdua de visió no vegin els controls que es mostren només al passar el cursor o al focus, sobretot si es mostren fora de la finestra gràfica. Per als usuaris que necessiten contingut ampliat o ampliat, la part del contingut de la finestra gràfica es pot reduir significativament. Els usuaris amb baixa visió poden tenir una resolució de 800 x 600 com a predeterminada. Poden mirar de prop el monitor des d'uns quants centímetres de distància a causa de l'agudesa limitada (incapacitat per veure els detalls) o escotomes (punts cecs). Poden tenir una quantitat significativa de moviment de cap i coll mentre utilitzen contingut. Quan els usuaris no veuen res a la pantalla, poden suposar que l'estan perdent (per exemple, que està en el seu punt cec o amagat en un menú) i van cercant fins que el troben o deixen de cercar.</p ><p>Les persones que utilitzen mètodes d'entrada alternatius poden tenir dificultats per localitzar i operar els controls que només es mostren al passar el cursor o al focus. Per exemple, els usuaris de reconeixement de veu activen els controls pronunciant el nom del control. Les funcions que només s'exposen mitjançant la interacció amb el ratolí o el focus del teclat poden suposar obstacles importants als mètodes d'entrada alternatius.</p><p>[...]</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que los componentes de la interfaz de usuario (controles) puedan ser encontrados fácilmente por personas con discapacidades cognitivas, pérdida de visión y discapacidades motoras y de movilidad.</p><p>Algunos enfoques de diseño ocultan los controles y requieren ciertas interacciones del usuario (como pasar el mouse por encima) para mostrarlos. Donde los controles ocultos son necesarios para completar tareas, la dificultad para descubrir los controles puede dejar a algunos usuarios con discapacidades sin una forma de progresar.</p><p>Personas con función ejecutiva baja, problemas de memoria y otras discapacidades cognitivas y de aprendizaje Es posible que no pueda encontrar los controles ocultos. Si se necesita un control oculto para progresar, esto puede evitar que algunos usuarios completen una tarea. Es posible que los usuarios que descubren controles que se muestran al pasar el mouse no recuerden cómo mostrar y operar los controles la próxima vez que interactúen con el sitio. Entonces, incluso cuando un usuario puede continuar, el tiempo dedicado a la tarea puede verse afectado tanto por usos únicos como repetidos.</p><p>Uno de los principales desafíos para las personas con pérdida de visión es simplemente ubicar los controles relacionados en la pantalla. , moviendo el mouse de un control a otro y logrando que el enfoque del teclado coincida con el lugar donde están mirando. Este Criterio de Conformidad puede ayudar a reducir esa carga acumulativa.</p><p>Es posible que las personas con pérdida de visión no vean los controles que se muestran solo al pasar el mouse por encima o enfocar, especialmente si se muestran fuera de la ventana gráfica. Para los usuarios que requieren contenido ampliado o magnificado, la parte del contenido en la ventana gráfica puede reducirse significativamente. Los usuarios con problemas de visión pueden tener una resolución de 800 x 600 por defecto. Pueden mirar de cerca el monitor desde unas pocas pulgadas de distancia debido a la agudeza visual limitada (incapacidad para ver los detalles) o Escotomas (puntos ciegos). Pueden tener una cantidad significativa de movimiento de cabeza y cuello mientras usan contenido. Cuando los usuarios no ven algo en la pantalla, pueden asumir que se lo pierden, por ejemplo, que está en su punto ciego o escondido en un menú, y buscan hasta que lo encuentran o dejan de buscar.</p <p>Las personas que usan métodos de entrada alternativos pueden tener dificultades para ubicar y operar los controles que se muestran solo al pasar el mouse por encima o al enfocar. Por ejemplo, los usuarios de reconocimiento de voz activan los controles pronunciando el nombre del control. Las funciones que solo están expuestas a través de la interacción con el cursor o el enfoque del teclado pueden representar barreras significativas para los métodos de entrada alternativos.</p><p>[...]</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure that user interface components (controls) can be found easily by people with cognitive disabilities, vision loss, and mobility and motor impairments.</p><p>Some design approaches hide controls and require certain user interactions (such as mouseover) to display them. Where the hidden controls are needed to complete tasks, the difficulty in discovering the controls can leave some users with disabilities without a way to progress.</p><p>People with low executive function, impaired memory, and other cognitive and learning disabilities may not be able to find hidden controls. If a hidden control is needed in order to progress, this can prevent some users from completing a task. Users who discover controls that display on hover may not remember how to show and operate the controls the next time they interact with the site. So even when a user is able to proceed, time on task can be affected for both one-time and repeated uses.</p><p>One of the main challenges for people with vision loss is simply locating related controls on the screen, moving the mouse from control to control, and getting the keyboard focus to coincide with where they are looking. This Success Criterion can help reduce that cumulative load.</p><p>People with vision loss may not see controls that display only on hover or focus, particularly if they display outside of the viewport. For users who require enlarged or magnified content, the portion of the content in the viewport may be significantly reduced. Low vision users may have 800 x 600 resolution as the default. They may look closely at the monitor from a few inches away due to limited acuity (inability to see detail) or Scotomas (blind spots). They may have a significant amount of head and neck movement while using content. When users don't see something on the screen, they may assume they are missing it — for example, that it’s in their blind spot or hidden in a menu — and go searching until they either find it or give up searching.</p><p>People who use alternative input methods may have difficulty locating and operating controls that display only on hover or focus. For example, speech recognition users activate controls by speaking the name of the control. Functions that are only exposed through hover interaction or keyboard focus can pose significant barriers to alternative input methods.</p><p>[...]</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "<ul><li>Les persones amb discapacitats cognitives i d'aprenentatge poden localitzar més fàcilment els controls que els permetin progressar amb èxit a través d'un procés.</li><li>Les persones amb problemes de memòria no necessiten recordar on es troben els controls.</li> li><li>Les persones amb baixa visió no necessiten coordinar la cerca visual dels controls amb l'acció de moure el punter o el focus del teclat.</li><li>Les persones amb discapacitat motriu i de mobilitat que utilitzen la parla o altres mètodes d'entrada. no cal fer servir el cursor o el focus per localitzar i operar els controls.</li></ul>", 
+        "es" : "<ul><li>Las personas con discapacidades cognitivas y de aprendizaje pueden ubicar más fácilmente los controles que les permitan progresar con éxito a través de un proceso.</li><li>Las personas con problemas de memoria no necesitan recordar dónde se encuentran los controles.</ li><li>Las personas con baja visión no necesitan coordinar visualmente la búsqueda de controles con el acto de mover el puntero o el enfoque del teclado.</li><li>Personas con problemas de movilidad y motrices que utilizan el habla u otros métodos de entrada no es necesario utilizar el desplazamiento o el enfoque para ubicar y operar los controles.</li></ul>", 
+        "en" : "<ul><li>People with cognitive and learning disabilities can more easily locate controls that allow them to successfully progress through a process.</li><li>People with memory impairments do not need to remember where controls are located.</li><li>People with low vision do not need to coordinate visually searching for controls with the act of moving the pointer hover or keyboard focus.</li><li>People with mobility and motor impairments who use speech or other input methods do not need to use hover or focus to locate and operate controls.</li></ul>",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/visible-controls.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/visible-controls.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -3488,7 +3462,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3534,7 +3507,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3580,7 +3552,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3626,7 +3597,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3672,7 +3642,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3718,7 +3687,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "-", 
@@ -3734,7 +3702,7 @@ const wcagObj = {
       "category" : [""]
     },
     
-    { // ****** 3.3.7.
+    { // 3.3.7.
       "criteria" : 
       {
         "ca" : "3.3.7 Autenticació accessible", 
@@ -3752,19 +3720,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>L'objectiu d'aquest Criteri d'èxit és garantir que hi ha un mètode accessible, fàcil d'utilitzar i segur per iniciar sessió, accedir al contingut i dur a terme tasques. La majoria de llocs web es basen en noms d'usuari i contrasenyes per iniciar sessió. Memoritzar un nom d'usuari i una contrasenya (o transcrivir-los manualment) suposa una càrrega molt alta o impossible per a les persones amb determinades discapacitats cognitives.</p><p>Recordar una contrasenya específica d'un lloc. és una prova de funció cognitiva. Se sap que aquestes proves són problemàtiques per a moltes persones amb discapacitats cognitives. Tant si es tracta de recordar cadenes de caràcters aleatòries, un gest de patró per realitzar en una pantalla tàctil o identificar quines imatges inclouen un objecte concret, les proves de funció cognitiva exclouran algunes persones. Quan s'utilitza una prova de funció cognitiva, ha d'estar disponible almenys un altre mètode d'autenticació que no sigui una prova de funció cognitiva.</p><p>Si hi ha més d'un pas en el procés d'autenticació, com ara amb múltiples factors. autenticació, tots els passos haurien de complir aquest criteri d'èxit. Hi hauria d'haver un camí a través de l'autenticació que no es basa en proves de funció cognitiva.</p><p>Poder recuperar o canviar el correu electrònic i la contrasenya és una part important de l'autenticació. Si l'usuari s'autentica amb informació alternativa per recuperar el seu compte, cal que hi hagi un mètode que no sigui una prova de funció cognitiva.</p>", 
+        "es" : "<p>El propósito de este Criterio de Conformidad es garantizar que haya un método accesible, fácil de usar y seguro para iniciar sesión, acceder al contenido y realizar tareas. La mayoría de los sitios web dependen de nombres de usuario y contraseñas para iniciar sesión. Memorizar un nombre de usuario y una contraseña (o transcribirlos manualmente) impone una carga muy alta o imposible a las personas con ciertas discapacidades cognitivas.</p><p>Recordar una contraseña específica del sitio es una prueba de función cognitiva. Se sabe que tales pruebas son problemáticas para muchas personas con discapacidades cognitivas. Ya sea para recordar cadenas aleatorias de caracteres, un gesto de patrón para realizar en una pantalla táctil o identificar qué imágenes incluyen un objeto en particular, las pruebas de función cognitiva excluirán a algunas personas. Cuando se utiliza una prueba de función cognitiva, debe estar disponible al menos otro método de autenticación que no sea una prueba de función cognitiva.</p><p>Si hay más de un paso en el proceso de autenticación, como con multifactor autenticación, todos los pasos deben cumplir con este Criterio de Conformidad. Debe haber un camino a través de la autenticación que no dependa de las pruebas de función cognitiva.</p><p>Poder recuperar o cambiar el correo electrónico y la contraseña es una parte importante de la autenticación. Si el usuario se está autenticando con información alternativa para recuperar su cuenta, debe haber un método que no sea una prueba de función cognitiva.</p>", 
+        "en" : "<p>The purpose of this Success Criterion is to ensure there is an accessible, easy-to-use, and secure method to log in, access content, and undertake tasks. Most web sites rely on usernames and passwords for logging in. Memorizing a username and password (or transcribing it manually) places a very high or impossible burden upon people with certain cognitive disabilities.</p><p>Remembering a site-specific password is a cognitive function test. Such tests are known to be problematic for many people with cognitive disabilities. Whether it is remembering random strings of characters, a pattern gesture to perform on a touch screen, or identifying which images include a particular object, cognitive function tests will exclude some people. When a cognitive function test is used, at least one other authentication method must be available which is not a cognitive function test.</p><p>If there is more than one step in the authentication process, such as with multi-factor authentication, all steps should comply with this Success Criterion. There should be a path through authentication that does not rely on cognitive function tests.</p><p>Being able to recover or change the email and password is an important part of authentication. If the user is authenticating with alternative information in order to recover their account, there needs to be a method that is not a cognitive function test.</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "Les persones amb problemes cognitius relacionats amb la memòria, la lectura (per exemple, la dislèxia), els números (per exemple, la discalcúlia) o les limitacions en el processament de la percepció podran autenticar-se independentment del nivell de les seves capacitats cognitives.", 
+        "es" : "Las personas con problemas cognitivos relacionados con la memoria, la lectura (por ejemplo, dislexia), los números (por ejemplo, discalculia) o limitaciones en el procesamiento de la percepción podrán autenticarse independientemente del nivel de sus capacidades cognitivas.", 
+        "en" : "People with cognitive issues relating to memory, reading (for example, dyslexia), numbers (for example, dyscalculia), or perception-processing limitations will be able to authenticate irrespective of the level of their cognitive abilities.",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -3780,7 +3747,7 @@ const wcagObj = {
       "category" : [""]
     },
 
-    { // ****** 3.3.8.
+    { // 3.3.8.
       "criteria" : 
       {
         "ca" : "3.3.8 Entrada redundant", 
@@ -3798,19 +3765,18 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "", 
-        "es" : "", 
-        "en" : "",
+        "ca" : "<p>La intenció d'aquest criteri d'èxit és garantir que els usuaris puguin navegar amb èxit per processos de diversos passos. Redueix l'esforç cognitiu quan es demana informació més d'una vegada durant els passos d'un procés. També redueix la necessitat de recordar la informació proporcionada en un pas anterior.</p><p>La informació que cal recordar per introduir-la pot suposar una barrera important per als usuaris amb dificultats cognitives o de memòria. Tots els usuaris experimenten una fatiga mental gradual natural mentre avancen a través dels passos d'un procés. Aquesta fatiga s'accelera per l'estrès de recordar informació de la memòria de treball a curt termini. Els usuaris amb discapacitats cognitives i d'aprenentatge són molt susceptibles a patir fatiga mental.</p><p>Exigir que les persones recordin la informació ja introduïda als passos anteriors pot fer que abandonin o introdueixin informació incorrecta. La funció d'emplenament automàtic dels navegadors no es considera suficient perquè és el contingut (el lloc web) el que necessita proporcionar la informació emmagatzemada per a una entrada redundant, o evitar demanar la mateixa informació de nou.</p><p>Aquest criteri d'èxit. no afegeix un requisit per recordar informació entre sessions. Un procés es defineix en funció d'una activitat i no és aplicable quan un usuari torna després de tancar una sessió o de navegar. Tanmateix, un procés pot executar-se en diferents dominis, de manera que si un procés de pagament inclou un proveïdor de pagaments de tercers, això estaria a l'abast.</p><p>[...]</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que los usuarios puedan navegar con éxito procesos de varios pasos. Reduce el esfuerzo cognitivo cuando se solicita información más de una vez durante los pasos de un proceso. También reduce la necesidad de recordar la información proporcionada en un paso anterior.</p><p>La información que se requiere recordar para la entrada puede representar una barrera significativa para los usuarios con dificultades cognitivas o de memoria. Todos los usuarios experimentan una fatiga mental gradual natural a medida que avanzan en los pasos de un proceso. Esta fatiga se ve acelerada por el estrés de recordar información de la memoria de trabajo a corto plazo. Los usuarios con discapacidades cognitivas y de aprendizaje son muy susceptibles a la fatiga mental.</p><p>Exigir a las personas que recuerden información ya ingresada en los pasos anteriores puede hacer que se rindan o que ingresen información incorrecta. La función de autocompletar de los navegadores no se considera suficiente porque es el contenido (el sitio web) el que debe proporcionar la información almacenada para una entrada redundante, o evitar solicitar la misma información nuevamente.</p><p>Este Criterio de Conformidad no agrega un requisito para recordar información entre sesiones. Un proceso se define sobre la base de una actividad y no es aplicable cuando un usuario regresa después de cerrar una sesión o salir de la navegación. Sin embargo, un proceso puede ejecutarse en diferentes dominios, por lo que si un proceso de pago incluye un proveedor de pago de terceros, eso estaría dentro del alcance.</p><p>[...]</p>", 
+        "en" : "<p>The intent of this Success Criterion is to ensure that users can successfully navigate multi-step processes. It reduces cognitive effort where information is asked for more than once during steps in a process. It also reduces the need to recall information provided in a previous step.</p><p>Information that is required to be remembered for input can pose a significant barrier to users with cognitive or memory difficulties. All users experience a natural gradual mental fatigue as they proceed through steps in a process. This fatigue is accelerated by the stress of recalling information from short-term working memory. Users with learning, and cognitive disabilities are highly susceptible to mental fatigue.</p><p>Requiring people to recall information already entered in the previous steps can cause them to give up or enter incorrect information. The autocomplete feature of browsers is not considered sufficient because it is the content (the web site) that needs to provide the stored information for a redundant entry, or avoid asking for the same information again.</p><p>This Success Criterion does not add a requirement to remember information between sessions. A process is defined on the basis of an activity and is not applicable when a user returns after closing a session or navigating away. However, a process can run across different domains, so if a check-out process includes a 3rd party payment provider, that would be in scope.</p><p>[...]</p>",
       },
       "benefits" :
       {
-        "ca" : "-", 
-        "es" : "-", 
-        "en" : "-",
+        "ca" : "<ul><li>Els usuaris amb discapacitat cognitiva experimenten dificultats de memòria de treball a curt termini. No haver de recordar repetidament informació determinada redueix l'estrès i la probabilitat d'errors.</li><li>Els usuaris que tenen dificultats per formar nous records, recordar informació i altres funcions relacionades amb la cognició poden completar processos sense haver de confiar innecessàriament en la seva memòria. .</li><li>Els usuaris amb discapacitat de mobilitat, com ara l'ús d'un interruptor o una entrada de veu, es beneficien d'una necessitat reduïda d'introduir text.</li></ul>", 
+        "es" : "<ul><li>Los usuarios con discapacidades cognitivas experimentan dificultades de memoria de trabajo a corto plazo. No tener que recordar información particular repetidamente reduce el estrés y la probabilidad de cometer errores.</li><li>Los usuarios que experimentan dificultades para formar nuevos recuerdos, recordar información y otras funciones relacionadas con la cognición pueden completar procesos sin tener que depender innecesariamente de su memoria .</li><li>Los usuarios con problemas de movilidad, por ejemplo, que utilizan el control por botón o la entrada de voz, se benefician de una menor necesidad de ingresar texto.</li></ul>", 
+        "en" : "<ul><li>Users with cognitive disabilities experience short-term, working memory difficulty. Not having to repeatedly remember particular information reduces stress and the likelihood of mistakes.</li><li>Users who experience difficulty forming new memories, recalling information, and other functions related to cognition can complete processes without having to unnecessarily rely on their memory.</li><li>Users with mobility impairments, for example using switch control or voice input, benefit from a reduced need for text entry.</li></ul>",
       },
-      "examples" : "",
-      "techniques" : "",
-      "failures" : "",
+      "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html#examples",
+      "techniques" : "https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html#techniques",
       "verification" :
       {
         "ca" : "-", 
@@ -3856,7 +3822,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "<p>Objectiu: assegurar que els agents d'usuari i productes de suport puguin interpretar correctament i processar (parsejar) el contingut.</p><p>El codi no ha de tenir errors de sintaxi i ha d'estar ben format de manera que pugui ser processat de forma automàtica sense ambigüitats</p>", 
@@ -3902,7 +3867,6 @@ const wcagObj = {
       },
       "examples" : "",
       "techniques" : "",
-      "failures" : "",
       "verification" :
       {
         "ca" : "<p>Objectiu: assegurar que els productes de suport puguin obtenir informació, interactuar i estar al corrent de l'estat dels controls d'interfície d'usuari.</p><p>Els elements de la interfície d'usuari (formularis, enllaços, components personalitzats amb scripts, etc.) han de ser accessibles. És a dir, els productes de suport han de poder reconèixer quin és el nom, la funció i el valor o l'estat i poden interactuar-hi</p>", 
@@ -3918,7 +3882,7 @@ const wcagObj = {
       "category" : ["custom-controls", "forms-and-UI"]
     },
     
-    { // *** 4.1.3.
+    { // 4.1.3.
       "criteria" : 
       {
         "ca" : "4.1.3 Missatges d'estat", 
