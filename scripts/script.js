@@ -277,8 +277,8 @@ function createTable() {
 					}  else if (head.name === 'techniques' && item.techniques != '') {
 						switch (lang) {
 							case 'ca':
-								linkText = document.createTextNode(item.criteria.cat + ' Tècniques');
-								a.title = item.criteria.cat + ' Tècniques';
+								linkText = document.createTextNode(item.criteria.ca + ' Tècniques');
+								a.title = item.criteria.ca + ' Tècniques';
 								break;
 							case 'es':
 								linkText = document.createTextNode(item.criteria.es + ' Tecnicas');
@@ -500,7 +500,6 @@ function btnLevel(btn) {
 function showColumns(check){
 	headers.forEach(item => {
 		if (item.name === check.id) {
-			console.log(item.view)
 			item.view ? item.view = false : item.view = true;
 		}
 	})
