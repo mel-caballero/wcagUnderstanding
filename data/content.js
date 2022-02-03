@@ -1263,9 +1263,9 @@ const wcagObj = {
       }, 
       "tools" :
       {
-        "ca" : "<p>Nom de l'eina: Bookmarklet “Text spacing” de Steve Faulkner</p><p>Procediment de comprovació:</p><ol><li>A la barra de marcadors del navegador, polsar sobre el marcador “ Text spacing”. L'aspecte gràfic de la web haurà hagut de canviar per mostrar unes característiques del text que compleixen els criteris anteriors.</li><li>Comprovar que amb la nova visualització de pantalla no hi ha:<ul><li>Textos tallats</ li><li>Superposicions de textos</li></ul></li></ol>", 
+        "ca" : "<p>Nom de l'eina: Bookmarklet “Text spacing” de Steve Faulkner</p><p>Procediment de comprovació:</p><ol><li>A la barra de marcadors del navegador, polsar sobre el marcador “ Text spacing”. L'aspecte gràfic de la web haurà hagut de canviar per mostrar unes característiques del text que compleixen els criteris anteriors.</li><li>Comprovar que amb la nova visualització de pantalla no hi ha:<ul><li>Textos tallats</li><li>Superposicions de textos</li></ul></li></ol>", 
         "es" : "<p>Nombre de la herramienta: Bookmarklet “Text spacing” de Steve Faulkner</p><p>Procedimiento de comprobación:</p><ol><li>En la barra de marcadores del navegador, pulsar sobre el marcador “Text spacing”. El aspecto gráfico de la web habrá tenido que cambiar para mostrar unas características del texto que cumplen los criterios anteriores.</li><li>Comprobar que con la nueva visualización de pantalla no existen:<ul><li>Textos cortados</li><li>Superposiciones de textos</li></ul></li></ol>", 
-        "en" : "<p>Tool name: Steve Faulkner's “Text spacing” bookmarklet</p><p>Check procedure:</p><ol><li>In the browser's bookmarks bar, click on the bookmark “ Text spacing”. The graphic aspect of the web will have had to change to show some characteristics of the text that meet the above criteria.</li><li>Check that with the new screen display there are no:<ul><li>Cut texts</ li><li>Text Overlays</li></ul></li></ol>",
+        "en" : "<p>Tool name: Steve Faulkner's “Text spacing” bookmarklet</p><p>Check procedure:</p><ol><li>In the browser's bookmarks bar, click on the bookmark “ Text spacing”. The graphic aspect of the web will have had to change to show some characteristics of the text that meet the above criteria.</li><li>Check that with the new screen display there are no:<ul><li>Cut texts</li><li>Text Overlays</li></ul></li></ol>",
       },
       "category" : ["structure"]
     },
@@ -1273,8 +1273,8 @@ const wcagObj = {
     { // 1.4.13.
       "criteria" : 
       {
-        "ca" : "1.4.13 Contingut en passar el ratolí o enfocar", 
-        "es" : "1.4.13 Contenido al pasar el mouse o enfocar", 
+        "ca" : "1.4.13 Contingut en Hover o Focus", 
+        "es" : "1.4.13 Contenido en Hover o Focus", 
         "en" : "1.4.13 Content on Hover or Focus",
       }, 
       "link" : "https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus", 
@@ -1993,8 +1993,8 @@ const wcagObj = {
     { // 2.4.3.
       "criteria" : 
       {
-        "ca" : "2.4.3 Ordre denfocament", 
-        "es" : "2.4.3 Orden de enfoque", 
+        "ca" : "2.4.3 Ordre de Focus", 
+        "es" : "2.4.3 Orden de Focus", 
         "en" : "2.4.3 Focus Order",
       }, 
       "link" : "https://www.w3.org/TR/WCAG21/#focus-order", 
@@ -2174,8 +2174,8 @@ const wcagObj = {
     { // 2.4.7.
       "criteria" : 
       {
-        "ca" : "2.4.7 Enfocament visible", 
-        "es" : "2.4.7 Enfoque visible", 
+        "ca" : "2.4.7 Focus visible", 
+        "es" : "2.4.7 Focus visible", 
         "en" : "2.4.7 Focus Visible",
       }, 
       "link" : "https://www.w3.org/TR/WCAG21/#focus-visible", 
@@ -2354,8 +2354,8 @@ const wcagObj = {
     { // 2.4.11.
       "criteria" : 
       {
-        "ca" : "2.4.11 Aspecte d'enfocament (mínim)", 
-        "es" : "2.4.11 Aspecto de enfoque (mínimo)", 
+        "ca" : "2.4.11 Aspecte de Focus (mínim)", 
+        "es" : "2.4.11 Aspecto de Focus (mínimo)", 
         "en" : "2.4.11 Focus Appearance (Minimum)",
       }, 
       "link" : "https://www.w3.org/TR/WCAG22/#focus-appearance-minimum", 
@@ -2363,7 +2363,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "ca" : "Quan els components de la interfície dusuari reben el focus del teclat, tot el següent és veritable:<ul><li>Àrea de contrast: hi ha una àrea de l'indicador d'enfocament que té una relació de contrast d'almenys 3:1 entre els colors als estats enfocats i desenfocats.</li><li>Àrea mínima: L'àrea de contrast és almenys tan gran com:<ul><li>Contorn: l'àrea d'un perímetre de 1 píxel CSS de gruix del component desenfocat, o</li><li>Forma: l'àrea d'una línia de 4 píxels CSS de gruix al costat més curt d'un quadre delimitador mínim del component desenfocat, i no més prima que 2 píxels CSS.</li></ul></li><li>Contrast adjacent: l'àrea de contrast també té una relació de contrast d'almenys 3:1 davant dels colors adjacents al component enfocat, o l'àrea de contrast té un gruix d'almenys 2 píxels CSS.</li><li>No és completament ocult: l'element que té el focus no està completament ocult pel contingut creat per l'autor.</li></ul>", 
+        "ca" : "Quan els components de la interfície d'usuari reben el focus del teclat, es compleixen tots els aspectes següents:<ul><li>Àrea de contrast: hi ha una àrea de l'indicador d'enfocament que té una relació de contrast de com a mínim 3:1 entre els colors en els estats Focused i Unfocused.</li><li>Àrea mínima: L'àrea de contrast és com a mínim tan gran com:<ul><li>Contorn: l'àrea d'un perímetre de 1 píxel CSS de gruix del component Unfocused, o</li><li>Forma: l'àrea d'una línia de 4 píxels CSS de gruix al costat més curt d'un quadre delimitador mínim del component desenfocat, i no més prima que 2 píxels CSS.</li></ul></li><li>Contrast adjacent: l'àrea de contrast també té una relació de contrast de com a mínim 3:1 davant dels colors adjacents al component enfocat, o l'àrea de contrast té un gruix de com a mínim 2 píxels CSS.</li><li>No és completament ocult: l'element que té el focus no està completament ocult pel contingut creat per l'autor.</li></ul>", 
         "es" : "Cuando los componentes de la interfaz de usuario reciben el foco del teclado, todo lo siguiente es verdadero:<ul><li>Área de contraste: hay un área del indicador de enfoque que tiene una relación de contraste de al menos 3:1 entre los colores en los estados enfocado y desenfocado.</li><li>Área mínima: El área de contraste es al menos tan grande como:<ul><li>Contorno: el área de un perímetro de 1 píxel CSS de espesor del componente desenfocado, o</li><li>Forma: el área de una línea de 4 píxeles CSS de grosor a lo largo del lado más corto de un cuadro delimitador mínimo del componente desenfocado, y no más delgada que 2 píxeles CSS.</li></ul></li><li>Contraste adyacente: el área de contraste también tiene una relación de contraste de al menos 3:1 frente a los colores adyacentes en el componente enfocado, o el área de contraste tiene un grosor de al menos 2 píxeles CSS.</li><li>No completamente oculto: el elemento que tiene el foco no está completamente oculto por el contenido creado por el autor.</li></ul>", 
         "en" : "When user interface components receive keyboard focus, all of the following are true:<ul><li>Contrasting area: There is an area of the focus indicator that has a contrast ratio of at least 3:1 between the colors in the focused and unfocused states.</li><li>Minimum area: The contrasting area is at least as large as:<ul><li>Outline: the area of a 1 CSS pixel thick perimeter of the unfocused component, or</li><li>Shape: the area of a 4 CSS pixel thick line along the shortest side of a minimum bounding box of the unfocused component, and no thinner than 2 CSS pixels.</li></ul></li><li>Adjacent contrast: The contrasting area also has a contrast ratio of least 3:1 against adjacent colors in the focused component, or the contrasting area has a thickness of at least 2 CSS pixels.</li><li>Not fully obscured: The item with focus is not entirely hidden by author-created content.</li></ul>",
       },
@@ -2399,8 +2399,8 @@ const wcagObj = {
     { // 2.4.12.
       "criteria" : 
       {
-        "ca" : "2.4.12 Aspecte d'enfocament (millorat)", 
-        "es" : "2.4.12 Aspecto de enfoque (mejorado)", 
+        "ca" : "2.4.12 Aspecte de Focus (millorat)", 
+        "es" : "2.4.12 Aspecto de Focus (mejorado)", 
         "en" : "2.4.12 Focus Appearance (Enhanced)",
       }, 
       "link" : "https://www.w3.org/TR/WCAG22/#focus-appearance-enhanced", 
@@ -2774,8 +2774,8 @@ const wcagObj = {
       },
       "intent" : 
       {
-        "ca" : "<p>La intenció d'aquest criteri d'èxit és garantir que la funcionalitat que utilitza un moviment d'arrossegament (p. ex., controls lliscants, interfícies d'arrossegar i deixar anar) tingui un altre mode de funcionament d'un punter únic sense necessitat de la destresa necessària per arrossegar elements.</p> p><p>Algunes persones no poden realitzar moviments d'arrossegament d'una manera precisa. Altres utilitzen un dispositiu d'entrada especialitzat o adaptat, com ara un punter de cap, un sistema de mira o un emulador de ratolí controlat per veu, que fa que l'arrossegament sigui complicat, propens a errors o totalment impossible.</p><p>Quan s'implementa una interfície. La funcionalitat que utilitza els moviments d'arrossegament, els usuaris realitzen quatre accions discretes:</p><ol><li>Toqueu o feu clic per establir un punt de partida i, a continuació,</li><li>Manteniu premut aquest contacte mentre...</ li><li>Realitzar una reposició del punter, abans de...</li><li>Alliberar el punter al punt final.</li></ol><p>No tots els usuaris poden mantenir premut amb precisió. aquest contacte alhora que reposiciona el punter. S'ha de proporcionar un mètode alternatiu perquè els usuaris amb problemes de mobilitat que utilitzen un punter (ratolí, bolígraf o contacte tàctil) puguin utilitzar la funcionalitat.</p>", 
-        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que la funcionalidad que utiliza un movimiento de arrastre (por ejemplo, controles deslizantes, interfaces de arrastrar y soltar) tenga otro modo de operación de puntero único sin la necesidad de la destreza necesaria para arrastrar elementos.</p> p><p>Algunas personas no pueden realizar movimientos de arrastre de manera precisa. Otros usan un dispositivo de entrada especializado o adaptado, como un puntero de cabeza, un sistema de mirada o un emulador de mouse controlado por voz, lo que hace que arrastrar sea engorroso, propenso a errores o completamente imposible.</p><p>Cuando una interfaz implementa funcionalidad que usa movimientos de arrastre, los usuarios realizan cuatro acciones discretas:</p><ol><li>Toque o haga clic para establecer un punto de inicio, luego</li><li>Presione y mantenga presionado ese contacto mientras...</ li><li>Realizando un reposicionamiento del puntero, antes de...</li><li>Soltar el puntero en el punto final.</li></ol><p>No todos los usuarios pueden mantener presionado con precisión ese contacto mientras también reposiciona el puntero. Se debe proporcionar un método alternativo para que los usuarios con problemas de movilidad que usan un puntero (mouse, bolígrafo o contacto táctil) puedan usar la funcionalidad.</p>", 
+        "ca" : "<p>La intenció d'aquest criteri d'èxit és garantir que la funcionalitat que utilitza un moviment d'arrossegament (p. ex., controls lliscants, interfícies d'arrossegar i deixar anar) tingui un altre mode de funcionament d'un punter únic sense necessitat de la destresa necessària per arrossegar elements.</p><p>Algunes persones no poden realitzar moviments d'arrossegament d'una manera precisa. Altres utilitzen un dispositiu d'entrada especialitzat o adaptat, com ara un punter de cap, un sistema de mira o un emulador de ratolí controlat per veu, que fa que l'arrossegament sigui complicat, propens a errors o totalment impossible.</p><p>Quan s'implementa una interfície. La funcionalitat que utilitza els moviments d'arrossegament, els usuaris realitzen quatre accions discretes:</p><ol><li>Toqueu o feu clic per establir un punt de partida i, a continuació,</li><li>Manteniu premut aquest contacte mentre...</li><li>Realitzar una reposició del punter, abans de...</li><li>Alliberar el punter al punt final.</li></ol><p>No tots els usuaris poden mantenir premut amb precisió. aquest contacte alhora que reposiciona el punter. S'ha de proporcionar un mètode alternatiu perquè els usuaris amb problemes de mobilitat que utilitzen un punter (ratolí, bolígraf o contacte tàctil) puguin utilitzar la funcionalitat.</p>", 
+        "es" : "<p>La intención de este Criterio de Conformidad es garantizar que la funcionalidad que utiliza un movimiento de arrastre (por ejemplo, controles deslizantes, interfaces de arrastrar y soltar) tenga otro modo de operación de puntero único sin la necesidad de la destreza necesaria para arrastrar elementos.</p><p>Algunas personas no pueden realizar movimientos de arrastre de manera precisa. Otros usan un dispositivo de entrada especializado o adaptado, como un puntero de cabeza, un sistema de mirada o un emulador de mouse controlado por voz, lo que hace que arrastrar sea engorroso, propenso a errores o completamente imposible.</p><p>Cuando una interfaz implementa funcionalidad que usa movimientos de arrastre, los usuarios realizan cuatro acciones discretas:</p><ol><li>Toque o haga clic para establecer un punto de inicio, luego</li><li>Presione y mantenga presionado ese contacto mientras...</li><li>Realizando un reposicionamiento del puntero, antes de...</li><li>Soltar el puntero en el punto final.</li></ol><p>No todos los usuarios pueden mantener presionado con precisión ese contacto mientras también reposiciona el puntero. Se debe proporcionar un método alternativo para que los usuarios con problemas de movilidad que usan un puntero (mouse, bolígrafo o contacto táctil) puedan usar la funcionalidad.</p>", 
         "en" : "<p>The intent of this Success Criterion is to ensure functionality that uses a dragging movement (e.g., sliders, drag-and-drop interfaces) has another single pointer mode of operation without the need for the dexterity required to drag elements.</p><p>Some people cannot perform dragging motions in a precise manner. Others use a specialized or adapted input device such as a head pointer, eye-gaze system, or speech-controlled mouse emulator, which makes dragging cumbersome, error-prone, or outright impossible.</p><p>When an interface implements functionality that uses dragging motions, users perform four discrete actions:</p><ol><li>Tap or click to establish a starting point, then</li><li>Press and hold that contact while...</li><li>Performing a respositioning of the pointer, before...</li><li>Releasing the pointer at the end point.</li></ol><p>Not all users can accurately press and hold that contact while also repositioning the pointer. An alternative method must be provided so that users with mobility impairments who use a pointer (mouse, pen, or touch contact) can use the functionality.</p>",
       },
       "benefits" :
@@ -3119,8 +3119,8 @@ const wcagObj = {
     { // 3.2.1.
       "criteria" : 
       {
-        "ca" : "3.2.1 En focus", 
-        "es" : "3.2.1 En foco", 
+        "ca" : "3.2.1 En Focus", 
+        "es" : "3.2.1 En Focus", 
         "en" : "3.2.1 On Focus",
       }, 
       "link" : "https://www.w3.org/TR/WCAG21/#on-focus", 
@@ -3399,7 +3399,7 @@ const wcagObj = {
       "version" : "2.2", 
       "goal" : 
       {
-        "ca" : "Quan rebreu el cursor del punter o l'enfocament del teclat fa que els components de la interfície d'usuari siguin visibles, la informació necessària per identificar que els components de la interfície d'usuari estan disponibles és visible, excepte quan:<ul><li>La informació necessària per identificar els components de la interfície dusuari està disponible a través dun component equivalent que està visible a la mateixa pàgina o en un pas diferent en un procés de diversos passos sense necessitat de passar el punter o enfocar el teclat;</li><li>El component es proporciona específicament per millorar lexperiència de navegació amb el teclat;</li><li>Es disposa d'un mecanisme per fer visible la informació de manera persistent;</li><li>És essencial amagar la informació necessària per identificar el component.</li></ul>", 
+        "ca" : "Quan rebreu el cursor del punter o l'enfocament del teclat fa que els components de la interfície d'usuari siguin visibles, la informació necessària per identificar que els components de la interfície d'usuari estan disponibles és visible, excepte quan:<ul><li>La informació necessària per identificar els components de la interfície d'usuari està disponible a través dun component equivalent que està visible a la mateixa pàgina o en un pas diferent en un procés de diversos passos sense necessitat de passar el punter o enfocar el teclat;</li><li>El component es proporciona específicament per millorar l'experiència de navegació amb el teclat;</li><li>Es disposa d'un mecanisme per fer visible la informació de manera persistent;</li><li>És essencial amagar la informació necessària per identificar el component.</li></ul>", 
         "es" : "Cuando recibir el cursor del puntero o el enfoque del teclado hace que los componentes de la interfaz de usuario sean visibles, la información necesaria para identificar que los componentes de la interfaz de usuario están disponibles es visible, excepto cuando:<ul><li>La información necesaria para identificar los componentes de la interfaz de usuario está disponible a través de un componente equivalente que está visible en la misma página o en un paso diferente en un proceso de varios pasos sin necesidad de pasar el puntero o enfocar el teclado;</li><li>El componente se proporciona específicamente para mejorar la experiencia de navegación con el teclado;</li><li>Se dispone de un mecanismo para hacer visible la información de forma persistente;</li><li>Es esencial ocultar la información necesaria para identificar el componente.</li></ul>", 
         "en" : "Where receiving pointer hover or keyboard focus triggers user interface components to be visible, information needed to identify that user interface components are available is visible, except when:<ul><li>The information needed to identify the user interface components is available through an equivalent component that is visible on the same page or on a different step in a multi-step process without requiring pointer hover or keyboard focus;</li><li>The component is provided specifically to enhance the experience for keyboard navigation;</li><li>A mechanism is available to make the information persistently visible;</li><li>Hiding the information needed to identify the component is essential.</li></ul>",
       },
@@ -3411,8 +3411,8 @@ const wcagObj = {
       },
       "benefits" :
       {
-        "ca" : "<ul><li>Les persones amb discapacitats cognitives i d'aprenentatge poden localitzar més fàcilment els controls que els permetin progressar amb èxit a través d'un procés.</li><li>Les persones amb problemes de memòria no necessiten recordar on es troben els controls.</li> li><li>Les persones amb baixa visió no necessiten coordinar la cerca visual dels controls amb l'acció de moure el punter o el focus del teclat.</li><li>Les persones amb discapacitat motriu i de mobilitat que utilitzen la parla o altres mètodes d'entrada. no cal fer servir el cursor o el focus per localitzar i operar els controls.</li></ul>", 
-        "es" : "<ul><li>Las personas con discapacidades cognitivas y de aprendizaje pueden ubicar más fácilmente los controles que les permitan progresar con éxito a través de un proceso.</li><li>Las personas con problemas de memoria no necesitan recordar dónde se encuentran los controles.</ li><li>Las personas con baja visión no necesitan coordinar visualmente la búsqueda de controles con el acto de mover el puntero o el enfoque del teclado.</li><li>Personas con problemas de movilidad y motrices que utilizan el habla u otros métodos de entrada no es necesario utilizar el desplazamiento o el enfoque para ubicar y operar los controles.</li></ul>", 
+        "ca" : "<ul><li>Les persones amb discapacitats cognitives i d'aprenentatge poden localitzar més fàcilment els controls que els permetin progressar amb èxit a través d'un procés.</li><li>Les persones amb problemes de memòria no necessiten recordar on es troben els controls.</li><li>Les persones amb baixa visió no necessiten coordinar la cerca visual dels controls amb l'acció de moure el punter o el focus del teclat.</li><li>Les persones amb discapacitat motriu i de mobilitat que utilitzen la parla o altres mètodes d'entrada. no cal fer servir el cursor o el focus per localitzar i operar els controls.</li></ul>", 
+        "es" : "<ul><li>Las personas con discapacidades cognitivas y de aprendizaje pueden ubicar más fácilmente los controles que les permitan progresar con éxito a través de un proceso.</li><li>Las personas con problemas de memoria no necesitan recordar dónde se encuentran los controles.</li><li>Las personas con baja visión no necesitan coordinar visualmente la búsqueda de controles con el acto de mover el puntero o el enfoque del teclado.</li><li>Personas con problemas de movilidad y motrices que utilizan el habla u otros métodos de entrada no es necesario utilizar el desplazamiento o el enfoque para ubicar y operar los controles.</li></ul>", 
         "en" : "<ul><li>People with cognitive and learning disabilities can more easily locate controls that allow them to successfully progress through a process.</li><li>People with memory impairments do not need to remember where controls are located.</li><li>People with low vision do not need to coordinate visually searching for controls with the act of moving the pointer hover or keyboard focus.</li><li>People with mobility and motor impairments who use speech or other input methods do not need to use hover or focus to locate and operate controls.</li></ul>",
       },
       "examples" : "https://www.w3.org/WAI/WCAG22/Understanding/visible-controls.html#examples",
