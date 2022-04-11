@@ -113,7 +113,7 @@ let headers = [
 			"es" : "Nivel",
 			"en" : "Level"
 		},
-		"view" : true
+		"view" : false
 	},
 	{
 		"name" : "version",
@@ -122,7 +122,7 @@ let headers = [
 			"es" : "Versión",
 			"en" : "Version"
 		},
-		"view" : true
+		"view" : false
 	},
 	{
 		"name" : "goal",
@@ -131,7 +131,7 @@ let headers = [
 			"es" : "Objetivo",
 			"en" : "Goal"
 		},
-		"view" : true
+		"view" : false
 	},
 	{
 		"name" : "intent",
@@ -140,7 +140,7 @@ let headers = [
 			"es" : "Intención",
 			"en" : "Intent"
 		},
-		"view" : true
+		"view" : false
 	},
 	{
 		"name" : "benefits",
@@ -176,7 +176,7 @@ let headers = [
 			"es" : "Verificación",
 			"en" : "Verification"
 		},
-		"view" : false
+		"view" : true
 	},
 	{
 		"name" : "tools",
@@ -185,7 +185,7 @@ let headers = [
 			"es" : "Herramientas",
 			"en" : "Tools"
 		},
-		"view" : false
+		"view" : true
 	},
 	{
 		"name" : "category",
